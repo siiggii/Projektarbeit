@@ -2,6 +2,7 @@ package evaluator;
 
 import com.sun.org.apache.regexp.internal.RE;
 import core.CALC;
+import core.Engine;
 import evaluator.extend.*;
 import exception.WrongParametersException;
 import struct.*;
@@ -30,6 +31,7 @@ public SOLVEFORVARIABEL() {}
 
 	@Override
 	public MathObject evaluate(Function input) {
+
 
 		if(containsVariable(input,"y")){
 			variableToSolveFor = "y";
@@ -69,7 +71,7 @@ public SOLVEFORVARIABEL() {}
 			addendsList.add(new Addends(addExponent0,0));
 
 
-			solutionset = new Solutionset(CALC.SOLUTIONSET);
+			solutionset = Engine.solutionset;
 			//check term for elementary algebra
 			if(addendsList.size() == 2){
 				if(addendsList.get(0).getPotenzDesSummanden()!=0&&addendsList.get(1).getPotenzDesSummanden()==0){
@@ -110,7 +112,7 @@ public SOLVEFORVARIABEL() {}
 			throw new WrongParametersException("SOLVEFORVARIABLE -> wrong number of parameters");
 		}
 
-		return solutionset;
+		return input;
 	}
 	private void substitution(){
 		int substitutionFactor = addendsList.get(1).getPotenzDesSummanden();
@@ -241,6 +243,14 @@ public SOLVEFORVARIABEL() {}
 		}
 		return false;
 	}
+
+
+
+
+	public void plusminus(Function input){
+
+	}
+
 
 
 

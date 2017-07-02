@@ -1,5 +1,7 @@
 package struct;
 
+import core.CALC;
+
 import java.util.ArrayList;
 
 /**
@@ -16,11 +18,22 @@ public class Solutionset implements MathObject {
     }
 
     public void add(MathObject mathObject){
-        parameters.add(mathObject);
+        boolean contains = false;
+        for (MathObject mathobjectp:parameters) {
+            if(mathobjectp.isSameSolution(mathObject)){
+                contains = true;
+            }
+        }
+        if(contains == false){
+            parameters.add(mathObject);
+        }
+
     }
 
     public void addAll(ArrayList<MathObject> mathObjectsList){
-        parameters.addAll(mathObjectsList);
+        for (MathObject mathobject:mathObjectsList) {
+            add(mathobject);
+        }
     }
     public ArrayList<MathObject> getParameters(){
         return  parameters;
@@ -80,51 +93,33 @@ public class Solutionset implements MathObject {
             return false;
         }
 
+
+
+
+
         Solutionset solSet2 = (Solutionset) obj;
 
-        if(parameters.size() == 1){
-            if(solSet2.parameters.size() != 1) return  false;
-            if(parameters.get(0).isSameSolution(solSet2.parameters.get(0))) return true;
-            else return false;
-        }
-        else{
-            if(solSet2.parameters.size() == 1){
-                if(parameters.get(0).isSameSolution(solSet2.parameters.get(0))| parameters.get(1).isSameSolution(solSet2.parameters.get(0))){
-                    return true;
+
+        for(MathObject mathObject1:solSet2.parameters){
+            boolean bol = false;
+            for(MathObject mathObject2:parameters){
+                if(mathObject1.isSameSolution(mathObject2)){
+                    bol = true;
                 }
             }
-            else if(solSet2.parameters.size() == 2){
-                if(parameters.get(0).isSameSolution(solSet2.parameters.get(0))& parameters.get(1).isSameSolution(solSet2.parameters.get(1))) return true;
-                else if (parameters.get(1).isSameSolution(solSet2.parameters.get(0))& parameters.get(0).isSameSolution(solSet2.parameters.get(1)))return true;
-                else return false;
-            }
-            //todo not implemented completly
-            return false;
-        }
-        /*
-        if(parameters.size() != solSet2.parameters.size()){
-            if(parameters.size() == 1){
+            if(bol == false){
                 return false;
             }
-            else if(solSet2.parameters.size() != 1){
-                return false;
-            }
-            else {
-                if(parameters.get(0).isSameSolution(solSet2.parameters.get(0))| parameters.get(1).isSameSolution(solSet2.parameters.get(0))){
-                    return true;
-                }
-                else{
-                    return false;
-                }
-            }
-        }
-        else{
-            if(parameters.get(0).isSameSolution(solSet2.parameters.get(0))& parameters.get(1).isSameSolution(solSet2.parameters.get(1))) return true;
-            else if (parameters.get(1).isSameSolution(solSet2.parameters.get(0))& parameters.get(0).isSameSolution(solSet2.parameters.get(1)))return true;
-            else return false;
         }
 
-        */
+        return true;
+    }
+
+
+    public Solutionset cloneSolutionset(){
+        Solutionset solutionset = new Solutionset(CALC.SOLUTIONSET);
+        solutionset.parameters = parameters;
+        return solutionset;
     }
 
 

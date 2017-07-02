@@ -37,20 +37,7 @@ public class Function implements MathObject, Iterable<MathObject>, Serializable 
 	private Symbol functionHeader;
 	protected ArrayList<MathObject> parameters = new ArrayList<MathObject>();
 
-
-
-
-
-
-
-	//die allgemeine Lösung?
 	public static Solutionset solutionset;
-
-
-
-
-
-
 
 
 	private int properties = 0x0000;
@@ -459,4 +446,7 @@ public class Function implements MathObject, Iterable<MathObject>, Serializable 
 		}
 		return true;
 	}
+
+
+
 }

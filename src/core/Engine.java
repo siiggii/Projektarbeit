@@ -92,8 +92,12 @@ public final class Engine {
     public boolean compareSolutions(String exercise, String userInput){
         boolean trueFalse = false;
         MathObject input1 = executeInput(exercise);
+        MathObject solution1 = Engine.solutionset.cloneSolutionset();
+        Engine.solutionset = new Solutionset(CALC.SOLUTIONSET);
         MathObject input2 = executeInput(userInput);
-        if(input1.isSameSolution(input2)){
+        MathObject solution2 = Engine.solutionset.cloneSolutionset();
+        Engine.solutionset = new Solutionset(CALC.SOLUTIONSET);
+        if(solution1.isSameSolution(solution2)){
             return true;
         }
         return false;

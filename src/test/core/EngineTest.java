@@ -69,7 +69,7 @@ public class EngineTest {
         boolean solution = engine.compareSolutions("1*x*x-7*x+3=2","x=((3*(5^(1/2))+7)/(2))");
         Assert.assertTrue(solution );
     }
-    /*
+
     @Test
     public void test9() throws Exception {
         boolean solution = engine.compareSolutions("x*x*x*x-3*x*x+2=0","x=1");
@@ -80,6 +80,6 @@ public class EngineTest {
         boolean solution = engine.compareSolutions("2*x*x*x*x-4*x*x-16=0","x=1");
         Assert.assertTrue(solution );
     }
-    */
+
 
 }

@@ -12,9 +12,7 @@ import java.util.List;
  */
 public class EQUAL implements RelationshipInterface {
 
-    List<SOLVEFORVARIABEL.Addends> addendsList;
-    Solutionset solutionset;
-    String variableToSolveFor = "x";
+
 
     @Override
     public MathObject evaluate(Relationship input) {
