@@ -74,10 +74,7 @@ public class Fraction implements MathObject, Serializable {
 		return new Fraction(nume.divide(commonfactor), deno.divide(commonfactor));
 	}
 	
-	/**
-	 * @param n
-	 * @return this fraction to the n<sup>th</sup> power
-	 */
+
 	public MathObject power(int n) {
 		if (n < 0) {
 			n *= -1;

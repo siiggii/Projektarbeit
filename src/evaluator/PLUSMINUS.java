@@ -6,9 +6,11 @@ import struct.Function;
 import struct.MathObject;
 
 /**
- * Created by siegf on 02.07.2017.
+ * Evaluator that handles plusminus of expressions
  */
 public class PLUSMINUS implements FunctionEvaluator {
+
+    //todo this needs to return a set
     @Override
     public MathObject evaluate(Function input) {
         if(input.get(0).getHeader().equals(CALC.PLUSMINUS)){

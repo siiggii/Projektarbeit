@@ -12,8 +12,6 @@ import struct.MathObject;
  * Evaluator that handles multiplication of expressions. Handles basic
  * simplification.
  *
- * @author Duyun Chen 
- *
  *
  */
 public class MULTIPLY extends NParamFunctionEvaluator implements OperatorEvaluator {
@@ -121,36 +119,6 @@ public class MULTIPLY extends NParamFunctionEvaluator implements OperatorEvaluat
         MathObject temp = null;
         for (int ii = 0; ii < function.size(); ii++) {
             temp = function.get(ii);
-            //a*1/x -> a/x
-			/*if (temp instanceof CalcFunction && 	//handle '/' cases
-             temp.getHeader().equals(core.CALC.POWER) &&
-             ((CalcFunction)temp).get(1).compareTo(core.CALC.ZERO) < 0) {
-             CalcObject temp2 = ((CalcFunction)temp).get(0);
-             CalcObject temp3 = ((CalcFunction)temp).get(1);
-             if (temp3.isNumber()) {
-             if (temp3 instanceof CalcInteger) {
-             ((CalcInteger)temp3).negate();
-             }
-             if (temp3 instanceof CalcDouble) {
-             ((CalcDouble)temp3).negate();
-             }
-             }
-             if (buffer.charAt(buffer.length() - 1) == '*') {
-             buffer.deleteCharAt(buffer.length() - 1);
-             }
-             if (unaryNegative) {
-             buffer.append('1'); //fixes -1/x case (no more -/x crap)
-             }
-             buffer.append('/');
-             if (temp2 instanceof CalcFunction) {
-             buffer.append('(');	//embedded function -> parenthesis required
-             }
-             buffer.append(temp);
-             if (temp2 instanceof CalcFunction) {
-             buffer.append(')');
-             }				
-             continue;
-             }*/
             if (temp.equals(CALC.NEG_ONE)) {
                 buffer.append('-');	//-1*x = -x
             } else {

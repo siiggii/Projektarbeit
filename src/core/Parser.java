@@ -8,17 +8,12 @@ import struct.Integer;
 import struct.MathObject;
 
 /**
- * Parses a mathematical expression string into a CalcObject
- * hiearchical data structure which can either be transformed back
- * into a string, evaluated, or passed as an argument to another hierarchy.
- *  
- *
+ * parses a mathematical expression string into a CalcObject.
  */
 public final class Parser {
 	
 	/**
-	 * These static constants define what values the token can take
-	 * based on what currentChar is. This keeps track of the TYPE of
+	 * static constants define the values that token can take based on what currentChar is, This keeps track of the TYPE of
 	 * currentChar.
 	 */
 	private final static int
@@ -30,32 +25,24 @@ public final class Parser {
 	CALC_ADD = 5,				//add
 	CALC_PARENTHESISOPEN = 6,	//open parenthesis
 	CALC_PARENTHESISCLOSE = 7,	//close parenthesis
-	CALC_MATRIXOPEN = 8,		//open matrix declaration
-	CALC_MATRIXCLOSE = 9,		//close matrix declaration
-	CALC_IDENTIFIER = 10,		//variable names. function names, symbolic anything
+	CALC_IDENTIFIER = 10,		//variable names
 	CALC_DIGIT = 11,			//numbers
 	CALC_COMMA = 12,			//commas (mostly used in function argument list)
 	CALC_DEFINE = 13,			//variable assignment (i.e. x=10, f(x)=x+4, etc)
-	CALC_FACTORIAL = 14,		//factorial (x!)
-	CALC_ABS = 15,				//absolute value (|x|)
 	CALC_EQUAL = 16, 	 		//EQUATION assignment (i.e. x=10, f(x)=x+4, etc)
 	CALC_PLUSMINUS = 17;		//plus minus
+
 	private String inputString;
 	private char currentChar;
 	private int currentCharIndex;
 	private int token;
 	
-	/**
-	 * Constructor
-	 * @param StringIn The string that needs to be converted into a CalcObject hierarchy
-	 */
+
 	public Parser(String StringIn) {
 		inputString = StringIn;
 	}
 	
-	/**
-	 * Empty constructor
-	 */
+
 	public Parser() {
 		inputString = null;
 	}
@@ -77,9 +64,7 @@ public final class Parser {
 	}
 	
 	/**
-	 * Identifies the next sequence of characters by a unique 
-	 * int stored in global variable <b>token</b>
-	 * @throws SyntaxException
+	 * identifies the next sequence of characters by a unique int stored in global variable
 	 */
 	private void parseNextToken() throws SyntaxException {
 		while (inputString.length() > currentCharIndex) {
@@ -145,12 +130,6 @@ public final class Parser {
 						break;
 					case ':':
 						token = CALC_DEFINE;
-						break;
-					case '!':
-						token = CALC_FACTORIAL;
-						break;
-					case '|':
-						token = CALC_ABS;
 						break;
 					default:
 						throw new SyntaxException("Unidentified character: " + currentChar);
@@ -278,17 +257,7 @@ public final class Parser {
 		
 	}
 	
-	/**
-	 * Parses division precedence expression. The reason why I did
-	 * not create or use a separate "Divide" evaluation class, instead using 
-	 * multiply to negative one power, is because of the properties
-	 * of the multiply function over the divide function (same with
-	 * add over subtract) -> commutativity and associativity. Makes life
-	 * a lot easier in evaluation but will probably come back to haunt me.
-	 * Delete this comment when this issue is resolved.
-	 * @return the parsed hierarchy tree at division level
-	 * @throws SyntaxException
-	 */
+
 	private MathObject parseDivision() throws SyntaxException {
 		MathObject numerator = parsePower();
 		MathObject denominator;
@@ -326,7 +295,7 @@ public final class Parser {
 	}
 	
 	private MathObject parsePower() throws SyntaxException {
-		MathObject returnVal = parseFactorial();
+		MathObject returnVal = parseTerm();
 		
 		if (token != CALC_POWER) {
 			return returnVal;
@@ -335,23 +304,13 @@ public final class Parser {
 		while (token == CALC_POWER) {
 			parseNextToken();
 			Function function = new Function(CALC.POWER, returnVal);
-			function.add(parseFactorial());
+			function.add(parseTerm());
 			returnVal = function;
 		}
 		
 		return returnVal;
 	}
-	
-	private MathObject parseFactorial() throws SyntaxException {
-		MathObject returnVal = parseTerm();
-		
-		while (token == CALC_FACTORIAL) {
-			parseNextToken();
-			returnVal = CALC.FACTORIAL.createFunction(returnVal);
-		}
-		
-		return returnVal;
-	}
+
 	
 
 	

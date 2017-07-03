@@ -12,8 +12,6 @@ import struct.MathObject;
 
 /**
  * Natural Logarithm evaluator. Supports stable treatment of border and nondomain input.
- * @author Duyun Chen <A HREF="mailto:duchen@seas.upenn.edu">[duchen@seas.upenn.edu]</A>,
- * Seth Shannin <A HREF="mailto:sshannin@seas.upenn.edu">[sshannin@seas.upenn.edu]</A>
  *  
  *
  */
@@ -68,7 +66,6 @@ public class LN extends OneParamFunctionEvaluator {
         if (input.equals(CALC.ERROR)) {
             return CALC.ERROR;
         }
-        //cannot evaluate symbols, so just return the original function
         return CALC.LN.createFunction(input);
     }
 

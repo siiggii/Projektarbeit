@@ -9,21 +9,15 @@ import struct.Solutionset;
 import java.util.List;
 
 /**
+ * simple implementation of equal, only use as an mathobject
  */
 public class EQUAL implements RelationshipInterface {
 
 
-
+    // would return true or false
     @Override
     public MathObject evaluate(Relationship input) {
-        int a = 0;
-        a++;
         return null;
-    }
-
-
-    public void solveforVariable(){
-
     }
 
     @Override

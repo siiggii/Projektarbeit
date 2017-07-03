@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 /**
- *
+ * should be a set instead of solutionset, holds a number of CalcObjects
  */
 public class Solutionset implements MathObject,Iterable<MathObject> {
 
@@ -98,11 +98,6 @@ public class Solutionset implements MathObject,Iterable<MathObject> {
         if(!(obj instanceof Solutionset)){
             return false;
         }
-
-
-
-
-
         Solutionset solSet2 = (Solutionset) obj;
 
         if(solSet2.parameters.size() == 0){

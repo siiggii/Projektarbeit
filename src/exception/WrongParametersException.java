@@ -2,7 +2,7 @@ package exception;
 
 /**
  * Thrown when extra parameters are given to a function that does not support
- * that many parameters (e.g. SIN(1,2))
+ * that many parameters
  *  
  *
  */

@@ -21,8 +21,7 @@ public class EXPAND implements FunctionEvaluator {
     public MathObject evaluate(Function input) {
         if (input.size() == 1) {
             MathObject obj = input.get(0);
-            //Simplify object before expanding (combine fractions)
-            //obj = core.CALC.SYM_EVAL(core.CALC.SIMPLIFY.createFunction(obj));
+
             if (obj.getHeader().equals(CALC.ADD) && ((Function) obj).size() > 1) { //	EXPAND(y1+y2+...,x) = EXPAND(y1,x) + EXPAND(y2,x) + ...
                 Function function = (Function) obj;
                 Function functionB = new Function(CALC.ADD, function, 1, function.size());

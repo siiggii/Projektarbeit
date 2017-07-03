@@ -1,15 +1,12 @@
 package core;
 
-//import org.junit.Test;
-//import org.junit.*;
+
 
 
 import org.junit.Assert;
 import org.junit.Test;
 
-/**
- * Created by siegf on 17.06.2017.
- */
+
 public class EngineTest {
     Engine engine = new Engine();
     @Test
@@ -98,6 +95,7 @@ public class EngineTest {
     @Test
     public void solutionTest2() throws Exception {
         String s = engine.solution("x=(a^2)^(1/2)");
+
         Assert.assertTrue(true );
     }
 

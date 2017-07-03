@@ -1,7 +1,7 @@
 package exception;
 
 /**
- * Thrown when an illegal math operation is required (e.g. 1/0 or arccos(2))
+ * Thrown when an illegal math operation is required (1/0)
  *  
  *
  */

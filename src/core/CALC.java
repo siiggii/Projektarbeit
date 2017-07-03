@@ -15,10 +15,8 @@ import java.math.MathContext;
     import java.util.logging.Logger;
 
     /**
-     * This class contains a lot of global static constant or mutable values,
+     * This class contains a lot of global static constant and mutable values,
      * functions, and instances.
-     *
-     *
      *
      */
     public final class CALC {
@@ -26,21 +24,13 @@ import java.math.MathContext;
     	private static final Logger log = Logger.getLogger( CALC.class.getName() );
     	
 
-        /**
-         * The math context for the engine. Controls rounding and truncations to 32
-         * bit to IEEE 754R Decimal32 standards (7 digits). The precision can be
-         * changed by calling <b>core.CALC.setMathContext(int precision)</b>
-         */
-        //public static MathContext mathcontext = MathContext.UNLIMITED;
         public static MathContext mathcontext = MathContext.DECIMAL32;
-        //public static MathContext mathcontext = ;
+
         public static boolean operator_notation = false;
         public static int max_recursion_depth = 3;
         public static boolean full_integrate_mode = true;
         public static boolean fix_rounding_errors = true;
-        /**
-         * Standard unaryChar operator symbols
-         */
+
         public static final Symbol EQUAL = new Symbol("EQUAL", new EQUAL());
 
         public static final Symbol ADD = new Symbol("ADD", new ADD(),
@@ -53,8 +43,7 @@ import java.math.MathContext;
                 Symbol.OPERATOR | Symbol.UNIPARAM_IDENTITY);
         public static final Symbol POWER = new Symbol("POWER", new POWER(),
                 Symbol.OPERATOR | Symbol.UNIPARAM_IDENTITY);
-        public static final Symbol FACTORIAL = new Symbol("FACTORIAL", new FACTORIAL(),
-                Symbol.OPERATOR);
+
 
         public static final Symbol EXPAND = new Symbol("EXPAND", new EXPAND(),
                 Symbol.OPERATOR);
@@ -64,9 +53,6 @@ import java.math.MathContext;
                 Symbol.OPERATOR);
 
 
-        public static final Symbol FACTOR = new Symbol("FACTOR", new FACTOR(),
-                Symbol.OPERATOR);
-
         public static final Symbol SOLVEFORVARIABEL = new Symbol("SOLVEFORVARIABEL",
                 new SOLVEFORVARIABEL());
         public static final Symbol PLUSMINUS = new Symbol("PLUSMINUS",
@@ -74,16 +60,12 @@ import java.math.MathContext;
 
 
         
-        /**
-         * Special function symbols
-         */
-        //public static final CalcSymbol COT = new CalcSymbol("COT", new CalcCOT(),
-        //CalcSymbol.NO_PROPERTY);
+
         public static final Symbol LN = new Symbol("LN", new LN(),
                 Symbol.NO_PROPERTY);
 
 
-        //TODO implement INT (integration). This is gonna a hell of a lot harder.
+
         public static final Symbol DEFINE = new Symbol("DEFINE", new DEFINE(),
                 Symbol.OPERATOR | Symbol.FAST_EVAL);
 
@@ -125,11 +107,7 @@ import java.math.MathContext;
         public static final Symbol DOUBLE = new Symbol("Double");
         public static final Symbol FRACTION = new Symbol("Fraction");
         public static final Symbol SYMBOL = new Symbol("Symbol");
-        public static final Symbol MATRIX = new Symbol("Matrix");
-        public static final Symbol VECTOR = new Symbol("Vector");
         public static final Symbol ERROR = new Symbol("Error");
-        public static final Symbol USUB = new Symbol("USub");
-        public static final Symbol CALCRELATIONSHIP = new Symbol("EQUATION");
         public static final Symbol SOLUTIONSET = new Symbol("SOLUTIONSET");
         /**
          * Symbols for built-in constants
@@ -144,12 +122,7 @@ import java.math.MathContext;
          */
         public static HashMap<Symbol, MathObject> defined = new HashMap<Symbol, MathObject>();
 
-        /**
-         *
-         * @param variable .
-         * @return true if the HashMap <b>defined</b> contains key <b>variable</b>.
-         * False otherwise.
-         */
+
         public static boolean hasDefinedVariable(Symbol variable) {
             //TODO optimize this process
             if (defined.isEmpty()) {
@@ -167,13 +140,6 @@ import java.math.MathContext;
 
             return false;
         }
-
-        /**
-         *
-         * @param variable .
-         * @return The value in HashMap <b>defined</b> corresponding to the key
-         * <b>variable</b>
-         */
         public static MathObject getDefinedVariable(Symbol variable) {
             if (!hasDefinedVariable(variable)) {
                 return null;
@@ -210,12 +176,7 @@ import java.math.MathContext;
             return null;
         }
 
-        /**
-         * Puts entry (<b>key</b>, <b>value</b>) in HashMap <b>defined</b>
-         *
-         * @param key .
-         * @param value .
-         */
+
         public static void setDefinedVariable(Symbol key, MathObject value) {
             if (hasDefinedVariable(key)) {
                 if (!getDefinedVariable(key).equals(value)) {
@@ -226,11 +187,7 @@ import java.math.MathContext;
             }
         }
 
-        /**
-         *
-         * @param input .
-         * @return true if every char in input is upper case. False otherwise.
-         */
+
         public static final boolean isUpperCase(String input) {
             for (int ii = 0; ii < input.length(); ii++) {
                 if (Character.isLowerCase(input.charAt(ii))) {
@@ -241,10 +198,7 @@ import java.math.MathContext;
         }
 
         /**
-         * Symbolically and recursively evaluate a CalcObject using its own evaluate
-         * method
-         * @param input .
-         * @return .
+         * evaluate MathObject recursivly
          */
         public static MathObject SYM_EVAL(MathObject input) {
         	
@@ -293,9 +247,7 @@ import java.math.MathContext;
 
         /**
          *
-         * @param identifier .
-         * @return a function evaluator capable of evaluating the properties of
-         * symbol
+
          */
         public static Symbol getSymbol(String identifier) {
             if (identifier.equals("LN")) {
@@ -306,8 +258,6 @@ import java.math.MathContext;
                 return (Symbol) DEPTH.clone();
             } else if (identifier.equals("SIMPLIFY")) {
                 return (Symbol) SIMPLIFY.clone();
-            } else if (identifier.equals("FACTOR")) {
-                return (Symbol) FACTOR.clone();
             } else if (identifier.equals("DEFINE")) {
                 return (Symbol) DEFINE.clone();
             } else if (identifier.equals("PI")) {
@@ -317,26 +267,7 @@ import java.math.MathContext;
             } else if(identifier.equals("SOLVEFORVARIABEL")){
             	return (Symbol) SOLVEFORVARIABEL.clone();
             	
-            }else {
-            
-                String name = "javacalculus.evaluator.Calc" + identifier;
-
-                Class cls = null;
-                FunctionEvaluator evaluator;
-                Symbol symbol = new Symbol(identifier);
-
-                try {
-                    cls = Class.forName(name);
-                } catch (ClassNotFoundException e) {
-                }
-
-                try {
-                    evaluator = (FunctionEvaluator) cls.newInstance();
-                    symbol.setEvaluator(evaluator);
-                    return symbol;
-                } catch (Exception e) {
-                }
-            }
+            }else
             return null;
         }
 

@@ -14,16 +14,18 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+/**
+ * Solves a variable for x or for y
+ * y is for substitution
+ */
+//todo rework this class but implement set first
+
 public class SOLVEFORVARIABEL implements FunctionEvaluator {
 
-	/**
- *
- */
+
 public SOLVEFORVARIABEL() {}
 
-	/* (non-Javadoc)
-	 * @see javacalculus.evaluator.CalcFunctionEvaluator#evaluate(CalcFunction)
-	 */
+
 
 	List<Addends> addendsList;
 	Solutionset solutionset;
@@ -34,8 +36,8 @@ public SOLVEFORVARIABEL() {}
 	@Override
 	public MathObject evaluate(Function input) {
 
-		//first step is to check if input contains plusminus
-		//ersetze plusminus
+
+		//todo solve this via PLUSMINUS class
 		if(containsPLUSMINUS(input)){
 			solveForPlusMinus(input);
 			return Engine.solutionset;
@@ -126,6 +128,8 @@ public SOLVEFORVARIABEL() {}
 			return Engine.solutionset;
 		}
 	}
+
+	//todo use DEFINE class
 	private void substitution(){
 		int substitutionFactor = addendsList.get(1).getPotenzDesSummanden();
 		Function function1 = new Function(CALC.POWER,new Symbol("x"),new Integer(substitutionFactor));
@@ -374,7 +378,9 @@ public SOLVEFORVARIABEL() {}
         //CALC.SYM_EVAL(fuunctionMinus);
 	}
 
-
+	/**
+	 *  nested Class that helps to split equation into its Addends
+	 */
 	class Addends implements Comparable<Addends>{
 		MathObject summand;
 		int potenzDesSummanden;

@@ -12,8 +12,7 @@ import java.util.ArrayList;
 
 /**
  *
- *
- * @author Seva Luchianov
+
  */
 public class SIMPLIFY implements FunctionEvaluator {
 
@@ -58,8 +57,9 @@ public class SIMPLIFY implements FunctionEvaluator {
             //so this might be bad... lets see
             //System.out.println("DENOM:" + denomObj);
             //System.out.println("NUME:" + numeObj);
-            denomObj = CALC.SYM_EVAL(CALC.FACTOR.createFunction(denomObj));
-            numeObj = CALC.SYM_EVAL(CALC.FACTOR.createFunction(numeObj));
+            //todo
+            //denomObj = CALC.SYM_EVAL(CALC.FACTOR.createFunction(denomObj));
+            //numeObj = CALC.SYM_EVAL(CALC.FACTOR.createFunction(numeObj));
             //System.out.println("DENOM FACTORED:" + denomObj);
             //System.out.println("NUME FACTORED:" + numeObj);
             ArrayList<MathObject> nume = giveList(CALC.MULTIPLY, numeObj);

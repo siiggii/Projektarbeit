@@ -11,11 +11,7 @@ import struct.Integer;
 import struct.MathObject;
 
 /**
- * Evaluator that handles exponentiation of expressions. Handles basic simplification.
- * @author Duyun Chen <A HREF="mailto:duchen@seas.upenn.edu">[duchen@seas.upenn.edu]</A>,
- * Seth Shannin <A HREF="mailto:sshannin@seas.upenn.edu">[sshannin@seas.upenn.edu]</A>
- *  
- *
+ * handles exponentiation of expressions and basic simplification
  */
 public class POWER extends TwoParamFunctionEvaluator implements OperatorEvaluator {
 	
@@ -44,7 +40,7 @@ public class POWER extends TwoParamFunctionEvaluator implements OperatorEvaluato
 			Function function1 = (Function)input1;
 			
 			if (function1.size() == 2 && function1.get(1).isNumber()) {
-				if(((Double) input2).doubleValue() < 1&&((Double) input2).doubleValue() > 0 ){
+				if(((Double) input2).doubleValue() < 1&&((Double) input2).doubleValue() > -1 ){
 					return CALC.PLUSMINUS.createFunction(CALC.POWER.createFunction(function1.get(0), CALC.MULTIPLY.createFunction(function1.get(1), input2)));
 				}
 				return CALC.POWER.createFunction(function1.get(0), CALC.MULTIPLY.createFunction(function1.get(1), input2));

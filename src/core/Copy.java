@@ -3,16 +3,11 @@ package core;
 import java.io.*;
 
 /**
- *
+ * copys an object
  */
 public class Copy {
 
-    /**
-     * Returns a copy of the object, or null if the object cannot
-     * be serialized.
-     * @param orig .
-     * @return .
-     */
+
     public static Object copy(Object orig) {
         Object obj = null;
         try {

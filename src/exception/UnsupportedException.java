@@ -1,10 +1,9 @@
 package exception;
 
-import core.CALC;
+
 
 /**
  * Thrown when an unidentified function needs to be parsed or evaluated.
- * @see CALC
  *
  */
 public class UnsupportedException extends RuntimeException {

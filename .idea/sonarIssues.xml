@@ -183,6 +183,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../untitled2/src/evaluator/LN.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../untitled2/src/evaluator/MULTIPLY.java">
           <value>
             <set />
@@ -224,6 +229,41 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../untitled2/src/evaluator/extend/CalcRelationshipInterface.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../untitled2/src/evaluator/extend/ConstantEvaluator.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../untitled2/src/evaluator/extend/FunctionEvaluator.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../untitled2/src/evaluator/extend/NParamFunctionEvaluator.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../untitled2/src/evaluator/extend/NullEvaluator.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../untitled2/src/evaluator/extend/OneParamFunctionEvaluator.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../untitled2/src/evaluator/extend/OperatorEvaluator.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../untitled2/src/evaluator/extend/RelationshipInterface.java">
           <value>
             <set />
           </value>

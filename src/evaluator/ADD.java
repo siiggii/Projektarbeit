@@ -9,8 +9,7 @@ import struct.Integer;
 import struct.MathObject;
 
 /**
- * Evaluator that handles addition of expressions. Handles basic simplification.
- *  
+ * Evaluator that handles addition of expressions
  *
  */
 public class ADD extends NParamFunctionEvaluator implements OperatorEvaluator {
@@ -88,7 +87,6 @@ public class ADD extends NParamFunctionEvaluator implements OperatorEvaluator {
 	
 	@Override
 	protected MathObject evaluateInteger(Integer input1, Integer input2) {
-		// TODO Auto-generated method stub
 		return input1.add(input2);
 	}
 	

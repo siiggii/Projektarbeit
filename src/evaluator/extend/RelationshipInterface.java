@@ -5,14 +5,10 @@ import struct.MathObject;
 import struct.Relationship;
 
 /**
- * Created by siegf on 22.05.2017.
+ *  Interface of Relationships like equal (unequal, bigger, smaller)
  */
 public interface RelationshipInterface {
-    /**
-     * Converts a function into a special operator notation
-     * @param function input function
-     * @return operator notation String
-     */
+
     public String toOperatorString(Function function);
 
     /**

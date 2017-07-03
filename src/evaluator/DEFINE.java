@@ -12,10 +12,7 @@ import struct.MathObject;
 import java.util.List;
 
 /**
- * Handles user defined functions (e.g. f(x)=x^2). Stores defined functions
- * in core.CALC.defined.
- * @see CALC
- *  
+ * user defined functions which are stored in CALC
  *
  */
 public class DEFINE implements OperatorEvaluator {

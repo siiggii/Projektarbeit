@@ -8,12 +8,7 @@ import struct.MathObject;
 import java.io.Serializable;
 
 /**
- * Abstract definition of a function evaluator that takes in one parameter.
- * 
- * @author Duyun Chen <A HREF="mailto:duchen@seas.upenn.edu">[duchen@seas.upenn.edu]</A>,
- * Seth Shannin <A HREF="mailto:sshannin@seas.upenn.edu">[sshannin@seas.upenn.edu]</A>
- *  
- *
+ * function evaluator that takes in one parameter.
  */
 public abstract class OneParamFunctionEvaluator implements FunctionEvaluator, Serializable{
 
