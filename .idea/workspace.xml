@@ -8,37 +8,7 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/../untitled2/src/exception/DimensionException.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../untitled2/src/gui/Console.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../untitled2/src/struct/Sub.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/.idea/sonarIssues.xml" afterPath="$PROJECT_DIR$/../untitled2/.idea/sonarIssues.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../untitled2/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/core/CALC.java" afterPath="$PROJECT_DIR$/../untitled2/src/core/CALC.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/core/Copy.java" afterPath="$PROJECT_DIR$/../untitled2/src/core/Copy.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/core/Engine.java" afterPath="$PROJECT_DIR$/../untitled2/src/core/Engine.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/core/Parser.java" afterPath="$PROJECT_DIR$/../untitled2/src/core/Parser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/evaluator/ADD.java" afterPath="$PROJECT_DIR$/../untitled2/src/evaluator/ADD.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/evaluator/DEFINE.java" afterPath="$PROJECT_DIR$/../untitled2/src/evaluator/DEFINE.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/evaluator/EQUAL.java" afterPath="$PROJECT_DIR$/../untitled2/src/evaluator/EQUAL.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/evaluator/EXPAND.java" afterPath="$PROJECT_DIR$/../untitled2/src/evaluator/EXPAND.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/evaluator/LN.java" afterPath="$PROJECT_DIR$/../untitled2/src/evaluator/LN.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/evaluator/MULTIPLY.java" afterPath="$PROJECT_DIR$/../untitled2/src/evaluator/MULTIPLY.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/evaluator/PLUSMINUS.java" afterPath="$PROJECT_DIR$/../untitled2/src/evaluator/PLUSMINUS.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/evaluator/POWER.java" afterPath="$PROJECT_DIR$/../untitled2/src/evaluator/POWER.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/evaluator/SIMPLIFY.java" afterPath="$PROJECT_DIR$/../untitled2/src/evaluator/SIMPLIFY.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/evaluator/SOLVEFORVARIABEL.java" afterPath="$PROJECT_DIR$/../untitled2/src/evaluator/SOLVEFORVARIABEL.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/evaluator/extend/ConstantEvaluator.java" afterPath="$PROJECT_DIR$/../untitled2/src/evaluator/extend/ConstantEvaluator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/evaluator/extend/FunctionEvaluator.java" afterPath="$PROJECT_DIR$/../untitled2/src/evaluator/extend/FunctionEvaluator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/evaluator/extend/NParamFunctionEvaluator.java" afterPath="$PROJECT_DIR$/../untitled2/src/evaluator/extend/NParamFunctionEvaluator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/evaluator/extend/NullEvaluator.java" afterPath="$PROJECT_DIR$/../untitled2/src/evaluator/extend/NullEvaluator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/evaluator/extend/OneParamFunctionEvaluator.java" afterPath="$PROJECT_DIR$/../untitled2/src/evaluator/extend/OneParamFunctionEvaluator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/evaluator/extend/OperatorEvaluator.java" afterPath="$PROJECT_DIR$/../untitled2/src/evaluator/extend/OperatorEvaluator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/evaluator/extend/RelationshipInterface.java" afterPath="$PROJECT_DIR$/../untitled2/src/evaluator/extend/RelationshipInterface.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/evaluator/extend/TwoParamFunctionEvaluator.java" afterPath="$PROJECT_DIR$/../untitled2/src/evaluator/extend/TwoParamFunctionEvaluator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/exception/ArithmeticException.java" afterPath="$PROJECT_DIR$/../untitled2/src/exception/ArithmeticException.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/exception/UnsupportedException.java" afterPath="$PROJECT_DIR$/../untitled2/src/exception/UnsupportedException.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/exception/WrongParametersException.java" afterPath="$PROJECT_DIR$/../untitled2/src/exception/WrongParametersException.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/struct/Fraction.java" afterPath="$PROJECT_DIR$/../untitled2/src/struct/Fraction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/struct/MathObject.java" afterPath="$PROJECT_DIR$/../untitled2/src/struct/MathObject.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/struct/Solutionset.java" afterPath="$PROJECT_DIR$/../untitled2/src/struct/Solutionset.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/test/core/EngineTest.java" afterPath="$PROJECT_DIR$/../untitled2/src/test/core/EngineTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/../untitled2/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -120,11 +90,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Engine.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Engine.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../untitled2/src/core/Engine.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-296">
               <caret line="16" column="49" lean-forward="false" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="untitled2.iml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../untitled2/untitled2.iml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -186,16 +166,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="151">
               <caret line="61" column="14" lean-forward="false" selection-start-line="61" selection-start-column="14" selection-end-line="61" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WrongParametersException.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../untitled2/src/exception/WrongParametersException.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="23" lean-forward="false" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -858,7 +828,14 @@
       <option name="project" value="LOCAL" />
       <updated>1499084919016</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="commit 4">
+      <created>1499090411391</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1499090411391</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -895,6 +872,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -972,7 +950,8 @@
     <MESSAGE value="vor plusminus" />
     <MESSAGE value="2" />
     <MESSAGE value="3" />
-    <option name="LAST_COMMIT_MESSAGE" value="3" />
+    <MESSAGE value="commit 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit 4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1015,7 +994,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../untitled2/src/struct/PLUSMINUS.java" />
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/runner/JUnitCore.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
@@ -1506,6 +1484,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-296">
           <caret line="16" column="49" lean-forward="false" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../untitled2/untitled2.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
