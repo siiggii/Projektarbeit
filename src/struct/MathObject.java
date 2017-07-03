@@ -68,6 +68,8 @@ public interface MathObject extends Comparable<MathObject> {
 	 */
 	public int getPrecedence();
 
-	public boolean isSameSolution(MathObject obj);
+	public boolean isSameSolution(MathObject mathObject);
+
+	public MathObject cloneMathObject();
 	
 }

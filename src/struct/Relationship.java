@@ -74,6 +74,10 @@ public class Relationship implements MathObject {
         return 0;
     }
 
+    public final int size() {
+        return parameters.size();
+    }
+
     @Override
     public boolean isSameSolution(MathObject obj) {
         //todo if(functionHeader)
@@ -102,5 +106,17 @@ public class Relationship implements MathObject {
             return false;
         }
 
+    }
+
+    @Override
+    public MathObject cloneMathObject() {
+        Relationship clone = new Relationship(functionHeader);
+        for (MathObject mathObject: parameters) {
+            clone.add(mathObject.cloneMathObject());
+        }
+        return clone;
+    }
+    public void set(int index, MathObject obj) {
+        parameters.set(index, obj);
     }
 }

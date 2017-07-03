@@ -3,11 +3,12 @@ package struct;
 import core.CALC;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 /**
  *
  */
-public class Solutionset implements MathObject {
+public class Solutionset implements MathObject,Iterable<MathObject> {
 
     private Symbol functionHeader;
     protected ArrayList<MathObject> parameters = new ArrayList<MathObject>();
@@ -88,6 +89,11 @@ public class Solutionset implements MathObject {
     }
 
     @Override
+    public Iterator<MathObject> iterator() {
+        return parameters.iterator();
+    }
+
+    @Override
     public boolean isSameSolution(MathObject obj) {
         if(!(obj instanceof Solutionset)){
             return false;
@@ -99,7 +105,9 @@ public class Solutionset implements MathObject {
 
         Solutionset solSet2 = (Solutionset) obj;
 
-
+        if(solSet2.parameters.size() == 0){
+            return false;
+        }
         for(MathObject mathObject1:solSet2.parameters){
             boolean bol = false;
             for(MathObject mathObject2:parameters){
@@ -122,5 +130,12 @@ public class Solutionset implements MathObject {
         return solutionset;
     }
 
-
+    @Override
+    public MathObject cloneMathObject() {
+        Solutionset clone = new Solutionset(functionHeader);
+        for (MathObject mathObject: parameters) {
+            clone.add(mathObject.cloneMathObject());
+        }
+        return clone;
+    }
 }

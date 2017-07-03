@@ -16,7 +16,8 @@ public class EQUAL implements RelationshipInterface {
 
     @Override
     public MathObject evaluate(Relationship input) {
-
+        int a = 0;
+        a++;
         return null;
     }
 

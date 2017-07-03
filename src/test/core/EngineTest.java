@@ -40,7 +40,7 @@ public class EngineTest {
     }
     @Test
     public void test3p() throws Exception {
-        boolean solution = engine.compareSolutions("2*x*x-4*x-16=0","x=(-4±((((-4)^2)-4*2*(-16))^(1/2)))/(2*2)");
+        boolean solution = engine.compareSolutions("2*x*x-4*x-16=0","x=-(-4±((((-4)^2)-4*2*(-16))^(1/2)))/(2*2)");
         Assert.assertTrue(solution );
     }
     @Test
@@ -80,6 +80,25 @@ public class EngineTest {
         boolean solution = engine.compareSolutions("2*x*x*x*x-4*x*x-16=0","x=1");
         Assert.assertTrue(solution );
     }
-
+    @Test
+    public void test11() throws Exception {
+        boolean solution = engine.compareSolutions("a*x*x+b*x+c=0","x=0");
+        Assert.assertTrue(solution );
+    }
+    @Test
+    public void testplusminus() throws Exception {
+        boolean s = engine.compareSolutions("x=-(-4±((((-4)^2)-4*2*(-16))^(1/2)))/(2*2)","x=1");
+        Assert.assertTrue(s );
+    }
+    @Test
+    public void solutionTest() throws Exception {
+        String s = engine.solution("2×x^[2]-4×x-16=0");
+        Assert.assertTrue(true );
+    }
+    @Test
+    public void solutionTest2() throws Exception {
+        String s = engine.solution("x=(a^2)^(1/2)");
+        Assert.assertTrue(true );
+    }
 
 }

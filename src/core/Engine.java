@@ -57,7 +57,7 @@ public final class Engine {
     private MathObject executeInput(String input){
         MathObject parsed = null;
         //todo bad solution
-        if(input.contains("±")){
+        if(input.contains("±/////////////")){
             String input1 = input.replace('±','+');
             String input2 = input.replace('±','-');
             MathObject mathObject1 = executeIn(input1);
@@ -101,6 +101,14 @@ public final class Engine {
             return true;
         }
         return false;
+    }
+
+    public String solution(String exercise){
+        MathObject input1 = executeInput(exercise);
+        MathObject solution1 = Engine.solutionset.cloneSolutionset();
+        String solution = solution1.toString();
+        Engine.solutionset = new Solutionset(CALC.SOLUTIONSET);
+        return solution;
     }
 
     /**

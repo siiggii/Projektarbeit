@@ -68,8 +68,9 @@ import java.math.MathContext;
                 Symbol.OPERATOR);
 
         public static final Symbol SOLVEFORVARIABEL = new Symbol("SOLVEFORVARIABEL",
-                new SOLVEFORVARIABEL(), Symbol.ONLY_EVAL_FIRST);
-
+                new SOLVEFORVARIABEL());
+        public static final Symbol PLUSMINUS = new Symbol("PLUSMINUS",
+                new PLUSMINUS(), Symbol.FAST_EVAL);
 
 
         

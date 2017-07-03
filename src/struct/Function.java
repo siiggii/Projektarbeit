@@ -37,7 +37,6 @@ public class Function implements MathObject, Iterable<MathObject>, Serializable 
 	private Symbol functionHeader;
 	protected ArrayList<MathObject> parameters = new ArrayList<MathObject>();
 
-	public static Solutionset solutionset;
 
 
 	private int properties = 0x0000;
@@ -447,6 +446,13 @@ public class Function implements MathObject, Iterable<MathObject>, Serializable 
 		return true;
 	}
 
-
+	@Override
+	public MathObject cloneMathObject() {
+		Function clone = new Function(functionHeader);
+		for (MathObject mathObject: parameters) {
+			clone.add(mathObject.cloneMathObject());
+		}
+		return clone;
+	}
 
 }

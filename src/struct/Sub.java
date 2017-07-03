@@ -60,4 +60,9 @@ public class Sub implements MathObject, Serializable {
 
         return  true;
     }
+    @Override
+    public MathObject cloneMathObject() {
+
+        return null;
+    }
 }

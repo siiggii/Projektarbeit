@@ -38,8 +38,8 @@ public final class Parser {
 	CALC_DEFINE = 13,			//variable assignment (i.e. x=10, f(x)=x+4, etc)
 	CALC_FACTORIAL = 14,		//factorial (x!)
 	CALC_ABS = 15,				//absolute value (|x|)
-	CALC_PLUSMINUS = 17,		//plus minus
-	CALC_EQUAL = 16;  	 		//EQUATION assignment (i.e. x=10, f(x)=x+4, etc)
+	CALC_EQUAL = 16, 	 		//EQUATION assignment (i.e. x=10, f(x)=x+4, etc)
+	CALC_PLUSMINUS = 17;		//plus minus
 	private String inputString;
 	private char currentChar;
 	private int currentCharIndex;
@@ -86,7 +86,7 @@ public final class Parser {
 			currentChar = inputString.charAt(currentCharIndex++);
 			token = CALC_NULL;
 		
-			if (currentChar != '\n' && currentChar != '\t' 
+			if (currentChar != '\n' && currentChar != '\t'
 				&& currentChar != '\r' && currentChar != ' ') { //make sure the char is not terminating or whitespace
 				if ((currentChar >= 'a' && currentChar <= 'z') //is the char a letter (identifier)?
 						|| (currentChar >= 'A' && currentChar <= 'Z')) {
@@ -108,10 +108,10 @@ public final class Parser {
 						token = CALC_PARENTHESISCLOSE;
 						break;
 					case '[':
-						token = CALC_MATRIXOPEN;
+						token = CALC_PARENTHESISOPEN;
 						break;
 					case ']':
-						token = CALC_MATRIXCLOSE;
+						token = CALC_PARENTHESISCLOSE;
 						break;
 					case ',':
 						token = CALC_COMMA;
@@ -125,7 +125,16 @@ public final class Parser {
 					case '-':
 						token = CALC_SUBTRACT;
 						break;
+					case '±':
+						token = CALC_PLUSMINUS;
+						break;
 					case '*':
+						token = CALC_MULTIPLY;
+						break;
+					case '·':
+						token = CALC_MULTIPLY;
+						break;
+					case '×':
 						token = CALC_MULTIPLY;
 						break;
 					case '/':
@@ -200,7 +209,7 @@ public final class Parser {
 		int tempToken;
 		MathObject returnVal;
 		
-		if (token == CALC_ADD || token == CALC_SUBTRACT) {
+		if (token == CALC_ADD || token == CALC_SUBTRACT||token == CALC_PLUSMINUS) {
 			tempToken = token;
 			parseNextToken();
 			
@@ -215,13 +224,20 @@ public final class Parser {
 			returnVal = parseMultiplication(false);
 		}
 		
-		if (token == CALC_ADD || token == CALC_SUBTRACT) {
+		if (token == CALC_ADD || token == CALC_SUBTRACT || token == CALC_PLUSMINUS) {
+
+
 			Function returnFunction = CALC.ADD.createFunction(returnVal);
 			
-			while (token == CALC_ADD || token == CALC_SUBTRACT) {
+			while (token == CALC_ADD || token == CALC_SUBTRACT|| token == CALC_PLUSMINUS) {
 				if (token == CALC_ADD) {
 					parseNextToken();
 					returnFunction.add(parseMultiplication(false));
+				}
+				else if(token == CALC_PLUSMINUS){
+					parseNextToken();
+					Function plusMinusFunction = CALC.PLUSMINUS.createFunction(parseMultiplication(false));
+					returnFunction.add(plusMinusFunction);
 				}
 				else {
 					parseNextToken();

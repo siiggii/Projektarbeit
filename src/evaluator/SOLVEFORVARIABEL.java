@@ -29,96 +29,108 @@ public SOLVEFORVARIABEL() {}
 	Solutionset solutionset;
     String variableToSolveFor = "x";
 
+
+
 	@Override
 	public MathObject evaluate(Function input) {
 
-
-		if(containsVariable(input,"y")){
-			variableToSolveFor = "y";
-		}
-
-		//first step is to bring all terms on one side of equation and to simplify and expand them
-
-		//bring everything to right side
-		Relationship equation = (Relationship)input.get(0);
-		Function leftSideOfEquation = new Function(CALC.ADD, equation.get(0), new Function(CALC.MULTIPLY,CALC.D_NEG_ONE,equation.get(1)));
-		//simplify and expand
-		Function simAndExpand = new Function(CALC.EXPAND,leftSideOfEquation);
-		MathObject expanded = CALC.SYM_EVAL(simAndExpand);
-
-		//check if the expanded Term is addition
-		if(expanded.getHeader().equals(CALC.ADD)){
-			Function addendsTerm =  (Function) expanded;
-
-			addendsList = new ArrayList<>();
-			// add addends to List
-			for (int i = 0; i < addendsTerm.size();i++){
-				addendsList.add(new Addends(addendsTerm.get(i)));
-			}
-			// sort list for variable exponent
-			Collections.sort(addendsList);
-			//all variables who's exponent is 0 are added together
-			Function addExponent0 = new Function(CALC.ADD);
-			int listSize = addendsList.size();
-			for(int i=0; i<listSize;i++){
-				if( addendsList.get(i).getPotenzDesSummanden()==0){
-					addExponent0.add( addendsList.get(i).getAbc());
-					addendsList.remove( addendsList.get(i));
-					listSize = listSize-1;
-					i--;
-				}
-			}
-			addendsList.add(new Addends(addExponent0,0));
-
-
-			solutionset = Engine.solutionset;
-			//check term for elementary algebra
-			if(addendsList.size() == 2){
-				if(addendsList.get(0).getPotenzDesSummanden()!=0&&addendsList.get(1).getPotenzDesSummanden()==0){
-					simpleEquation();
-				}
-			}
-			//check term for polynomial equation
-			else if(addendsList.size() == 3){
-				if(addendsList.get(0).getPotenzDesSummanden()==2
-						&& addendsList.get(1).getPotenzDesSummanden()==1
-						&& addendsList.get(2).getPotenzDesSummanden()==0){
-					//midnightformula?
-					Solutionset solutionsetN = quadraticEquation();
-					solutionset.addAll(solutionsetN.getParameters());
-				}
-				else{
-					if(addendsList.get(0).getPotenzDesSummanden() / addendsList.get(1).getPotenzDesSummanden() == 2 && addendsList.get(2).getPotenzDesSummanden()==0){
-						substitution();
-					}
-				}
-				/*
-					&& addendsList.get(0).getPotenzDesSummanden()==4
-						&& addendsList.get(1).getPotenzDesSummanden()==2
-						&& addendsList.get(2).getPotenzDesSummanden()==0){
-					//todo substitution();
-				*/
-
-			}
-			//can't solve yet
-			else{
-
-			}
-
-
-
+		//first step is to check if input contains plusminus
+		//ersetze plusminus
+		if(containsPLUSMINUS(input)){
+			solveForPlusMinus(input);
+			return Engine.solutionset;
 		}
 		else{
-			throw new WrongParametersException("SOLVEFORVARIABLE -> wrong number of parameters");
-		}
 
-		return input;
+
+            //bring everything to right side
+            Relationship equation = (Relationship)input.get(0);
+            Function leftSideOfEquation = new Function(CALC.ADD, equation.get(0), new Function(CALC.MULTIPLY,CALC.D_NEG_ONE,equation.get(1)));
+            //simplify and expand
+            Function simAndExpand = new Function(CALC.EXPAND,leftSideOfEquation);
+            MathObject expanded = CALC.SYM_EVAL(simAndExpand);
+
+			if(containsVariable(expanded,"y")){
+				variableToSolveFor = "y";
+			}
+			else {
+				variableToSolveFor = "x";
+			}
+
+			//check if the expanded Term is addition
+			if(expanded.getHeader().equals(CALC.ADD)){
+				Function addendsTerm =  (Function) expanded;
+
+				addendsList = new ArrayList<>();
+				// add addends to List
+				for (int i = 0; i < addendsTerm.size();i++){
+					addendsList.add(new Addends(addendsTerm.get(i)));
+				}
+				// sort list for variable exponent
+				Collections.sort(addendsList);
+				//all variables who's exponent is 0 are added together
+				Function addExponent0 = new Function(CALC.ADD);
+				int listSize = addendsList.size();
+				for(int i=0; i<listSize;i++){
+					if( addendsList.get(i).getPotenzDesSummanden()==0){
+						addExponent0.add( addendsList.get(i).getAbc());
+						addendsList.remove( addendsList.get(i));
+						listSize = listSize-1;
+						i--;
+					}
+				}
+				addendsList.add(new Addends(addExponent0,0));
+
+
+				solutionset = Engine.solutionset;
+				//check term for elementary algebra
+				if(addendsList.size() == 2){
+					if(addendsList.get(0).getPotenzDesSummanden()!=0&&addendsList.get(1).getPotenzDesSummanden()==0){
+						simpleEquation();
+					}
+				}
+				//check term for polynomial equation
+				else if(addendsList.size() == 3){
+					if(addendsList.get(0).getPotenzDesSummanden()==2
+							&& addendsList.get(1).getPotenzDesSummanden()==1
+							&& addendsList.get(2).getPotenzDesSummanden()==0){
+						//midnightformula?
+						Solutionset solutionsetN = quadraticEquation();
+						solutionset.addAll(solutionsetN.getParameters());
+					}
+					else{
+						if(addendsList.get(0).getPotenzDesSummanden() / addendsList.get(1).getPotenzDesSummanden() == 2 && addendsList.get(2).getPotenzDesSummanden()==0){
+							substitution();
+						}
+					}
+					/*
+						&& addendsList.get(0).getPotenzDesSummanden()==4
+							&& addendsList.get(1).getPotenzDesSummanden()==2
+							&& addendsList.get(2).getPotenzDesSummanden()==0){
+						//todo substitution();
+					*/
+
+				}
+				//can't solve yet
+				else{
+
+				}
+
+
+
+			}
+			else{
+				throw new WrongParametersException("SOLVEFORVARIABLE -> wrong number of parameters");
+			}
+
+			return Engine.solutionset;
+		}
 	}
 	private void substitution(){
 		int substitutionFactor = addendsList.get(1).getPotenzDesSummanden();
 		Function function1 = new Function(CALC.POWER,new Symbol("x"),new Integer(substitutionFactor));
 		Relationship result1 = new Relationship(CALC.EQUAL,new Symbol("y"), function1);
-		solutionset.add(result1);
+
 		Function function2 = new Function(CALC.ADD);
 		for (Addends addens:addendsList) {
 			function2.add(addens.summand);
@@ -131,19 +143,20 @@ public SOLVEFORVARIABEL() {}
 			function3.add(addens.summand);
 		}
 		variableToSolveFor = "y";
-		Solutionset solutionsetN = quadraticEquation();
-		solutionset.addAll(solutionsetN.getParameters());
+		quadraticEquation();
 
+  		int size = Engine.solutionset.getParameters().size();
 
-		for (MathObject mathObject:solutionsetN.getParameters()) {
+		for (int i = 0; i<size;i++) {
 
 			Function function5 = new Function(CALC.POWER,new Integer(substitutionFactor),CALC.D_NEG_ONE);
-			Function function4 = new Function(CALC.POWER,((Relationship)mathObject).get(1),function5);
-			MathObject resultMathObject2 = CALC.SYM_EVAL(function4);
+			Function function4 = new Function(CALC.POWER,((Relationship)Engine.solutionset.getParameters().get(i)).get(1),function5);
 			Relationship result3 = new Relationship(CALC.EQUAL,new Symbol("x"), function4);
-			MathObject resultMathObject1 = CALC.SYM_EVAL(result3);
-			solutionset.add(resultMathObject1);
+			Function function = new Function(CALC.SOLVEFORVARIABEL,result3);
+			MathObject resultMathObject1 = CALC.SYM_EVAL(function);
+
 		}
+		solutionset.add(result1);
 	}
 
 	private void simpleEquation(){
@@ -182,7 +195,14 @@ public SOLVEFORVARIABEL() {}
 				MathObject mathObject = CALC.SYM_EVAL(rightSide);
 
 				Relationship relationship = new Relationship(CALC.EQUAL, leftSide, mathObject);
-				solutionset.add(relationship);
+				if(containsPLUSMINUS(relationship)){
+					Function function = new Function(CALC.SOLVEFORVARIABEL,relationship);
+					CALC.SYM_EVAL(function);
+				}
+				else{
+					solutionset.add(relationship);
+				}
+
 				break;
 			}
 		}
@@ -208,23 +228,21 @@ public SOLVEFORVARIABEL() {}
 		Function m5 = new Function(CALC.POWER,m4,new Double(0.5));
 		//-1*b
 		Function m6 = new Function(CALC.MULTIPLY, CALC.D_NEG_ONE, addendsList.get(1).getAbc());
-		//-1*b+(b^2-1*4*a*c)^0.5
-		Function resultplus = new Function(CALC.ADD, m6,m5);
-		//-(b^2-1*4*a*c)^0.5
-		Function minus = new Function(CALC.MULTIPLY, CALC.D_NEG_ONE,m5);
-		Function resultminus = new Function(CALC.ADD, m6,minus);
+
+        MathObject m8 = CALC.SYM_EVAL(m6);
+        MathObject m9 = CALC.SYM_EVAL(m5);
+
+        Function m10 = new Function(CALC.ADD, m8,m9);
+        MathObject m11 = CALC.SYM_EVAL(m10);
+        MathObject m13 = CALC.SYM_EVAL(m7);
+        Function m12 = new Function(CALC.MULTIPLY,m10,CALC.SYM_EVAL(m7));
 
 
 
-		Function result11 = new Function(CALC.MULTIPLY,resultplus,m7);
-		Function result12 = new Function(CALC.MULTIPLY,resultminus,m7);
-		MathObject resultMathObject1 = CALC.SYM_EVAL(result11);
-		MathObject resultMathObject2 = CALC.SYM_EVAL(result12);
-		Relationship result1 = new Relationship(CALC.EQUAL,new Symbol(variableToSolveFor), resultMathObject1);
-		Relationship result2 = new Relationship(CALC.EQUAL,new Symbol(variableToSolveFor), resultMathObject2);
-		Solutionset solutionset = new Solutionset(CALC.SOLUTIONSET);
-		solutionset.add(result1);
-		solutionset.add(result2);
+		Relationship result1 = new Relationship(CALC.EQUAL,new Symbol(variableToSolveFor), m12);
+		Function function = new Function(CALC.SOLVEFORVARIABEL, result1);
+		CALC.SYM_EVAL(function);
+
 		return solutionset;
 	}
 
@@ -241,6 +259,7 @@ public SOLVEFORVARIABEL() {}
 				return true;
 			}
 		}
+
 		return false;
 	}
 
@@ -251,7 +270,109 @@ public SOLVEFORVARIABEL() {}
 
 	}
 
+	public MathObject findPLUSMINUSParent(MathObject mathObject){
+		if(mathObject.getHeader().equals(CALC.PLUSMINUS)){
+			return mathObject;
+		}
+		else if(mathObject instanceof Function){
+			for(int i = 0; i<((Function) mathObject).size(); i++) {
+				MathObject mathObject1 = ((Function) mathObject).get(i);
+				if(mathObject1 instanceof  Function){
+					if(((Function) mathObject1).getHeader().equals(CALC.PLUSMINUS)){
+						return mathObject;
+					}
+				}
+			}
+			for(int i = 0; i<((Function) mathObject).size(); i++) {
 
+				if (containsPLUSMINUS(((Function) mathObject).get(i))) {
+					return findPLUSMINUSParent(((Function) mathObject).get(i));
+				}
+			}
+		}
+		else if(mathObject instanceof Relationship){
+			for(int i = 0; i<((Relationship) mathObject).size(); i++) {
+				MathObject mathObject1 = ((Relationship) mathObject).get(i);
+				if(mathObject1 instanceof  Function){
+					if(((Function) mathObject1).getHeader().equals(CALC.PLUSMINUS)){
+						return mathObject;
+					}
+				}
+			}
+			for(int i = 0; i<((Relationship) mathObject).size(); i++) {
+				if (containsPLUSMINUS(((Relationship) mathObject).get(i))) {
+					return findPLUSMINUSParent(((Relationship) mathObject).get(i));
+				}
+			}
+		}
+		return null;
+	}
+
+	public boolean containsPLUSMINUS(MathObject mathObject){
+		if(mathObject instanceof Function){
+			if(mathObject.getHeader().equals(CALC.PLUSMINUS)){
+				return true;
+			}
+			for(int i = 0; i<((Function) mathObject).size(); i++) {
+				if (containsPLUSMINUS(((Function) mathObject).get(i))) {
+					return true;
+				}
+			}
+		}
+		else if(mathObject instanceof Relationship){
+			for(int i = 0; i<((Relationship) mathObject).size(); i++) {
+				if (containsPLUSMINUS(((Relationship) mathObject).get(i))) {
+					return true;
+				}
+			}
+		}
+		return false;
+	}
+
+	public void solveForPlusMinus(Function input){
+		MathObject inuptplus = input.cloneMathObject();
+		MathObject plus = findPLUSMINUSParent(inuptplus);
+		if(plus instanceof Function){
+			for (int i = 0; i< ((Function)plus).size();i++ ) {
+				if(containsPLUSMINUS(((Function)plus).get(i))){
+					((Function)plus).set(i,((Function)((Function)plus).get(i)).get(0));
+				}
+			}
+		}
+		else if(plus instanceof Relationship){
+			for (int i = 0; i< ((Relationship)plus).size();i++ ) {
+				if(containsPLUSMINUS(((Relationship)plus).get(i))){
+					((Relationship)plus).set(i,((Function)((Relationship)plus).get(i)).get(0));
+				}
+			}
+		}
+		//Function equal1 = new Function(CALC.EQUAL,inuptplus,CALC.D_ZERO);
+		//Function functionPlus = new Function(CALC.SOLVEFORVARIABEL,equal1);
+		//CALC.SYM_EVAL(functionPlus);
+		CALC.SYM_EVAL(inuptplus);
+
+		MathObject inputminus = input.cloneMathObject();
+		MathObject minus = findPLUSMINUSParent(inputminus);
+		if(minus instanceof Function){
+			for (int i = 0; i< ((Function)minus).size();i++ ) {
+				if(containsPLUSMINUS(((Function)minus).get(i))){
+
+					((Function)minus).set(i,CALC.MULTIPLY.createFunction(CALC.NEG_ONE, ((Function)((Function)minus).get(i)).get(0)));
+				}
+			}
+		}
+		else if(minus instanceof Relationship){
+			for (int i = 0; i< ((Relationship)minus).size();i++ ) {
+				if(containsPLUSMINUS(((Relationship)minus).get(i))){
+					((Relationship)minus).set(i,CALC.MULTIPLY.createFunction(CALC.NEG_ONE, ((Function)((Relationship)minus).get(i)).get(0)));
+				}
+			}
+		}
+		CALC.SYM_EVAL(inputminus);
+		//Function equal2 = new Function(CALC.EQUAL,inputminus,CALC.D_ZERO);
+		//Function fuunctionMinus = new Function(CALC.SOLVEFORVARIABEL,equal2);
+        //CALC.SYM_EVAL(fuunctionMinus);
+	}
 
 
 	class Addends implements Comparable<Addends>{

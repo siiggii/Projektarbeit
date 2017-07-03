@@ -299,4 +299,11 @@ public class Symbol implements MathObject, Serializable {
 
 		return true;
 	}
+
+	@Override
+	public MathObject cloneMathObject() {
+		Symbol clone = new Symbol(name);
+
+		return clone;
+	}
 }

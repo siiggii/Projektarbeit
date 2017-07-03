@@ -44,6 +44,9 @@ public class POWER extends TwoParamFunctionEvaluator implements OperatorEvaluato
 			Function function1 = (Function)input1;
 			
 			if (function1.size() == 2 && function1.get(1).isNumber()) {
+				if(((Double) input2).doubleValue() < 1&&((Double) input2).doubleValue() > 0 ){
+					return CALC.PLUSMINUS.createFunction(CALC.POWER.createFunction(function1.get(0), CALC.MULTIPLY.createFunction(function1.get(1), input2)));
+				}
 				return CALC.POWER.createFunction(function1.get(0), CALC.MULTIPLY.createFunction(function1.get(1), input2));
 			}
 			
@@ -68,8 +71,8 @@ public class POWER extends TwoParamFunctionEvaluator implements OperatorEvaluato
 			if(input1.doubleValue() < 0){
 				return new Function(CALC.POWER,input1,input2);
 			}
-			else{
-				//todo +- needs to be implemented here
+			else if(input2.doubleValue()>-1){
+				return  new Function(CALC.PLUSMINUS,input1.power(input2));
 			}
 		}
 		return input1.power(input2);

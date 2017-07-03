@@ -377,4 +377,10 @@ public class Double implements MathObject, Serializable{
 
         return true;
     }
+    @Override
+    public MathObject cloneMathObject() {
+        Double clone = new Double(value);
+
+        return clone;
+    }
 }

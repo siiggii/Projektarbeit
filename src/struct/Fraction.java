@@ -169,4 +169,10 @@ public class Fraction implements MathObject, Serializable {
 		return true;
 	}
 
+	@Override
+	public MathObject cloneMathObject() {
+		Fraction clone = new Fraction(numerator,denominator);
+
+		return clone;
+	}
 }

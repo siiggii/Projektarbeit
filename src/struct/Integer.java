@@ -207,4 +207,11 @@ public class Integer implements MathObject, Serializable {
 		if(value != int2.value) return false;
 		return true;
 	}
+
+	@Override
+	public MathObject cloneMathObject() {
+		Integer clone = new Integer(value);
+
+		return clone;
+	}
 }
