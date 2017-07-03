@@ -1,28 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1e00fe82-353c-4989-befa-f28e8c6701ff" name="Default" comment="vor plusminus">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/.idea/sonarIssues.xml" afterPath="$PROJECT_DIR$/../untitled2/.idea/sonarIssues.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../untitled2/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/core/CALC.java" afterPath="$PROJECT_DIR$/../untitled2/src/core/CALC.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/core/Engine.java" afterPath="$PROJECT_DIR$/../untitled2/src/core/Engine.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/core/Parser.java" afterPath="$PROJECT_DIR$/../untitled2/src/core/Parser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/evaluator/EQUAL.java" afterPath="$PROJECT_DIR$/../untitled2/src/evaluator/EQUAL.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/evaluator/PLUSMINUS.java" afterPath="$PROJECT_DIR$/../untitled2/src/evaluator/PLUSMINUS.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/evaluator/POWER.java" afterPath="$PROJECT_DIR$/../untitled2/src/evaluator/POWER.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/evaluator/SOLVEFORVARIABEL.java" afterPath="$PROJECT_DIR$/../untitled2/src/evaluator/SOLVEFORVARIABEL.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/struct/Double.java" afterPath="$PROJECT_DIR$/../untitled2/src/struct/Double.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/struct/Error.java" afterPath="$PROJECT_DIR$/../untitled2/src/struct/Error.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/struct/Fraction.java" afterPath="$PROJECT_DIR$/../untitled2/src/struct/Fraction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/struct/Function.java" afterPath="$PROJECT_DIR$/../untitled2/src/struct/Function.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/struct/Integer.java" afterPath="$PROJECT_DIR$/../untitled2/src/struct/Integer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/struct/MathObject.java" afterPath="$PROJECT_DIR$/../untitled2/src/struct/MathObject.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/struct/Relationship.java" afterPath="$PROJECT_DIR$/../untitled2/src/struct/Relationship.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/struct/Solutionset.java" afterPath="$PROJECT_DIR$/../untitled2/src/struct/Solutionset.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/struct/Sub.java" afterPath="$PROJECT_DIR$/../untitled2/src/struct/Sub.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/struct/Symbol.java" afterPath="$PROJECT_DIR$/../untitled2/src/struct/Symbol.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/test/core/EngineTest.java" afterPath="$PROJECT_DIR$/../untitled2/src/test/core/EngineTest.java" />
-    </list>
+    <list default="true" id="1e00fe82-353c-4989-befa-f28e8c6701ff" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/../untitled2/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -803,7 +782,14 @@
       <option name="project" value="LOCAL" />
       <updated>1498995366636</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="2">
+      <created>1499084908535</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1499084908535</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -916,7 +902,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="vor plusminus" />
-    <option name="LAST_COMMIT_MESSAGE" value="vor plusminus" />
+    <MESSAGE value="2" />
+    <option name="LAST_COMMIT_MESSAGE" value="2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1206,6 +1193,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="32" lean-forward="false" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1213,6 +1203,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
           <caret line="134" column="15" lean-forward="true" selection-start-line="130" selection-start-column="4" selection-end-line="134" selection-end-column="15" />
+          <folding>
+            <element signature="method#evaluateObject#0;class#ADD#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
