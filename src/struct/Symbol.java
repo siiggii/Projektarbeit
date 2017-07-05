@@ -58,11 +58,14 @@ public class Symbol implements MathObject, Serializable {
 	}
 
 
+
 	public Relationship createRelationship(){
 		return new Relationship(this);
 	}
 
-
+	public Set createSet(MathObject fun1In,MathObject fun2In){
+		return new Set(this,fun1In,fun2In);
+	}
 	
 	private ArrayList<Symbol> variables = new ArrayList<Symbol>();
 
@@ -84,37 +87,20 @@ public class Symbol implements MathObject, Serializable {
 	public Symbol(StringBuffer stringBufferIn) {
 		this(stringBufferIn.toString());
 	}
-	/**
-	 * 
-	 * @return a CalcFunction with this symbol as header
-	 */
+
 	public Function createFunction() {
 		return new Function(this);
 	}
-	/**
-	 * @param obj
-	 * @return a CalcFunction with this symbol as header and a parameter obj
-	 */	
+
 	public Function createFunction(MathObject obj) {
 		return new Function(this, obj);
 	}
-	/**
-	 * 
-	 * @param obj1
-	 * @param obj2
-	 * @return a CalcFunction with this symbol as header and two parameters obj1,obj2
-	 */
+
 	public Function createFunction(MathObject obj1, MathObject obj2) {
 		return new Function(this, obj1, obj2);
 	}
 	
-	/**
-	 * 
-	 * @param obj1
-	 * @param obj2
-	 * @param obj3
-	 * @return a CalcFunction with this symbol as header and three parameters obj1,obj2,obj3
-	 */
+
 	public MathObject createFunction(MathObject obj1,
 									 MathObject obj2, MathObject obj3) {
 		return new Function(this, obj1, obj2, obj3);
@@ -143,11 +129,7 @@ public class Symbol implements MathObject, Serializable {
 		return variables.size();
 	}
 	
-	/**
-	 * 
-	 * @param symbol
-	 * @return the index of <b>symbol</b> in <b>variables</b>. If not found, return -1.
-	 */
+
 	public int getVariableIndex(Symbol symbol) {
 		for (int ii = 0; ii < getNumberOfVariables(); ii++) {
 			if (getVariable(ii).equals(symbol)) return ii;
@@ -155,19 +137,12 @@ public class Symbol implements MathObject, Serializable {
 		return -1;
 	}
 	
-	/**
-	 * Finds if a property is one of the properties of this symbol
-	 * @param propIn the property to be tested
-	 * @return true if propIn is a symbol property, false otherwise
-	 */
+
 	public boolean hasProperty(int propIn) {
 		return (propIn & properties) == propIn;
 	}
 	
-	/**
-	 * 
-	 * @return the properties associated with this symbol
-	 */
+
 	public int getProperties() {
 		return properties;
 	}
@@ -286,19 +261,7 @@ public class Symbol implements MathObject, Serializable {
 		else return 9999999; //it's over NINE MILLION!!! OK I need sleep... 
 	}
 
-	@Override
-	public boolean isSameSolution(MathObject obj) {
 
-		if(!(obj instanceof Symbol)){
-			return false;
-		}
-
-		Symbol frac2 = (Symbol) obj;
-		if(!name.equals(frac2.name)) return false;
-
-
-		return true;
-	}
 
 	@Override
 	public MathObject cloneMathObject() {

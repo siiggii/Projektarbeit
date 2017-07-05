@@ -16,7 +16,7 @@ public abstract class OneParamFunctionEvaluator implements FunctionEvaluator, Se
 	public MathObject evaluate(Function input) {
 		if (input.size() == 1) {
 			MathObject parameter = input.get(0);
-			//parameter = core.CALC.SYM_EVAL(parameter);
+			//parameter = core.CALC.EVALUATE(parameter);
 			MathObject returnVal = evaluateObject(parameter);
 			if (returnVal != null) return returnVal;
 			

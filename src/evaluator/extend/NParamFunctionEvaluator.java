@@ -1,7 +1,10 @@
 package evaluator.extend;
 
+import core.CALC;
+import core.Copy;
 import struct.Function;
 import struct.MathObject;
+import struct.Set;
 import struct.Symbol;
 
 import java.io.Serializable;
@@ -11,8 +14,16 @@ import java.io.Serializable;
  *
  */
 public abstract class NParamFunctionEvaluator extends TwoParamFunctionEvaluator implements Serializable {
+
+
+
+
+
 	@Override
 	public MathObject evaluate(Function input) {
+
+
+
 		if (input.size() == 2) {
 			return super.evaluate(input);
 		}
@@ -84,5 +95,6 @@ public abstract class NParamFunctionEvaluator extends TwoParamFunctionEvaluator 
 		}
 		return null;
 	}
-	
+
+
 }

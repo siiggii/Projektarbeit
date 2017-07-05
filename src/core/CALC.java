@@ -200,7 +200,7 @@ import java.math.MathContext;
         /**
          * evaluate MathObject recursivly
          */
-        public static MathObject SYM_EVAL(MathObject input) {
+        public static MathObject EVALUATE(MathObject input) {
         	
         	
         	log.info("input = " + input.toString() );  /////

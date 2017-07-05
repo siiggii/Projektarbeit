@@ -29,7 +29,7 @@ public class SIMPLIFY implements FunctionEvaluator {
     }
 
     public MathObject simplify(MathObject mathObject) {
-        mathObject = CALC.SYM_EVAL(mathObject);
+        mathObject = CALC.EVALUATE(mathObject);
         //System.out.println("SIMPLIFYING: " + object);
        
         //binom finden f�r a�+2*a*b+b�
@@ -51,15 +51,15 @@ public class SIMPLIFY implements FunctionEvaluator {
                     numeObj = CALC.MULTIPLY.createFunction(numeObj, piece);
                 }
             }
-            denomObj = CALC.SYM_EVAL(denomObj);
-            numeObj = CALC.SYM_EVAL(numeObj);
+            denomObj = CALC.EVALUATE(denomObj);
+            numeObj = CALC.EVALUATE(numeObj);
             //FACTORING CODE? yeah.
             //so this might be bad... lets see
             //System.out.println("DENOM:" + denomObj);
             //System.out.println("NUME:" + numeObj);
             //todo
-            //denomObj = CALC.SYM_EVAL(CALC.FACTOR.createFunction(denomObj));
-            //numeObj = CALC.SYM_EVAL(CALC.FACTOR.createFunction(numeObj));
+            //denomObj = CALC.EVALUATE(CALC.FACTOR.createFunction(denomObj));
+            //numeObj = CALC.EVALUATE(CALC.FACTOR.createFunction(numeObj));
             //System.out.println("DENOM FACTORED:" + denomObj);
             //System.out.println("NUME FACTORED:" + numeObj);
             ArrayList<MathObject> nume = giveList(CALC.MULTIPLY, numeObj);
@@ -73,7 +73,7 @@ public class SIMPLIFY implements FunctionEvaluator {
                     MathObject denominator = denom.get(j);
                     //System.out.println("TESTING: " + numerator + " / " + denominator);
                     int initDepth = findTotalDepth(numerator) + findTotalDepth(denominator);
-                    MathObject toAdd = CALC.SYM_EVAL(CALC.MULTIPLY.createFunction(numerator, CALC.POWER.createFunction(denominator, CALC.NEG_ONE)));
+                    MathObject toAdd = CALC.EVALUATE(CALC.MULTIPLY.createFunction(numerator, CALC.POWER.createFunction(denominator, CALC.NEG_ONE)));
                     int resultDepth = findTotalDepth(toAdd);
                     System.out.println("INIT DEPTH: " + initDepth + " TOADD: " + toAdd + " with depth " + resultDepth);
                     if (resultDepth < initDepth) {
@@ -101,7 +101,7 @@ public class SIMPLIFY implements FunctionEvaluator {
             System.out.println("MORE PROCESS:" + process);
             MathObject result = CALC.ONE;
             for (MathObject piece : process) {
-                result = CALC.SYM_EVAL(CALC.MULTIPLY.createFunction(result, piece));
+                result = CALC.EVALUATE(CALC.MULTIPLY.createFunction(result, piece));
             }
             return result;
         } else {
@@ -113,7 +113,7 @@ public class SIMPLIFY implements FunctionEvaluator {
         ArrayList<MathObject> allParts = giveList(test.getHeader(), test);
         int totalDepth = 0;
         for (MathObject piece : allParts) {
-            totalDepth += ((Integer) CALC.SYM_EVAL(CALC.DEPTH.createFunction(piece))).intValue();
+            totalDepth += ((Integer) CALC.EVALUATE(CALC.DEPTH.createFunction(piece))).intValue();
         }
         return totalDepth;
     }

@@ -22,8 +22,6 @@ public class Integer implements MathObject, Serializable {
 	
 	/**
 	 * Constructor
-	 * @param intString input string that represents an integer
-	 * @param radix the radix (base) of the integer
 	 */
 	public Integer(String intString, int radix) {
 		value = new BigInteger(intString, radix);
@@ -50,24 +48,19 @@ public class Integer implements MathObject, Serializable {
 	}
 	
 	/**
-	 * 
-	 * @return whether this integer is zero
+
 	 */
 	public boolean isZero() {
 		return equals(CALC.ZERO);
 	}
 	
 	/**
-	 * 
-	 * @return whether this integer is negative
 	 */
 	public boolean isNegative() {
 		return (value.compareTo(CALC.ZERO.bigIntegerValue()) < 0);
 	}
 	
 	/**
-	 * 
-	 * @return whether this integer is even
 	 */
 	public boolean isEven() {
 		return (value.mod(CALC.TWO.bigIntegerValue()).equals(CALC.ZERO.bigIntegerValue()));
@@ -90,9 +83,7 @@ public class Integer implements MathObject, Serializable {
 	}
 	
 	/**
-	 * 
-	 * @param n
-	 * @return the nth power of this integer
+	 *
 	 */
 	public Integer power(int n) {
 		return new Integer(value.pow(n));
@@ -103,9 +94,7 @@ public class Integer implements MathObject, Serializable {
 	}
 	
 	/**
-	 * 
-	 * @param n
-	 * @return the nth root of this integer
+	 *
 	 */
 	public Integer root(int n) {
 		if (isNegative() && ((n % 2) == 0)) throw new ArithmeticException("Even root of a negative number.");
@@ -196,17 +185,7 @@ public class Integer implements MathObject, Serializable {
 		return 9999999;
 	}
 
-	@Override
-	public boolean isSameSolution(MathObject obj) {
-		//todo if(functionHeader)
-		if(!(obj instanceof Integer)){
-			return false;
-		}
 
-		Integer int2 = (Integer) obj;
-		if(value != int2.value) return false;
-		return true;
-	}
 
 	@Override
 	public MathObject cloneMathObject() {

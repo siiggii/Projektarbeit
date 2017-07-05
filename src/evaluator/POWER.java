@@ -14,9 +14,14 @@ import struct.MathObject;
  * handles exponentiation of expressions and basic simplification
  */
 public class POWER extends TwoParamFunctionEvaluator implements OperatorEvaluator {
+
+	boolean evaluated = false;
 	
 	@Override
 	protected MathObject evaluateObject(MathObject input1, MathObject input2) {
+
+
+
 		if (input1.equals(CALC.ZERO)) {
 			if (input2.equals(CALC.ZERO)) {
 				throw new IndeterminateException("0^0");
@@ -57,7 +62,18 @@ public class POWER extends TwoParamFunctionEvaluator implements OperatorEvaluato
 						CALC.POWER.createFunction(new Function(CALC.MULTIPLY, function1, 1, function1.size()), input2));
 			}
 		}
-		
+		//debug
+		if(input2 instanceof  Double){
+			if(((Double)input2).doubleValue() < 1&&((Double)input2).doubleValue() > -1){
+				if(!(input1 instanceof Double)) {
+					if (!evaluated) {
+
+						return new Set(CALC.SOLUTIONSET, CALC.POWER.createFunction(input1, input2), CALC.POWER.createFunction(CALC.MULTIPLY.createFunction(CALC.D_NEG_ONE, input1), input2));
+					}
+					//return  new Function(CALC.PLUSMINUS,CALC.POWER.createFunction(input1,input2));
+				}
+			}
+		}
 		return null;
 	}
 
@@ -99,7 +115,7 @@ public class POWER extends TwoParamFunctionEvaluator implements OperatorEvaluato
 					
 					if (result.power(root).equals(nume1) && root % 4 != 0) {
 						throw new ArithmeticException("Non-real result");
-						//TODO implement imaginary numbers??
+
 					}
 					
 					return null;

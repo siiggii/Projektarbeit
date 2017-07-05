@@ -65,10 +65,7 @@ public class Error implements MathObject, Serializable{
         return hash;
     }
 
-    @Override
-    public boolean isSameSolution(MathObject obj) {
-        return false;
-    }
+
 
     @Override
     public MathObject cloneMathObject() {

@@ -31,7 +31,7 @@ public class DEPTH implements FunctionEvaluator {
 
     public Integer findDepth(MathObject obj, Integer currDepth) {
         if (obj instanceof Function) {
-            obj = CALC.SYM_EVAL(obj);
+            obj = CALC.EVALUATE(obj);
         }
         if (obj.isNumber() || (obj instanceof Symbol)) {
             return currDepth;
@@ -42,12 +42,12 @@ public class DEPTH implements FunctionEvaluator {
             int maxDepth = 0;
             for (MathObject temp : allParts) {
                 DEPTH depthFinder = new DEPTH();
-                testDepth = (Integer) CALC.SYM_EVAL(depthFinder.findDepth(temp, currDepth));
+                testDepth = (Integer) CALC.EVALUATE(depthFinder.findDepth(temp, currDepth));
                 if (testDepth.intValue() > maxDepth) {
                     maxDepth = testDepth.intValue();
                 }
             }
-            return (Integer) CALC.SYM_EVAL(CALC.ADD.createFunction(currDepth, new Integer(maxDepth)));
+            return (Integer) CALC.EVALUATE(CALC.ADD.createFunction(currDepth, new Integer(maxDepth)));
         }
         return currDepth;
     }

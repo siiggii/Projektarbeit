@@ -8,20 +8,31 @@ import java.util.Iterator;
 /**
  * should be a set instead of solutionset, holds a number of CalcObjects
  */
-public class Solutionset implements MathObject,Iterable<MathObject> {
+public class Set implements MathObject,Iterable<MathObject> {
 
     private Symbol functionHeader;
     protected ArrayList<MathObject> parameters = new ArrayList<MathObject>();
 
 
-    public Solutionset(Symbol symbol){
+    public Set(Symbol symbol){
         functionHeader = symbol;
+    }
+
+    public Set(Symbol symbol,MathObject mathObject){
+        functionHeader = symbol;
+        parameters.add(mathObject);
+    }
+
+    public Set(Symbol symbol, MathObject fun1In, MathObject fun2In) {
+        functionHeader = symbol;
+        parameters.add(fun1In);
+        parameters.add(fun2In);
     }
 
     public void add(MathObject mathObject){
         boolean contains = false;
         for (MathObject mathobjectp:parameters) {
-            if(mathobjectp.isSameSolution(mathObject)){
+            if(mathobjectp.equals(mathObject)){
                 contains = true;
             }
         }
@@ -29,6 +40,14 @@ public class Solutionset implements MathObject,Iterable<MathObject> {
             parameters.add(mathObject);
         }
 
+    }
+
+    public MathObject get(int i){
+        return parameters.get(i);
+    }
+
+    public int size(){
+        return parameters.size();
     }
 
     public void addAll(ArrayList<MathObject> mathObjectsList){
@@ -41,6 +60,9 @@ public class Solutionset implements MathObject,Iterable<MathObject> {
     }
     @Override
     public MathObject evaluate() throws Exception {
+        if(Set.containsSet(this)){
+            reduceSets();
+        }
         for (MathObject mathObject:parameters) {
             MathObject mathObject1 = mathObject.evaluate();
             mathObject = mathObject1;
@@ -93,12 +115,12 @@ public class Solutionset implements MathObject,Iterable<MathObject> {
         return parameters.iterator();
     }
 
-    @Override
+
     public boolean isSameSolution(MathObject obj) {
-        if(!(obj instanceof Solutionset)){
+        if(!(obj instanceof Set)){
             return false;
         }
-        Solutionset solSet2 = (Solutionset) obj;
+        Set solSet2 = (Set) obj;
 
         if(solSet2.parameters.size() == 0){
             return false;
@@ -106,7 +128,7 @@ public class Solutionset implements MathObject,Iterable<MathObject> {
         for(MathObject mathObject1:solSet2.parameters){
             boolean bol = false;
             for(MathObject mathObject2:parameters){
-                if(mathObject1.isSameSolution(mathObject2)){
+                if(mathObject1.equals(mathObject2)){
                     bol = true;
                 }
             }
@@ -119,18 +141,62 @@ public class Solutionset implements MathObject,Iterable<MathObject> {
     }
 
 
-    public Solutionset cloneSolutionset(){
-        Solutionset solutionset = new Solutionset(CALC.SOLUTIONSET);
-        solutionset.parameters = parameters;
-        return solutionset;
+    public Set cloneSolutionset(){
+        Set set = new Set(CALC.SOLUTIONSET);
+        set.parameters = parameters;
+        return set;
     }
 
     @Override
     public MathObject cloneMathObject() {
-        Solutionset clone = new Solutionset(functionHeader);
+        Set clone = new Set(functionHeader);
         for (MathObject mathObject: parameters) {
             clone.add(mathObject.cloneMathObject());
         }
         return clone;
     }
+    static public boolean containsSet(Function input){
+        for (int i =0; i<input.size();i++) {
+            if(input.get(i) instanceof Set){
+                return true;
+            }
+        }
+        return false;
+    }
+    static public boolean containsSet(Set input){
+        for (int i =0; i<input.size();i++) {
+            if(input.get(i) instanceof Set){
+                return true;
+            }
+        }
+        return false;
+    }
+    public void reduceSets(){
+        for (MathObject mathobject:parameters) {
+            if(mathobject instanceof Set){
+                parameters.addAll(((Set) mathobject).parameters);
+                parameters.remove(mathobject);
+                break;
+            }
+        }
+        if(containsSet(this)){
+            reduceSets();
+        }
+    }
+    @Override
+    public boolean equals(java.lang.Object obj) {
+        if (!(obj instanceof Set) || !(obj instanceof MathObject)) return false;
+
+        if (!((Set) obj).getHeader().equals(functionHeader)) return false;
+
+        if (((Set) obj).size() != size()) return false;
+
+        for (int ii = 0; ii < size(); ii++) {
+            if (!(get(ii).equals(((Set) obj).get(ii)))) return false;
+        }
+        return true;
+    }
+
+
+
 }

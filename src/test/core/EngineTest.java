@@ -25,6 +25,7 @@ public class EngineTest {
         a++;
 
     }
+
     @Test
     public void test2() throws Exception {
         boolean solution = engine.compareSolutions("2*x*x-4*x-16=0","x=4");
@@ -74,12 +75,12 @@ public class EngineTest {
     }
     @Test
     public void test10() throws Exception {
-        boolean solution = engine.compareSolutions("2*x*x*x*x-4*x*x-16=0","x=1");
+        boolean solution = engine.compareSolutions("2*x*x*x*x-4*x*x-16=0","x=2");
         Assert.assertTrue(solution );
     }
     @Test
     public void test11() throws Exception {
-        boolean solution = engine.compareSolutions("a*x*x+b*x+c=0","x=0");
+        boolean solution = engine.compareSolutions("a*x*x+b*x+c=0","x=4");
         Assert.assertTrue(solution );
     }
     @Test
@@ -98,5 +99,39 @@ public class EngineTest {
 
         Assert.assertTrue(true );
     }
-
+    @Test
+    public void testplusminus2() throws Exception {
+        String s = engine.solution("2-4±(2*2)");
+        Assert.assertTrue(true );
+    }
+    @Test
+    public void testplusminus3() throws Exception {
+        String s = engine.solution("2±3±5");
+        Assert.assertTrue(true );
+    }
+    @Test
+    public void wurzelTest1() throws Exception {
+        String s = engine.solution("(4)^(1/2)+(9)^(1/2)+(25)^(1/2)");
+        Assert.assertTrue(true );
+    }
+    @Test
+    public void wurzelTest2() throws Exception {
+        String s = engine.solution("(a^2)^(1/2)");
+        Assert.assertTrue(true );
+    }
+    @Test
+    public void wurzelTest3() throws Exception {
+        String s = engine.solution("(a)^(1/2)");
+        Assert.assertTrue(true );
+    }
+    @Test
+    public void wurzelTest4() throws Exception {
+        String s = engine.solution("(-(a^2))^(1/2)");
+        Assert.assertTrue(true );
+    }
+    @Test
+    public void wurzelTest5() throws Exception {
+        Boolean s = engine.compareSolutions("x^2=4","x=-2");
+        Assert.assertTrue(s );
+    }
 }

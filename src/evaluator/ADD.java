@@ -16,7 +16,8 @@ public class ADD extends NParamFunctionEvaluator implements OperatorEvaluator {
 
 	@Override
 	protected MathObject evaluateObject(MathObject input1, MathObject input2) {
-		
+
+
 		//optimization cases
 		if (input1.equals(CALC.ZERO)) {
 			return input2;

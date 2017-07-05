@@ -13,17 +13,7 @@ import java.util.Collections;
 import java.util.Iterator;
 
 
-/**
- * Represents all functions in an expression, including operators.
- * May take on an arbitrary number of CalcObject parameters, hence
- * forming a recursive N-ary tree. The type of function is represented by a
- * header CalcSymbol, which also contains a specific functionEvaluator that
- * evaluates this function.
- * @see Symbol
- * @see FunctionEvaluator
- *  
- *
- */
+
 
 public class Function implements MathObject, Iterable<MathObject>, Serializable {
 
@@ -109,21 +99,11 @@ public class Function implements MathObject, Iterable<MathObject>, Serializable 
 		functionHeader = symbol;
 		parameters = params;
 	}
-	
-
 
 	public Function(Symbol symbol, Relationship relationship){
 		functionHeader = symbol;
 		parameters.add(relationship);
 	}
-
-
-
-
-
-
-
-
 
 
 	/**
@@ -134,10 +114,7 @@ public class Function implements MathObject, Iterable<MathObject>, Serializable 
 		parameters.add(obj);
 	}
 	
-	/**
-	 * Adds all of the parameters from function into this function
-	 * @param function
-	 */
+
 	public void addAll(Function function) {
 		parameters.addAll(function.getAll());
 	}
@@ -162,11 +139,7 @@ public class Function implements MathObject, Iterable<MathObject>, Serializable 
 		return functionHeader.getNumberOfVariables();
 	}
 	
-	/**
-	 * 
-	 * @param symbol
-	 * @return the index of <b>symbol</b> in <b>variables</b>. If not found, return -1.
-	 */
+
 	public int getVariableIndex(Symbol symbol) {
 		for (int ii = 0; ii < getNumberOfVariables(); ii++) {
 			if (getVariable(ii).equals(symbol)) return ii;
@@ -174,35 +147,22 @@ public class Function implements MathObject, Iterable<MathObject>, Serializable 
 		return -1;
 	}
 	
-	/**
-	 * @param index
-	 * @return parameter of this function at index
-	 */
+
 	public MathObject get(int index) {
 		return parameters.get(index);
 	}
 	
-	/**
-	 * 
-	 * @return all parameters of this function
-	 */
+
 	public ArrayList<MathObject> getAll() {
 		return parameters;
 	}
 	
-	/**
-	 * 
-	 * @param index remove parameter of this function at index
-	 */
+
 	public void remove(int index) {
 		parameters.remove(index);
 	}
 	
-	/**
-	 * replace the parameter at index with obj
-	 * @param index
-	 * @param obj
-	 */
+
 	public void set(int index, MathObject obj) {
 		parameters.set(index, obj);
 	}
@@ -211,46 +171,27 @@ public class Function implements MathObject, Iterable<MathObject>, Serializable 
 		Collections.sort(parameters);
 	}
 	
-	/**
-	 * Set the header for the function
-	 * @param newHeader
-	 */
+
 	public void setHeader(Symbol newHeader) {
 		functionHeader = newHeader;
 	}
 	
-	/**
-	 * @return the header symbol of this function
-	 * @see Symbol
-	 */
+
 	public Symbol getHeader() {
 		return functionHeader;
 	}
 	
-	/**
-	 * @return the properties associated with this function
-	 */
+
 	public final int getProperty() {
 		return properties;
 	}
 	
-	/**
-	 * 
-	 * @param prop
-	 * @return true if prop is a property of this function. False otherwise.
-	 */
+
 	public final boolean hasProperty(int prop) {
 		return ((prop & properties) == prop);
 	}
 	
-	/**
-	 * 
-	 * @param startIndex
-	 * @param comparee
-	 * @param compareeStartIndex
-	 * @return Whether this function's parameters since startIndex are equal to comparee function's 
-	 * parameters since compareeStartIndex on comparee.
-	 */
+
 	public boolean equalsFromIndex(int startIndex, Function comparee, int compareeStartIndex) {
 		if ((size() - startIndex) != (comparee.size() - compareeStartIndex)) {
 			return false;
@@ -263,10 +204,7 @@ public class Function implements MathObject, Iterable<MathObject>, Serializable 
 		return true;
 	}
 	
-	/**
-	 * 
-	 * @return the number of parameters in this function
-	 */
+
 	public final int size() {
 		return parameters.size();
 	}
@@ -291,10 +229,7 @@ public class Function implements MathObject, Iterable<MathObject>, Serializable 
 		return true;
 	}
 	
-	/**
-	 * Convert the parameters of this function to StringBuffer
-	 * @return the StringBuffer containing the parameters
-	 */
+
 	private StringBuffer parametersToString() {
 		StringBuffer returnVal = new StringBuffer();
 		
@@ -307,16 +242,7 @@ public class Function implements MathObject, Iterable<MathObject>, Serializable 
 		return returnVal;
 	}
 	
-	/*
-	 * 
-	 * @param prop evaluation properties
-	 * @return a copy of the function with appropriate parameters evaluated
-	 * @see CalcSymbol
-	 */
-	/**
-	 * a copy of the function with appropriate parameters evaluated
-	 * @return a copy of the function with appropriate parameters evaluated
-	 */
+
 	public MathObject evaluateParameters() {
 		MathObject temp;
 		Function result = (Function)clone();
@@ -326,7 +252,7 @@ public class Function implements MathObject, Iterable<MathObject>, Serializable 
 			return get(0);
 		}
 		if (!functionHeader.hasProperty(Symbol.NO_EVAL_FIRST)) {
-			temp = CALC.SYM_EVAL(get(0));
+			temp = CALC.EVALUATE(get(0));
 
 
 			if (temp != null) {
@@ -336,7 +262,7 @@ public class Function implements MathObject, Iterable<MathObject>, Serializable 
 		}
 		if (!functionHeader.hasProperty(Symbol.ONLY_EVAL_FIRST)) {
 			for (int ii = 1; ii < size(); ii++) {
-				temp = CALC.SYM_EVAL(get(ii));
+				temp = CALC.EVALUATE(get(ii));
 				if (temp != null) {
 					result.set(ii, temp);
 					evaluated = true;
@@ -356,10 +282,7 @@ public class Function implements MathObject, Iterable<MathObject>, Serializable 
 		else return null;
 	}
 	
-	/**
-	 * 
-	 * @return f(x,y, f(z,w..)..) = f(x,y,z,w...)
-	 */
+
 	public Function associativeSimplify() {
 		Function tempFunction = new Function(functionHeader);
 		for (int ii = 0; ii < size(); ii++) {
@@ -377,7 +300,21 @@ public class Function implements MathObject, Iterable<MathObject>, Serializable 
 	
 	@Override
 	public MathObject evaluate() throws Exception {
+		if(Set.containsSet(this)){
+			Function fun1 = (Function) this.cloneMathObject();
+			Function fun2 = (Function) this.cloneMathObject();
 
+			for(int i = 0;i<fun1.size();i++){
+				if(fun1.get(i).getHeader().equals(CALC.SOLUTIONSET)){
+					fun1.set(i,((Set)fun1.get(i)).get(0));
+					fun2.set(i,((Set)fun2.get(i)).get(1));
+					break;
+				}
+			}
+			Set set = new Set(CALC.SOLUTIONSET, CALC.EVALUATE(fun1),CALC.EVALUATE(fun2));
+
+			return set;
+		}
 		return functionHeader.evaluateFunction(this);
 	}	
 	
@@ -432,19 +369,6 @@ public class Function implements MathObject, Iterable<MathObject>, Serializable 
 	}
 
 
-	@Override
-	public boolean isSameSolution(MathObject mathObject) {
-		//todo if(functionHeader)
-		if(!(mathObject instanceof Function)){
-			return false;
-		}
-		Function fun2 = (Function) mathObject;
-		if(parameters.size() != fun2.parameters.size()) return false;
-		for(int i = 0; i< parameters.size();i++){
-			if(!(parameters.get(i).isSameSolution(fun2.parameters.get(i)))) return false;
-		}
-		return true;
-	}
 
 	@Override
 	public MathObject cloneMathObject() {

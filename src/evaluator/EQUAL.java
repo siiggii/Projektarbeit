@@ -4,9 +4,6 @@ import evaluator.extend.RelationshipInterface;
 import struct.Function;
 import struct.MathObject;
 import struct.Relationship;
-import struct.Solutionset;
-
-import java.util.List;
 
 /**
  * simple implementation of equal, only use as an mathobject

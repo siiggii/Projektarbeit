@@ -365,18 +365,7 @@ public class Double implements MathObject, Serializable{
         return 9999999; //it's over NINE MILLION AGAIN!!!!
     }
 
-    @Override
-    public boolean isSameSolution(MathObject obj) {
 
-        if(!(obj instanceof Double)){
-            return false;
-        }
-        Double doub2 = (Double) obj;
-
-        if(!(value.compareTo(doub2.value)==0)) return false;
-
-        return true;
-    }
     @Override
     public MathObject cloneMathObject() {
         Double clone = new Double(value);

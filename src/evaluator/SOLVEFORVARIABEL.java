@@ -1,8 +1,6 @@
 package evaluator;
 
-import com.sun.org.apache.regexp.internal.RE;
 import core.CALC;
-import core.Engine;
 import evaluator.extend.*;
 import exception.WrongParametersException;
 import struct.*;
@@ -28,7 +26,7 @@ public SOLVEFORVARIABEL() {}
 
 
 	List<Addends> addendsList;
-	Solutionset solutionset;
+	//Set set = new Set(CALC.SOLUTIONSET);
     String variableToSolveFor = "x";
 
 
@@ -36,21 +34,17 @@ public SOLVEFORVARIABEL() {}
 	@Override
 	public MathObject evaluate(Function input) {
 
+		//todo x=0
 
-		//todo solve this via PLUSMINUS class
-		if(containsPLUSMINUS(input)){
-			solveForPlusMinus(input);
-			return Engine.solutionset;
-		}
-		else{
-
-
+			if(input.get(0).getHeader().equals(CALC.SOLUTIONSET)){
+				return new Set(CALC.SOLUTIONSET,CALC.EVALUATE(CALC.SOLVEFORVARIABEL.createFunction(((Set)input.get(0)).get(0))),CALC.EVALUATE(CALC.SOLVEFORVARIABEL.createFunction(((Set)input.get(0)).get(1))));
+			}
             //bring everything to right side
             Relationship equation = (Relationship)input.get(0);
             Function leftSideOfEquation = new Function(CALC.ADD, equation.get(0), new Function(CALC.MULTIPLY,CALC.D_NEG_ONE,equation.get(1)));
             //simplify and expand
             Function simAndExpand = new Function(CALC.EXPAND,leftSideOfEquation);
-            MathObject expanded = CALC.SYM_EVAL(simAndExpand);
+            MathObject expanded = CALC.EVALUATE(simAndExpand);
 
 			if(containsVariable(expanded,"y")){
 				variableToSolveFor = "y";
@@ -84,11 +78,11 @@ public SOLVEFORVARIABEL() {}
 				addendsList.add(new Addends(addExponent0,0));
 
 
-				solutionset = Engine.solutionset;
+
 				//check term for elementary algebra
 				if(addendsList.size() == 2){
 					if(addendsList.get(0).getPotenzDesSummanden()!=0&&addendsList.get(1).getPotenzDesSummanden()==0){
-						simpleEquation();
+						return simpleEquation();
 					}
 				}
 				//check term for polynomial equation
@@ -97,12 +91,12 @@ public SOLVEFORVARIABEL() {}
 							&& addendsList.get(1).getPotenzDesSummanden()==1
 							&& addendsList.get(2).getPotenzDesSummanden()==0){
 						//midnightformula?
-						Solutionset solutionsetN = quadraticEquation();
-						solutionset.addAll(solutionsetN.getParameters());
+						return   quadraticEquation();
+						//set.addAll(setN.getParameters());
 					}
 					else{
 						if(addendsList.get(0).getPotenzDesSummanden() / addendsList.get(1).getPotenzDesSummanden() == 2 && addendsList.get(2).getPotenzDesSummanden()==0){
-							substitution();
+							return substitution();
 						}
 					}
 					/*
@@ -115,7 +109,7 @@ public SOLVEFORVARIABEL() {}
 				}
 				//can't solve yet
 				else{
-
+					return null;
 				}
 
 
@@ -123,14 +117,22 @@ public SOLVEFORVARIABEL() {}
 			}
 			else{
 				throw new WrongParametersException("SOLVEFORVARIABLE -> wrong number of parameters");
-			}
 
-			return Engine.solutionset;
-		}
+			}
+			return null;
+			//return set;
+		//}
 	}
 
+
+
+
+
+
 	//todo use DEFINE class
-	private void substitution(){
+	private Set substitution(){
+
+		Set setSubstitution = new Set(CALC.SOLUTIONSET);
 		int substitutionFactor = addendsList.get(1).getPotenzDesSummanden();
 		Function function1 = new Function(CALC.POWER,new Symbol("x"),new Integer(substitutionFactor));
 		Relationship result1 = new Relationship(CALC.EQUAL,new Symbol("y"), function1);
@@ -147,23 +149,28 @@ public SOLVEFORVARIABEL() {}
 			function3.add(addens.summand);
 		}
 		variableToSolveFor = "y";
-		quadraticEquation();
+		setSubstitution = quadraticEquation();
 
-  		int size = Engine.solutionset.getParameters().size();
+  		int size = setSubstitution.getParameters().size();
 
 		for (int i = 0; i<size;i++) {
 
 			Function function5 = new Function(CALC.POWER,new Integer(substitutionFactor),CALC.D_NEG_ONE);
-			Function function4 = new Function(CALC.POWER,((Relationship)Engine.solutionset.getParameters().get(i)).get(1),function5);
+			Function function4 = new Function(CALC.POWER,((Relationship)setSubstitution.getParameters().get(i)).get(1),function5);
 			Relationship result3 = new Relationship(CALC.EQUAL,new Symbol("x"), function4);
 			Function function = new Function(CALC.SOLVEFORVARIABEL,result3);
-			MathObject resultMathObject1 = CALC.SYM_EVAL(function);
+			MathObject m = CALC.EVALUATE(function);
+			setSubstitution.addAll(((Set)m).getParameters());
+			int a = 0;
+			a++;
 
 		}
-		solutionset.add(result1);
+		setSubstitution.add(result1);
+		return setSubstitution;
 	}
 
-	private void simpleEquation(){
+	private Set simpleEquation(){
+		Set simpleEq = new Set(CALC.SOLUTIONSET);
 		MathObject leftSide = addendsList.get(0).getSummand();
 		MathObject rightSide = new Function(CALC.ADD, new Function(CALC.MULTIPLY,CALC.D_NEG_ONE,addendsList.get(1).getSummand()));
 
@@ -196,24 +203,24 @@ public SOLVEFORVARIABEL() {}
 					rightSide = newRightSide;
 				}
 			} else {
-				MathObject mathObject = CALC.SYM_EVAL(rightSide);
+				MathObject mathObject = CALC.EVALUATE(rightSide);
 
 				Relationship relationship = new Relationship(CALC.EQUAL, leftSide, mathObject);
-				if(containsPLUSMINUS(relationship)){
-					Function function = new Function(CALC.SOLVEFORVARIABEL,relationship);
-					CALC.SYM_EVAL(function);
-				}
-				else{
-					solutionset.add(relationship);
-				}
+				MathObject mathObject1 = CALC.EVALUATE(relationship);
+				Set set1 = new Set(CALC.SOLUTIONSET,mathObject1);
+				MathObject mathObject2 = CALC.EVALUATE(set1);
+				simpleEq = (Set) mathObject2;
+
 
 				break;
 			}
 		}
+		return simpleEq;
 		//addendsList.get(0)
 	}
 
-	private Solutionset quadraticEquation(){
+	private Set quadraticEquation(){
+		Set quadraticEq = new Set(CALC.SOLUTIONSET);
 		//2*a
 		Function m1 = new Function(CALC.MULTIPLY,new Integer(2), addendsList.get(0).getAbc());
 		//(2*a)^-1
@@ -233,22 +240,23 @@ public SOLVEFORVARIABEL() {}
 		//-1*b
 		Function m6 = new Function(CALC.MULTIPLY, CALC.D_NEG_ONE, addendsList.get(1).getAbc());
 
-        MathObject m8 = CALC.SYM_EVAL(m6);
-        MathObject m9 = CALC.SYM_EVAL(m5);
+        MathObject m8 = CALC.EVALUATE(m6);
+        MathObject m9 = CALC.EVALUATE(m5);
 
         Function m10 = new Function(CALC.ADD, m8,m9);
-        MathObject m11 = CALC.SYM_EVAL(m10);
-        MathObject m13 = CALC.SYM_EVAL(m7);
-        Function m12 = new Function(CALC.MULTIPLY,m10,CALC.SYM_EVAL(m7));
+        //MathObject m11 = CALC.EVALUATE(m10);
+        //MathObject m13 = CALC.EVALUATE(m7);
+        Function m12 = new Function(CALC.MULTIPLY,m10,CALC.EVALUATE(m7));
 
 
-
+		//MathObject mathObject = CALC.EVALUATE(m12);
 		Relationship result1 = new Relationship(CALC.EQUAL,new Symbol(variableToSolveFor), m12);
 		Function function = new Function(CALC.SOLVEFORVARIABEL, result1);
-		CALC.SYM_EVAL(function);
-
-		return solutionset;
+		CALC.EVALUATE(function);
+		quadraticEq.addAll(((Set)   (MathObject)function.get(0)).getParameters());
+		return quadraticEq;
 	}
+
 
 	private boolean containsVariable(MathObject mathObject, String variableToSolveFor){
 		if(mathObject instanceof Function){
@@ -268,115 +276,6 @@ public SOLVEFORVARIABEL() {}
 	}
 
 
-
-
-	public void plusminus(Function input){
-
-	}
-
-	public MathObject findPLUSMINUSParent(MathObject mathObject){
-		if(mathObject.getHeader().equals(CALC.PLUSMINUS)){
-			return mathObject;
-		}
-		else if(mathObject instanceof Function){
-			for(int i = 0; i<((Function) mathObject).size(); i++) {
-				MathObject mathObject1 = ((Function) mathObject).get(i);
-				if(mathObject1 instanceof  Function){
-					if(((Function) mathObject1).getHeader().equals(CALC.PLUSMINUS)){
-						return mathObject;
-					}
-				}
-			}
-			for(int i = 0; i<((Function) mathObject).size(); i++) {
-
-				if (containsPLUSMINUS(((Function) mathObject).get(i))) {
-					return findPLUSMINUSParent(((Function) mathObject).get(i));
-				}
-			}
-		}
-		else if(mathObject instanceof Relationship){
-			for(int i = 0; i<((Relationship) mathObject).size(); i++) {
-				MathObject mathObject1 = ((Relationship) mathObject).get(i);
-				if(mathObject1 instanceof  Function){
-					if(((Function) mathObject1).getHeader().equals(CALC.PLUSMINUS)){
-						return mathObject;
-					}
-				}
-			}
-			for(int i = 0; i<((Relationship) mathObject).size(); i++) {
-				if (containsPLUSMINUS(((Relationship) mathObject).get(i))) {
-					return findPLUSMINUSParent(((Relationship) mathObject).get(i));
-				}
-			}
-		}
-		return null;
-	}
-
-	public boolean containsPLUSMINUS(MathObject mathObject){
-		if(mathObject instanceof Function){
-			if(mathObject.getHeader().equals(CALC.PLUSMINUS)){
-				return true;
-			}
-			for(int i = 0; i<((Function) mathObject).size(); i++) {
-				if (containsPLUSMINUS(((Function) mathObject).get(i))) {
-					return true;
-				}
-			}
-		}
-		else if(mathObject instanceof Relationship){
-			for(int i = 0; i<((Relationship) mathObject).size(); i++) {
-				if (containsPLUSMINUS(((Relationship) mathObject).get(i))) {
-					return true;
-				}
-			}
-		}
-		return false;
-	}
-
-	public void solveForPlusMinus(Function input){
-		MathObject inuptplus = input.cloneMathObject();
-		MathObject plus = findPLUSMINUSParent(inuptplus);
-		if(plus instanceof Function){
-			for (int i = 0; i< ((Function)plus).size();i++ ) {
-				if(containsPLUSMINUS(((Function)plus).get(i))){
-					((Function)plus).set(i,((Function)((Function)plus).get(i)).get(0));
-				}
-			}
-		}
-		else if(plus instanceof Relationship){
-			for (int i = 0; i< ((Relationship)plus).size();i++ ) {
-				if(containsPLUSMINUS(((Relationship)plus).get(i))){
-					((Relationship)plus).set(i,((Function)((Relationship)plus).get(i)).get(0));
-				}
-			}
-		}
-		//Function equal1 = new Function(CALC.EQUAL,inuptplus,CALC.D_ZERO);
-		//Function functionPlus = new Function(CALC.SOLVEFORVARIABEL,equal1);
-		//CALC.SYM_EVAL(functionPlus);
-		CALC.SYM_EVAL(inuptplus);
-
-		MathObject inputminus = input.cloneMathObject();
-		MathObject minus = findPLUSMINUSParent(inputminus);
-		if(minus instanceof Function){
-			for (int i = 0; i< ((Function)minus).size();i++ ) {
-				if(containsPLUSMINUS(((Function)minus).get(i))){
-
-					((Function)minus).set(i,CALC.MULTIPLY.createFunction(CALC.NEG_ONE, ((Function)((Function)minus).get(i)).get(0)));
-				}
-			}
-		}
-		else if(minus instanceof Relationship){
-			for (int i = 0; i< ((Relationship)minus).size();i++ ) {
-				if(containsPLUSMINUS(((Relationship)minus).get(i))){
-					((Relationship)minus).set(i,CALC.MULTIPLY.createFunction(CALC.NEG_ONE, ((Function)((Relationship)minus).get(i)).get(0)));
-				}
-			}
-		}
-		CALC.SYM_EVAL(inputminus);
-		//Function equal2 = new Function(CALC.EQUAL,inputminus,CALC.D_ZERO);
-		//Function fuunctionMinus = new Function(CALC.SOLVEFORVARIABEL,equal2);
-        //CALC.SYM_EVAL(fuunctionMinus);
-	}
 
 	/**
 	 *  nested Class that helps to split equation into its Addends

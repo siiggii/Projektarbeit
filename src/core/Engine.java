@@ -2,7 +2,7 @@ package core;
 
 import exception.SyntaxException;
 import struct.MathObject;
-import struct.Solutionset;
+import struct.Set;
 
 import java.util.logging.Logger;
 
@@ -14,12 +14,10 @@ public final class Engine {
     private final static Logger LOGGER = Logger.getLogger(Engine.class.getCanonicalName());
     private Parser parser;
 
-    //todo remove this, problem of (recursivity?)
-    public static Solutionset solutionset;
 
 
     public Engine() {
-        solutionset = new Solutionset(CALC.SOLUTIONSET);
+
         parser = new Parser();
     }
 
@@ -37,7 +35,7 @@ public final class Engine {
         }
 
         CALC.toggleOperatorNotation();
-        MathObject mathMathObject = CALC.SYM_EVAL(parsed);
+        MathObject mathMathObject = CALC.EVALUATE(parsed);
         CALC.toggleOperatorNotation();
         return mathMathObject;
     }
@@ -45,12 +43,10 @@ public final class Engine {
     public boolean compareSolutions(String exercise, String userInput){
         boolean trueFalse = false;
         MathObject input1 = executeIn(exercise);
-        MathObject solution1 = Engine.solutionset.cloneSolutionset();
-        Engine.solutionset = new Solutionset(CALC.SOLUTIONSET);
+
         MathObject input2 = executeIn(userInput);
-        MathObject solution2 = Engine.solutionset.cloneSolutionset();
-        Engine.solutionset = new Solutionset(CALC.SOLUTIONSET);
-        if(solution1.isSameSolution(solution2)){
+
+        if(((Set)input1).isSameSolution(input2)){
             return true;
         }
         return false;
@@ -58,10 +54,8 @@ public final class Engine {
 
     public String solution(String exercise){
         MathObject input1 = executeIn(exercise);
-        MathObject solution1 = Engine.solutionset.cloneSolutionset();
-        String solution = solution1.toString();
-        Engine.solutionset = new Solutionset(CALC.SOLUTIONSET);
-        return solution;
+
+        return input1.toString();
     }
 
 

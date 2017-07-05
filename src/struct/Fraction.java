@@ -154,17 +154,7 @@ public class Fraction implements MathObject, Serializable {
 		}
 		else return 9999999;
 	}
-	@Override
-	public boolean isSameSolution(MathObject obj) {
 
-		if(!(obj instanceof Fraction)){
-			return false;
-		}
-		Fraction frac2 = (Fraction) obj;
-		if(denominator != frac2.denominator) return false;
-		if(numerator != frac2.numerator) return false;
-		return true;
-	}
 
 	@Override
 	public MathObject cloneMathObject() {
