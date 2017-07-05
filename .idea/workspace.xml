@@ -1,33 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1e00fe82-353c-4989-befa-f28e8c6701ff" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../untitled2/src/struct/Solutionset.java" afterPath="$PROJECT_DIR$/../untitled2/src/struct/Set.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/.idea/sonarIssues.xml" afterPath="$PROJECT_DIR$/../untitled2/.idea/sonarIssues.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/.idea/sonarlint/issuestore/index.pb" afterPath="$PROJECT_DIR$/../untitled2/.idea/sonarlint/issuestore/index.pb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../untitled2/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/core/CALC.java" afterPath="$PROJECT_DIR$/../untitled2/src/core/CALC.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/core/Engine.java" afterPath="$PROJECT_DIR$/../untitled2/src/core/Engine.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/evaluator/ADD.java" afterPath="$PROJECT_DIR$/../untitled2/src/evaluator/ADD.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/evaluator/DEPTH.java" afterPath="$PROJECT_DIR$/../untitled2/src/evaluator/DEPTH.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/evaluator/EQUAL.java" afterPath="$PROJECT_DIR$/../untitled2/src/evaluator/EQUAL.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/evaluator/EXPAND.java" afterPath="$PROJECT_DIR$/../untitled2/src/evaluator/EXPAND.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/evaluator/PLUSMINUS.java" afterPath="$PROJECT_DIR$/../untitled2/src/evaluator/PLUSMINUS.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/evaluator/POWER.java" afterPath="$PROJECT_DIR$/../untitled2/src/evaluator/POWER.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/evaluator/SIMPLIFY.java" afterPath="$PROJECT_DIR$/../untitled2/src/evaluator/SIMPLIFY.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/evaluator/SOLVEFORVARIABEL.java" afterPath="$PROJECT_DIR$/../untitled2/src/evaluator/SOLVEFORVARIABEL.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/evaluator/extend/NParamFunctionEvaluator.java" afterPath="$PROJECT_DIR$/../untitled2/src/evaluator/extend/NParamFunctionEvaluator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/evaluator/extend/OneParamFunctionEvaluator.java" afterPath="$PROJECT_DIR$/../untitled2/src/evaluator/extend/OneParamFunctionEvaluator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/struct/Double.java" afterPath="$PROJECT_DIR$/../untitled2/src/struct/Double.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/struct/Error.java" afterPath="$PROJECT_DIR$/../untitled2/src/struct/Error.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/struct/Fraction.java" afterPath="$PROJECT_DIR$/../untitled2/src/struct/Fraction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/struct/Function.java" afterPath="$PROJECT_DIR$/../untitled2/src/struct/Function.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/struct/Integer.java" afterPath="$PROJECT_DIR$/../untitled2/src/struct/Integer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/struct/MathObject.java" afterPath="$PROJECT_DIR$/../untitled2/src/struct/MathObject.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/struct/Relationship.java" afterPath="$PROJECT_DIR$/../untitled2/src/struct/Relationship.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/struct/Symbol.java" afterPath="$PROJECT_DIR$/../untitled2/src/struct/Symbol.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/test/core/EngineTest.java" afterPath="$PROJECT_DIR$/../untitled2/src/test/core/EngineTest.java" />
-    </list>
+    <list default="true" id="1e00fe82-353c-4989-befa-f28e8c6701ff" name="Default" comment="merging master" />
     <ignored path="$PROJECT_DIR$/../untitled2/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -50,16 +24,21 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SOLVEFORVARIABEL.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SOLVEFORVARIABEL.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../untitled2/src/evaluator/SOLVEFORVARIABEL.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="426">
+            <state relative-caret-position="1463">
               <caret line="155" column="0" lean-forward="false" selection-start-line="155" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
               <folding>
-                <element signature="method#simpleEquation#0;class#SOLVEFORVARIABEL#0" expanded="false" />
-                <element signature="method#quadraticEquation#0;class#SOLVEFORVARIABEL#0" expanded="false" />
-                <element signature="method#containsVariable#0;class#SOLVEFORVARIABEL#0" expanded="false" />
-                <element signature="class#Addends#0;class#SOLVEFORVARIABEL#0" expanded="false" />
+                <marker date="1499215910183" expanded="false" signature="8800:11617" ph="{...}" />
+                <marker date="1499215910183" expanded="false" signature="8898:8903" ph=" { " />
+                <marker date="1499215910183" expanded="false" signature="8914:8918" ph=" }" />
+                <marker date="1499215910183" expanded="false" signature="9374:9379" ph=" { " />
+                <marker date="1499215910183" expanded="false" signature="9394:9398" ph=" }" />
+                <marker date="1499215910183" expanded="false" signature="11007:11012" ph=" { " />
+                <marker date="1499215910183" expanded="false" signature="11039:11043" ph=" }" />
+                <marker date="1499215910183" expanded="false" signature="11090:11096" ph=" { " />
+                <marker date="1499215910183" expanded="false" signature="11145:11149" ph=" }" />
               </folding>
             </state>
           </provider>
@@ -72,6 +51,7 @@
               <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <marker date="1499215910179" expanded="true" signature="621:628" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -80,14 +60,18 @@
       <file leaf-file-name="POWER.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../untitled2/src/evaluator/POWER.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="67" column="46" lean-forward="false" selection-start-line="67" selection-start-column="46" selection-end-line="67" selection-end-column="46" />
+            <state relative-caret-position="528">
+              <caret line="76" column="20" lean-forward="false" selection-start-line="76" selection-start-column="20" selection-end-line="76" selection-end-column="20" />
               <folding>
-                <element signature="method#evaluateFraction#0;class#POWER#0" expanded="false" />
-                <element signature="e#4122#4123#0" expanded="true" />
-                <element signature="e#4140#4141#0" expanded="true" />
-                <element signature="method#evaluateInteger#0;class#POWER#0" expanded="false" />
-                <element signature="method#toOperatorString#0;class#POWER#0" expanded="false" />
+                <marker date="1499215910180" expanded="false" signature="3602:4036" ph="{...}" />
+                <marker date="1499215910180" expanded="true" signature="4121:4126" ph=" { " />
+                <marker date="1499215910180" expanded="true" signature="4138:4141" ph=" }" />
+                <marker date="1499215910180" expanded="true" signature="4236:4292" ph="{...}" />
+                <marker date="1499215910180" expanded="false" signature="4375:4575" ph="{...}" />
+                <marker date="1499215910180" expanded="true" signature="4658:4796" ph="{...}" />
+                <marker date="1499215910180" expanded="false" signature="4840:4845" ph=" { " />
+                <marker date="1499215910180" expanded="false" signature="4880:4883" ph=" }" />
+                <marker date="1499215910180" expanded="false" signature="4947:6893" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -123,12 +107,10 @@
       <file leaf-file-name="Symbol.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../untitled2/src/struct/Symbol.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
+            <state relative-caret-position="1227">
               <caret line="193" column="0" lean-forward="false" selection-start-line="193" selection-start-column="0" selection-end-line="193" selection-end-column="0" />
               <folding>
-                <element signature="method#Symbol#2;class#Symbol#0" expanded="false" />
-                <element signature="method#addVariable#0;class#Symbol#0" expanded="false" />
-                <element signature="method#removeVariable#0;class#Symbol#0" expanded="false" />
+                <marker date="1499215910192" expanded="true" signature="5930:5986" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -137,30 +119,10 @@
       <file leaf-file-name="Function.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../untitled2/src/struct/Function.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
+            <state relative-caret-position="2689">
               <caret line="317" column="0" lean-forward="false" selection-start-line="317" selection-start-column="0" selection-end-line="317" selection-end-column="0" />
               <folding>
-                <element signature="docComment;field#NO_PROPERTY#0;class#Function#0" expanded="false" />
-                <element signature="e#622#634#0" expanded="true" />
-                <element signature="docComment;method#Function#0;class#Function#0" expanded="false" />
-                <element signature="docComment;method#Function#1;class#Function#0" expanded="false" />
-                <element signature="method#Function#1;class#Function#0" expanded="false" />
-                <element signature="docComment;method#Function#2;class#Function#0" expanded="false" />
-                <element signature="method#Function#2;class#Function#0" expanded="false" />
-                <element signature="docComment;method#Function#3;class#Function#0" expanded="false" />
-                <element signature="method#Function#3;class#Function#0" expanded="false" />
-                <element signature="docComment;method#Function#4;class#Function#0" expanded="false" />
-                <element signature="method#Function#4;class#Function#0" expanded="false" />
-                <element signature="docComment;method#Function#5;class#Function#0" expanded="false" />
-                <element signature="method#Function#6;class#Function#0" expanded="false" />
-                <element signature="docComment;method#add#0;class#Function#0" expanded="false" />
-                <element signature="method#getVariableIndex#0;class#Function#0" expanded="false" />
-                <element signature="method#equalsFromIndex#0;class#Function#0" expanded="false" />
-                <element signature="method#equals#0;class#Function#0" expanded="false" />
-                <element signature="method#parametersToString#0;class#Function#0" expanded="false" />
-                <element signature="method#associativeSimplify#0;class#Function#0" expanded="false" />
-                <element signature="method#toString#0;class#Function#0" expanded="false" />
-                <element signature="method#compareTo#0;class#Function#0" expanded="false" />
+                <marker date="1499215910188" expanded="true" signature="8166:8327" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -178,10 +140,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Engine.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Engine.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../untitled2/src/core/Engine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="411">
+            <state relative-caret-position="714">
               <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
               <folding />
             </state>
@@ -209,7 +171,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../untitled2" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/../untitled2" value="master" />
+        <entry key="$PROJECT_DIR$/../untitled2" value="Set_integration" />
       </map>
     </option>
   </component>
@@ -264,7 +226,6 @@
         <option value="$PROJECT_DIR$/../untitled2/src/struct/Fraction.java" />
         <option value="$PROJECT_DIR$/../untitled2/src/struct/Error.java" />
         <option value="$PROJECT_DIR$/../untitled2/src/struct/Double.java" />
-        <option value="$PROJECT_DIR$/../untitled2/src/core/Engine.java" />
         <option value="$PROJECT_DIR$/../untitled2/src/struct/Integer.java" />
         <option value="$PROJECT_DIR$/../untitled2/src/struct/Symbol.java" />
         <option value="$PROJECT_DIR$/../untitled2/src/struct/Relationship.java" />
@@ -272,6 +233,7 @@
         <option value="$PROJECT_DIR$/../untitled2/src/evaluator/SOLVEFORVARIABEL.java" />
         <option value="$PROJECT_DIR$/../untitled2/src/test/core/EngineTest.java" />
         <option value="$PROJECT_DIR$/../untitled2/src/evaluator/POWER.java" />
+        <option value="$PROJECT_DIR$/../untitled2/src/core/Engine.java" />
       </list>
     </option>
   </component>
@@ -871,7 +833,14 @@
       <option name="project" value="LOCAL" />
       <updated>1499090630510</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="finished?">
+      <created>1499215514782</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1499215514782</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -908,6 +877,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -921,7 +891,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27591583" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27591583" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281372" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -929,7 +899,7 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969603" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969603" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32969603" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298887" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16176471" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -979,6 +949,32 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
@@ -989,7 +985,8 @@
     <MESSAGE value="commit 4" />
     <MESSAGE value="34" />
     <MESSAGE value="dsg" />
-    <option name="LAST_COMMIT_MESSAGE" value="dsg" />
+    <MESSAGE value="finished?" />
+    <option name="LAST_COMMIT_MESSAGE" value="finished?" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1342,10 +1339,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="16" column="20" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-          <folding>
-            <element signature="e#370#371#0" expanded="true" />
-            <element signature="e#397#398#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1364,7 +1358,6 @@
         <state relative-caret-position="374">
           <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
           <folding>
-            <element signature="method#toString#0;class#Relationship#0" expanded="false" />
             <element signature="method#cloneMathObject#0;class#Relationship#0" expanded="false" />
           </folding>
         </state>
@@ -1375,8 +1368,8 @@
         <state relative-caret-position="459">
           <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#333#345#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#333#345#0" expanded="false" />
             <element signature="method#toString#0;class#Set#0" expanded="false" />
             <element signature="method#cloneSolutionset#0;class#Set#0" expanded="false" />
           </folding>
@@ -1403,42 +1396,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../untitled2/src/struct/Symbol.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
+        <state relative-caret-position="1227">
           <caret line="193" column="0" lean-forward="false" selection-start-line="193" selection-start-column="0" selection-end-line="193" selection-end-column="0" />
           <folding>
-            <element signature="method#Symbol#2;class#Symbol#0" expanded="false" />
-            <element signature="method#addVariable#0;class#Symbol#0" expanded="false" />
-            <element signature="method#removeVariable#0;class#Symbol#0" expanded="false" />
+            <marker date="1499215910192" expanded="true" signature="5930:5986" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../untitled2/src/struct/Function.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
+        <state relative-caret-position="2689">
           <caret line="317" column="0" lean-forward="false" selection-start-line="317" selection-start-column="0" selection-end-line="317" selection-end-column="0" />
           <folding>
-            <element signature="docComment;field#NO_PROPERTY#0;class#Function#0" expanded="false" />
-            <element signature="e#622#634#0" expanded="true" />
-            <element signature="docComment;method#Function#0;class#Function#0" expanded="false" />
-            <element signature="docComment;method#Function#1;class#Function#0" expanded="false" />
-            <element signature="method#Function#1;class#Function#0" expanded="false" />
-            <element signature="docComment;method#Function#2;class#Function#0" expanded="false" />
-            <element signature="method#Function#2;class#Function#0" expanded="false" />
-            <element signature="docComment;method#Function#3;class#Function#0" expanded="false" />
-            <element signature="method#Function#3;class#Function#0" expanded="false" />
-            <element signature="docComment;method#Function#4;class#Function#0" expanded="false" />
-            <element signature="method#Function#4;class#Function#0" expanded="false" />
-            <element signature="docComment;method#Function#5;class#Function#0" expanded="false" />
-            <element signature="method#Function#6;class#Function#0" expanded="false" />
-            <element signature="docComment;method#add#0;class#Function#0" expanded="false" />
-            <element signature="method#getVariableIndex#0;class#Function#0" expanded="false" />
-            <element signature="method#equalsFromIndex#0;class#Function#0" expanded="false" />
-            <element signature="method#equals#0;class#Function#0" expanded="false" />
-            <element signature="method#parametersToString#0;class#Function#0" expanded="false" />
-            <element signature="method#associativeSimplify#0;class#Function#0" expanded="false" />
-            <element signature="method#toString#0;class#Function#0" expanded="false" />
-            <element signature="method#compareTo#0;class#Function#0" expanded="false" />
+            <marker date="1499215910188" expanded="true" signature="8166:8327" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1474,42 +1445,52 @@
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <marker date="1499215910179" expanded="true" signature="621:628" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../untitled2/src/evaluator/POWER.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="67" column="46" lean-forward="false" selection-start-line="67" selection-start-column="46" selection-end-line="67" selection-end-column="46" />
+        <state relative-caret-position="528">
+          <caret line="76" column="20" lean-forward="false" selection-start-line="76" selection-start-column="20" selection-end-line="76" selection-end-column="20" />
           <folding>
-            <element signature="method#evaluateFraction#0;class#POWER#0" expanded="false" />
-            <element signature="e#4122#4123#0" expanded="true" />
-            <element signature="e#4140#4141#0" expanded="true" />
-            <element signature="method#evaluateInteger#0;class#POWER#0" expanded="false" />
-            <element signature="method#toOperatorString#0;class#POWER#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../untitled2/src/evaluator/SOLVEFORVARIABEL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="155" column="0" lean-forward="false" selection-start-line="155" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
-          <folding>
-            <element signature="method#simpleEquation#0;class#SOLVEFORVARIABEL#0" expanded="false" />
-            <element signature="method#quadraticEquation#0;class#SOLVEFORVARIABEL#0" expanded="false" />
-            <element signature="method#containsVariable#0;class#SOLVEFORVARIABEL#0" expanded="false" />
-            <element signature="class#Addends#0;class#SOLVEFORVARIABEL#0" expanded="false" />
+            <marker date="1499215910180" expanded="false" signature="3602:4036" ph="{...}" />
+            <marker date="1499215910180" expanded="true" signature="4121:4126" ph=" { " />
+            <marker date="1499215910180" expanded="true" signature="4138:4141" ph=" }" />
+            <marker date="1499215910180" expanded="true" signature="4236:4292" ph="{...}" />
+            <marker date="1499215910180" expanded="false" signature="4375:4575" ph="{...}" />
+            <marker date="1499215910180" expanded="true" signature="4658:4796" ph="{...}" />
+            <marker date="1499215910180" expanded="false" signature="4840:4845" ph=" { " />
+            <marker date="1499215910180" expanded="false" signature="4880:4883" ph=" }" />
+            <marker date="1499215910180" expanded="false" signature="4947:6893" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../untitled2/src/core/Engine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
+        <state relative-caret-position="714">
           <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../untitled2/src/evaluator/SOLVEFORVARIABEL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1463">
+          <caret line="155" column="0" lean-forward="false" selection-start-line="155" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
+          <folding>
+            <marker date="1499215910183" expanded="false" signature="8800:11617" ph="{...}" />
+            <marker date="1499215910183" expanded="false" signature="8898:8903" ph=" { " />
+            <marker date="1499215910183" expanded="false" signature="8914:8918" ph=" }" />
+            <marker date="1499215910183" expanded="false" signature="9374:9379" ph=" { " />
+            <marker date="1499215910183" expanded="false" signature="9394:9398" ph=" }" />
+            <marker date="1499215910183" expanded="false" signature="11007:11012" ph=" { " />
+            <marker date="1499215910183" expanded="false" signature="11039:11043" ph=" }" />
+            <marker date="1499215910183" expanded="false" signature="11090:11096" ph=" { " />
+            <marker date="1499215910183" expanded="false" signature="11145:11149" ph=" }" />
+          </folding>
         </state>
       </provider>
     </entry>
