@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1e00fe82-353c-4989-befa-f28e8c6701ff" name="Default" comment="merging master" />
+    <list default="true" id="1e00fe82-353c-4989-befa-f28e8c6701ff" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../untitled2/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/evaluator/POWER.java" afterPath="$PROJECT_DIR$/../untitled2/src/evaluator/POWER.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/../untitled2/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,105 +27,54 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SOLVEFORVARIABEL.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../untitled2/src/evaluator/SOLVEFORVARIABEL.java">
+      <file leaf-file-name="Double.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../untitled2/src/struct/Double.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1463">
-              <caret line="155" column="0" lean-forward="false" selection-start-line="155" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
+            <state relative-caret-position="136">
+              <caret line="14" column="56" lean-forward="false" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
               <folding>
-                <marker date="1499215910183" expanded="false" signature="8800:11617" ph="{...}" />
-                <marker date="1499215910183" expanded="false" signature="8898:8903" ph=" { " />
-                <marker date="1499215910183" expanded="false" signature="8914:8918" ph=" }" />
-                <marker date="1499215910183" expanded="false" signature="9374:9379" ph=" { " />
-                <marker date="1499215910183" expanded="false" signature="9394:9398" ph=" }" />
-                <marker date="1499215910183" expanded="false" signature="11007:11012" ph=" { " />
-                <marker date="1499215910183" expanded="false" signature="11039:11043" ph=" }" />
-                <marker date="1499215910183" expanded="false" signature="11090:11096" ph=" { " />
-                <marker date="1499215910183" expanded="false" signature="11145:11149" ph=" }" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PLUSMINUS.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../untitled2/src/evaluator/PLUSMINUS.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <marker date="1499215910179" expanded="true" signature="621:628" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="POWER.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../untitled2/src/evaluator/POWER.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="76" column="20" lean-forward="false" selection-start-line="76" selection-start-column="20" selection-end-line="76" selection-end-column="20" />
-              <folding>
-                <marker date="1499215910180" expanded="false" signature="3602:4036" ph="{...}" />
-                <marker date="1499215910180" expanded="true" signature="4121:4126" ph=" { " />
-                <marker date="1499215910180" expanded="true" signature="4138:4141" ph=" }" />
-                <marker date="1499215910180" expanded="true" signature="4236:4292" ph="{...}" />
-                <marker date="1499215910180" expanded="false" signature="4375:4575" ph="{...}" />
-                <marker date="1499215910180" expanded="true" signature="4658:4796" ph="{...}" />
-                <marker date="1499215910180" expanded="false" signature="4840:4845" ph=" { " />
-                <marker date="1499215910180" expanded="false" signature="4880:4883" ph=" }" />
-                <marker date="1499215910180" expanded="false" signature="4947:6893" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CALC.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../untitled2/src/core/CALC.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="227" column="0" lean-forward="false" selection-start-line="227" selection-start-column="0" selection-end-line="227" selection-end-column="0" />
-              <folding>
-                <element signature="docComment;field#IntegerZero#0;class#CALC#0" expanded="false" />
-                <element signature="method#hasDefinedVariable#0;class#CALC#0" expanded="false" />
-                <element signature="method#getDefinedVariable#0;class#CALC#0" expanded="false" />
-                <element signature="method#getDefinedVariableKey#0;class#CALC#0" expanded="false" />
-                <element signature="method#setDefinedVariable#0;class#CALC#0" expanded="false" />
-                <element signature="method#isUpperCase#0;class#CALC#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TwoParamFunctionEvaluator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../untitled2/src/evaluator/extend/TwoParamFunctionEvaluator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Symbol.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../untitled2/src/struct/Symbol.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1227">
-              <caret line="193" column="0" lean-forward="false" selection-start-line="193" selection-start-column="0" selection-end-line="193" selection-end-column="0" />
-              <folding>
-                <marker date="1499215910192" expanded="true" signature="5930:5986" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Function.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../untitled2/src/struct/Function.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2689">
-              <caret line="317" column="0" lean-forward="false" selection-start-line="317" selection-start-column="0" selection-end-line="317" selection-end-column="0" />
-              <folding>
-                <marker date="1499215910188" expanded="true" signature="8166:8327" ph="{...}" />
+                <marker date="1499297776341" expanded="false" signature="437:448" ph=" { " />
+                <marker date="1499297776341" expanded="false" signature="477:483" ph=" }" />
+                <marker date="1499297776341" expanded="false" signature="528:1452" ph="{...}" />
+                <marker date="1499297776341" expanded="false" signature="1489:2943" ph="{...}" />
+                <marker date="1499297776341" expanded="false" signature="2979:2990" ph=" { " />
+                <marker date="1499297776341" expanded="false" signature="3041:3047" ph=" }" />
+                <marker date="1499297776341" expanded="false" signature="3089:3100" ph=" { " />
+                <marker date="1499297776341" expanded="false" signature="3156:3162" ph=" }" />
+                <marker date="1499297776341" expanded="false" signature="3196:3524" ph="{...}" />
+                <marker date="1499297776341" expanded="false" signature="3565:3576" ph=" { " />
+                <marker date="1499297776341" expanded="false" signature="3589:3595" ph=" }" />
+                <marker date="1499297776341" expanded="false" signature="3644:4770" ph="{...}" />
+                <marker date="1499297776341" expanded="false" signature="4815:5078" ph="{...}" />
+                <marker date="1499297776341" expanded="false" signature="5142:5849" ph="{...}" />
+                <marker date="1499297776341" expanded="false" signature="5995:6006" ph=" { " />
+                <marker date="1499297776341" expanded="false" signature="6049:6055" ph=" }" />
+                <marker date="1499297776341" expanded="false" signature="6096:6107" ph=" { " />
+                <marker date="1499297776341" expanded="false" signature="6133:6139" ph=" }" />
+                <marker date="1499297776341" expanded="false" signature="6180:6191" ph=" { " />
+                <marker date="1499297776341" expanded="false" signature="6217:6223" ph=" }" />
+                <marker date="1499297776341" expanded="false" signature="6251:6262" ph=" { " />
+                <marker date="1499297776341" expanded="false" signature="6275:6281" ph=" }" />
+                <marker date="1499297776341" expanded="false" signature="6326:6337" ph=" { " />
+                <marker date="1499297776341" expanded="false" signature="6356:6362" ph=" }" />
+                <marker date="1499297776341" expanded="false" signature="6400:7220" ph="{...}" />
+                <marker date="1499297776341" expanded="false" signature="7263:8176" ph="{...}" />
+                <marker date="1499297776341" expanded="false" signature="8217:9067" ph="{...}" />
+                <marker date="1499297776341" expanded="false" signature="9147:9414" ph="{...}" />
+                <marker date="1499297776341" expanded="false" signature="9671:9682" ph=" { " />
+                <marker date="1499297776341" expanded="false" signature="9742:9748" ph=" }" />
+                <marker date="1499297776341" expanded="false" signature="9796:9807" ph=" { " />
+                <marker date="1499297776341" expanded="false" signature="9845:9851" ph=" }" />
+                <marker date="1499297776341" expanded="false" signature="9885:10034" ph="{...}" />
+                <marker date="1499297776341" expanded="false" signature="10063:10434" ph="{...}" />
+                <marker date="1499297776341" expanded="false" signature="10467:10629" ph="{...}" />
+                <marker date="1499297776341" expanded="false" signature="10662:10673" ph=" { " />
+                <marker date="1499297776341" expanded="false" signature="10721:10727" ph=" }" />
+                <marker date="1499297776341" expanded="false" signature="10784:12617" ph="{...}" />
+                <marker date="1499297776341" expanded="false" signature="12662:12673" ph=" { " />
+                <marker date="1499297776341" expanded="false" signature="12687:12693" ph=" }" />
+                <marker date="1499297776341" expanded="false" signature="12739:12750" ph=" { " />
+                <marker date="1499297776341" expanded="false" signature="12800:12806" ph=" }" />
               </folding>
             </state>
           </provider>
@@ -131,21 +83,22 @@
       <file leaf-file-name="EngineTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../untitled2/src/test/core/EngineTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="77" column="21" lean-forward="false" selection-start-line="77" selection-start-column="21" selection-end-line="77" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="221">
+              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Engine.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../untitled2/src/core/Engine.java">
+      <file leaf-file-name="POWER.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../untitled2/src/evaluator/POWER.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="374">
+              <caret line="69" column="41" lean-forward="false" selection-start-line="69" selection-start-column="41" selection-end-line="69" selection-end-column="41" />
+              <folding>
+                <marker date="1499297819813" expanded="true" signature="300:307" ph="/**...*/" />
+                <marker date="1499297819813" expanded="false" signature="3625:4059" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -171,9 +124,10 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../untitled2" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/../untitled2" value="Set_integration" />
+        <entry key="$PROJECT_DIR$/../untitled2" value="master2" />
       </map>
     </option>
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -183,10 +137,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../untitled2/src/struct/CalcRelationship.java" />
-        <option value="$PROJECT_DIR$/../untitled2/src/evaluator/CalcSOLVEFORVARIABEL.java" />
-        <option value="$PROJECT_DIR$/../untitled2/src/exception/DimensionException.java" />
-        <option value="$PROJECT_DIR$/../untitled2/src/exception/IndeterminateException.java" />
         <option value="$PROJECT_DIR$/../untitled2/src/exception/SyntaxException.java" />
         <option value="$PROJECT_DIR$/../untitled2/src/evaluator/DEPTH.java" />
         <option value="$PROJECT_DIR$/../untitled2/src/evaluator/FACTOR.java" />
@@ -217,23 +167,27 @@
         <option value="$PROJECT_DIR$/../untitled2/src/core/Copy.java" />
         <option value="$PROJECT_DIR$/../untitled2/src/core/Parser.java" />
         <option value="$PROJECT_DIR$/../untitled2/src/struct/Solutionset.java" />
-        <option value="$PROJECT_DIR$/../untitled2/src/evaluator/PLUSMINUS.java" />
         <option value="$PROJECT_DIR$/../untitled2/src/evaluator/ADD.java" />
         <option value="$PROJECT_DIR$/../untitled2/src/evaluator/extend/NParamFunctionEvaluator.java" />
-        <option value="$PROJECT_DIR$/../untitled2/src/core/CALC.java" />
         <option value="$PROJECT_DIR$/../untitled2/src/struct/MathObject.java" />
         <option value="$PROJECT_DIR$/../untitled2/src/struct/Set.java" />
         <option value="$PROJECT_DIR$/../untitled2/src/struct/Fraction.java" />
         <option value="$PROJECT_DIR$/../untitled2/src/struct/Error.java" />
-        <option value="$PROJECT_DIR$/../untitled2/src/struct/Double.java" />
         <option value="$PROJECT_DIR$/../untitled2/src/struct/Integer.java" />
         <option value="$PROJECT_DIR$/../untitled2/src/struct/Symbol.java" />
         <option value="$PROJECT_DIR$/../untitled2/src/struct/Relationship.java" />
         <option value="$PROJECT_DIR$/../untitled2/src/struct/Function.java" />
-        <option value="$PROJECT_DIR$/../untitled2/src/evaluator/SOLVEFORVARIABEL.java" />
-        <option value="$PROJECT_DIR$/../untitled2/src/test/core/EngineTest.java" />
-        <option value="$PROJECT_DIR$/../untitled2/src/evaluator/POWER.java" />
         <option value="$PROJECT_DIR$/../untitled2/src/core/Engine.java" />
+        <option value="$PROJECT_DIR$/../untitled2/src/evaluator/FirstGradEquation.java" />
+        <option value="$PROJECT_DIR$/../untitled2/src/core/CALC.java" />
+        <option value="$PROJECT_DIR$/../untitled2/src/evaluator/Substitution.java" />
+        <option value="$PROJECT_DIR$/../untitled2/src/evaluator/extend/Addends.java" />
+        <option value="$PROJECT_DIR$/../untitled2/src/evaluator/SecondGradeEquation.java" />
+        <option value="$PROJECT_DIR$/../untitled2/src/test/core/EngineTest.java" />
+        <option value="$PROJECT_DIR$/../untitled2/src/evaluator/SOLVEFORVARIABEL.java" />
+        <option value="$PROJECT_DIR$/../untitled2/src/evaluator/PLUSMINUS.java" />
+        <option value="$PROJECT_DIR$/../untitled2/src/struct/Double.java" />
+        <option value="$PROJECT_DIR$/../untitled2/src/evaluator/POWER.java" />
       </list>
     </option>
   </component>
@@ -260,6 +214,8 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -404,8 +360,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -417,6 +371,7 @@
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/junit-4.10.jar!/" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
+    <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -451,7 +406,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.EngineTest.test10">
+  <component name="RunManager" selected="JUnit.EngineTest">
     <configuration default="false" name="EngineTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -772,9 +727,9 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.EngineTest.test10" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.EngineTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.EngineTest.test11" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.EngineTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.EngineTest.test11" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.EngineTest.test10" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.EngineTest.wurzelTest5" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.EngineTest.test2" />
       </list>
@@ -840,38 +795,52 @@
       <option name="project" value="LOCAL" />
       <updated>1499215514782</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="merging master">
+      <created>1499215940637</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1499215940637</updated>
+    </task>
+    <task id="LOCAL-00009" summary="new classes for first and second grade equations and substitution">
+      <created>1499293428913</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1499293428914</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="EngineTest - 2017.07.05 at 02h 23m 23s.xml">
+    <history-entry file="EngineTest - 2017.07.06 at 01h 36m 59s.xml">
       <configuration name="EngineTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EngineTest_test10 - 2017.07.05 at 02h 42m 25s.xml">
-      <configuration name="EngineTest.test10" configurationId="JUnit" />
+    <history-entry file="EngineTest - 2017.07.06 at 01h 37m 11s.xml">
+      <configuration name="EngineTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EngineTest_test11 - 2017.07.05 at 02h 00m 10s.xml">
+    <history-entry file="EngineTest_test11 - 2017.07.06 at 01h 04m 10s.xml">
       <configuration name="EngineTest.test11" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EngineTest_test11 - 2017.07.05 at 02h 04m 57s.xml">
+    <history-entry file="EngineTest_test11 - 2017.07.06 at 01h 10m 56s.xml">
       <configuration name="EngineTest.test11" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EngineTest_test11 - 2017.07.05 at 02h 07m 16s.xml">
+    <history-entry file="EngineTest_test11 - 2017.07.06 at 01h 12m 00s.xml">
       <configuration name="EngineTest.test11" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EngineTest_test11 - 2017.07.05 at 02h 12m 57s.xml">
+    <history-entry file="EngineTest_test11 - 2017.07.06 at 01h 14m 37s.xml">
       <configuration name="EngineTest.test11" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EngineTest_test11 - 2017.07.05 at 02h 13m 43s.xml">
+    <history-entry file="EngineTest_test11 - 2017.07.06 at 01h 15m 37s.xml">
       <configuration name="EngineTest.test11" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EngineTest_test11 - 2017.07.05 at 02h 17m 18s.xml">
+    <history-entry file="EngineTest_test11 - 2017.07.06 at 01h 18m 09s.xml">
       <configuration name="EngineTest.test11" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EngineTest_test11 - 2017.07.05 at 02h 20m 44s.xml">
+    <history-entry file="EngineTest_test11 - 2017.07.06 at 01h 18m 44s.xml">
       <configuration name="EngineTest.test11" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EngineTest_test11 - 2017.07.05 at 02h 23m 02s.xml">
+    <history-entry file="EngineTest_test11 - 2017.07.06 at 01h 20m 16s.xml">
       <configuration name="EngineTest.test11" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -891,20 +860,18 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27591583" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36307693" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281372" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3271795" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969603" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32969603" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298887" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25019485" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289166" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16176471" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16414945" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="SonarLint" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289166" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -912,6 +879,8 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298887" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289166" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -986,7 +955,9 @@
     <MESSAGE value="34" />
     <MESSAGE value="dsg" />
     <MESSAGE value="finished?" />
-    <option name="LAST_COMMIT_MESSAGE" value="finished?" />
+    <MESSAGE value="merging master" />
+    <MESSAGE value="new classes for first and second grade equations and substitution" />
+    <option name="LAST_COMMIT_MESSAGE" value="new classes for first and second grade equations and substitution" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1019,22 +990,28 @@
           <url>file://$PROJECT_DIR$/../untitled2/src/core/Engine.java</url>
           <line>48</line>
           <properties />
-          <option name="timeStamp" value="343" />
+          <option name="timeStamp" value="437" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../untitled2/src/core/Engine.java</url>
-          <line>46</line>
+          <url>file://$PROJECT_DIR$/../untitled2/src/evaluator/PLUSMINUS.java</url>
+          <line>16</line>
           <properties />
-          <option name="timeStamp" value="419" />
+          <option name="timeStamp" value="449" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/../untitled2/src/evaluator/SOLVEFORVARIABEL.java</url>
-          <line>155</line>
+          <line>261</line>
           <properties />
-          <option name="timeStamp" value="421" />
+          <option name="timeStamp" value="450" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../untitled2/src/evaluator/SOLVEFORVARIABEL.java</url>
+          <line>266</line>
+          <properties />
+          <option name="timeStamp" value="451" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="422" />
+      <option name="time" value="452" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
@@ -1047,34 +1024,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/runner/JUnitCore.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/runners/model/FrameworkMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/internal/runners/statements/InvokeMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/runners/BlockJUnit4ClassRunner.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/runners/ParentRunner.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="343">
@@ -1098,7 +1047,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1106,7 +1054,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="23" lean-forward="false" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1125,30 +1072,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
           <caret line="29" column="9" lean-forward="true" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../untitled2/src/struct/Double.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1598">
-          <caret line="367" column="0" lean-forward="true" selection-start-line="367" selection-start-column="0" selection-end-line="367" selection-end-column="0" />
-          <folding>
-            <element signature="method#Double#1;class#Double#0" expanded="false" />
-            <element signature="method#Double#2;class#Double#0" expanded="false" />
-            <element signature="method#doubleValue#0;class#Double#0" expanded="false" />
-            <element signature="method#evaluate#0;class#Double#0" expanded="false" />
-            <element signature="method#toString#0;class#Double#0" expanded="false" />
-            <element signature="method#equals#0;class#Double#0" expanded="false" />
-            <element signature="method#add#0;class#Double#0" expanded="false" />
-            <element signature="method#multiply#0;class#Double#0" expanded="false" />
-            <element signature="method#divide#0;class#Double#0" expanded="false" />
-            <element signature="method#power#0;class#Double#0" expanded="false" />
-            <element signature="method#isNegative#0;class#Double#0" expanded="false" />
-            <element signature="method#negate#0;class#Double#0" expanded="false" />
-            <element signature="method#isInteger#0;class#Double#0" expanded="false" />
-            <element signature="method#compareTo#0;class#Double#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1156,7 +1079,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="17" column="2" lean-forward="false" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1164,9 +1086,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1173">
           <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
-          <folding>
-            <element signature="e#2888#2889#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1198,7 +1118,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="901">
           <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1217,7 +1136,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="20" column="59" lean-forward="true" selection-start-line="20" selection-start-column="59" selection-end-line="20" selection-end-column="59" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1229,43 +1147,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../untitled2/src/core/Copy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="68" lean-forward="false" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../untitled2/src/core/Parser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding>
-            <element signature="method#parseNextToken#0;class#Parser#0" expanded="false" />
-            <element signature="method#parseDefine#0;class#Parser#0" expanded="false" />
-            <element signature="method#parseEqual#0;class#Parser#0" expanded="false" />
-            <element signature="method#parseExpression#0;class#Parser#0" expanded="false" />
-            <element signature="method#parseMultiplication#0;class#Parser#0" expanded="false" />
-            <element signature="method#parseDivision#0;class#Parser#0" expanded="false" />
-            <element signature="method#parsePower#0;class#Parser#0" expanded="false" />
-            <element signature="method#parseTerm#0;class#Parser#0" expanded="false" />
-            <element signature="method#parseFunction#0;class#Parser#0" expanded="false" />
-            <element signature="method#parseParameters#0;class#Parser#0" expanded="false" />
-            <element signature="method#parseIdentifier#0;class#Parser#0" expanded="false" />
-            <element signature="method#parseNumber#0;class#Parser#0" expanded="false" />
-            <element signature="method#parseNextChar#0;class#Parser#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../untitled2/src/evaluator/extend/ConstantEvaluator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1281,7 +1167,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1289,7 +1174,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="14" column="50" lean-forward="false" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1297,7 +1181,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="6" column="32" lean-forward="false" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1305,9 +1188,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding>
-            <element signature="method#toOperatorString#0;class#ADD#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1315,7 +1195,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1323,7 +1202,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="19" column="59" lean-forward="false" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="59" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1347,9 +1225,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="7" column="68" lean-forward="false" selection-start-line="7" selection-start-column="68" selection-end-line="7" selection-end-column="68" />
-          <folding>
-            <element signature="docComment;method#getPrecedence#0;class#RelationshipInterface#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1357,22 +1232,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding>
-            <element signature="method#cloneMathObject#0;class#Relationship#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../untitled2/src/struct/Set.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#333#345#0" expanded="false" />
-            <element signature="method#toString#0;class#Set#0" expanded="false" />
-            <element signature="method#cloneSolutionset#0;class#Set#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1386,110 +1245,191 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../untitled2/src/evaluator/extend/TwoParamFunctionEvaluator.java">
+    <entry file="file://$PROJECT_DIR$/../untitled2/src/evaluator/FirstGradEquation.java" />
+    <entry file="file://$PROJECT_DIR$/../untitled2/src/evaluator/extend/ConstantEvaluator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="221">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../untitled2/src/struct/Symbol.java">
+    <entry file="file://$PROJECT_DIR$/../untitled2/src/evaluator/extend/Addends.java" />
+    <entry file="file://$PROJECT_DIR$/../untitled2/src/evaluator/Substitution.java" />
+    <entry file="file://$PROJECT_DIR$/../untitled2/src/evaluator/SecondGradeEquation.java" />
+    <entry file="file://$PROJECT_DIR$/../untitled2/src/core/CALC.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1227">
-          <caret line="193" column="0" lean-forward="false" selection-start-line="193" selection-start-column="0" selection-end-line="193" selection-end-column="0" />
+        <state relative-caret-position="275">
+          <caret line="211" column="0" lean-forward="false" selection-start-line="211" selection-start-column="0" selection-end-line="211" selection-end-column="0" />
           <folding>
-            <marker date="1499215910192" expanded="true" signature="5930:5986" ph="{...}" />
+            <marker date="1499297023241" expanded="true" signature="4842:4899" ph="/**...*/" />
+            <marker date="1499297023241" expanded="true" signature="5175:5292" ph="/**...*/" />
+            <marker date="1499297023241" expanded="false" signature="5364:5384" ph="&lt;~&gt;" />
+            <marker date="1499297023241" expanded="false" signature="5456:5878" ph="{...}" />
+            <marker date="1499297023241" expanded="false" signature="5948:6388" ph="{...}" />
+            <marker date="1499297023241" expanded="false" signature="6459:6896" ph="{...}" />
+            <marker date="1499297023241" expanded="false" signature="6975:7230" ph="{...}" />
+            <marker date="1499297023241" expanded="false" signature="7295:7518" ph="{...}" />
+            <marker date="1499297023241" expanded="true" signature="7528:7585" ph="/**...*/" />
+            <marker date="1499297023241" expanded="true" signature="7646:8971" ph="{...}" />
+            <marker date="1499297023241" expanded="true" signature="8405:8550" ph="//..." />
+            <marker date="1499297023241" expanded="true" signature="8981:9008" ph="/**...*/" />
+            <marker date="1499297023241" expanded="true" signature="9866:9901" ph="{...}" />
+            <marker date="1499297023241" expanded="false" signature="9959:9974" ph=" { " />
+            <marker date="1499297023241" expanded="false" signature="10015:10025" ph=" }" />
+            <marker date="1499297023241" expanded="false" signature="10078:10093" ph=" { " />
+            <marker date="1499297023241" expanded="false" signature="10132:10142" ph=" }" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../untitled2/src/core/Copy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="68" lean-forward="false" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="68" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../untitled2/src/struct/Function.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2689">
-          <caret line="317" column="0" lean-forward="false" selection-start-line="317" selection-start-column="0" selection-end-line="317" selection-end-column="0" />
+        <state relative-caret-position="980">
+          <caret line="181" column="0" lean-forward="false" selection-start-line="181" selection-start-column="0" selection-end-line="181" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../untitled2/src/struct/Set.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="63" column="22" lean-forward="false" selection-start-line="63" selection-start-column="12" selection-end-line="63" selection-end-column="22" />
           <folding>
-            <marker date="1499215910188" expanded="true" signature="8166:8327" ph="{...}" />
+            <element signature="method#toString#0;class#Set#0" expanded="false" />
+            <element signature="method#cloneSolutionset#0;class#Set#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../untitled2/src/core/CALC.java">
+    <entry file="file://$PROJECT_DIR$/../untitled2/src/evaluator/extend/TwoParamFunctionEvaluator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="227" column="0" lean-forward="false" selection-start-line="227" selection-start-column="0" selection-end-line="227" selection-end-column="0" />
-          <folding>
-            <element signature="docComment;field#IntegerZero#0;class#CALC#0" expanded="false" />
-            <element signature="method#hasDefinedVariable#0;class#CALC#0" expanded="false" />
-            <element signature="method#getDefinedVariable#0;class#CALC#0" expanded="false" />
-            <element signature="method#getDefinedVariableKey#0;class#CALC#0" expanded="false" />
-            <element signature="method#setDefinedVariable#0;class#CALC#0" expanded="false" />
-            <element signature="method#isUpperCase#0;class#CALC#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="374">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../untitled2/src/test/core/EngineTest.java">
+    <entry file="file://$PROJECT_DIR$/../untitled2/src/struct/Symbol.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="77" column="21" lean-forward="false" selection-start-line="77" selection-start-column="21" selection-end-line="77" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="1261">
+          <caret line="211" column="0" lean-forward="false" selection-start-line="211" selection-start-column="0" selection-end-line="211" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../untitled2/src/evaluator/PLUSMINUS.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="187">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1499215910179" expanded="true" signature="621:628" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../untitled2/src/evaluator/POWER.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="76" column="20" lean-forward="false" selection-start-line="76" selection-start-column="20" selection-end-line="76" selection-end-column="20" />
-          <folding>
-            <marker date="1499215910180" expanded="false" signature="3602:4036" ph="{...}" />
-            <marker date="1499215910180" expanded="true" signature="4121:4126" ph=" { " />
-            <marker date="1499215910180" expanded="true" signature="4138:4141" ph=" }" />
-            <marker date="1499215910180" expanded="true" signature="4236:4292" ph="{...}" />
-            <marker date="1499215910180" expanded="false" signature="4375:4575" ph="{...}" />
-            <marker date="1499215910180" expanded="true" signature="4658:4796" ph="{...}" />
-            <marker date="1499215910180" expanded="false" signature="4840:4845" ph=" { " />
-            <marker date="1499215910180" expanded="false" signature="4880:4883" ph=" }" />
-            <marker date="1499215910180" expanded="false" signature="4947:6893" ph="{...}" />
+            <marker date="1499297776340" expanded="true" signature="621:628" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../untitled2/src/core/Engine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+        <state relative-caret-position="972">
+          <caret line="92" column="34" lean-forward="false" selection-start-line="92" selection-start-column="34" selection-end-line="92" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../untitled2/src/evaluator/SOLVEFORVARIABEL.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1463">
-          <caret line="155" column="0" lean-forward="false" selection-start-line="155" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
+        <state relative-caret-position="1692">
+          <caret line="243" column="0" lean-forward="false" selection-start-line="243" selection-start-column="0" selection-end-line="243" selection-end-column="0" />
           <folding>
-            <marker date="1499215910183" expanded="false" signature="8800:11617" ph="{...}" />
-            <marker date="1499215910183" expanded="false" signature="8898:8903" ph=" { " />
-            <marker date="1499215910183" expanded="false" signature="8914:8918" ph=" }" />
-            <marker date="1499215910183" expanded="false" signature="9374:9379" ph=" { " />
-            <marker date="1499215910183" expanded="false" signature="9394:9398" ph=" }" />
-            <marker date="1499215910183" expanded="false" signature="11007:11012" ph=" { " />
-            <marker date="1499215910183" expanded="false" signature="11039:11043" ph=" }" />
-            <marker date="1499215910183" expanded="false" signature="11090:11096" ph=" { " />
-            <marker date="1499215910183" expanded="false" signature="11145:11149" ph=" }" />
+            <marker date="1499297023292" expanded="false" signature="8800:11617" ph="{...}" />
+            <marker date="1499297023292" expanded="false" signature="8898:8903" ph=" { " />
+            <marker date="1499297023292" expanded="false" signature="8914:8918" ph=" }" />
+            <marker date="1499297023292" expanded="true" signature="8957:9185" ph="{...}" />
+            <marker date="1499297023292" expanded="true" signature="9247:9340" ph="{...}" />
+            <marker date="1499297023292" expanded="false" signature="9374:9379" ph=" { " />
+            <marker date="1499297023292" expanded="false" signature="9394:9398" ph=" }" />
+            <marker date="1499297023292" expanded="false" signature="9425:10967" ph="{...}" />
+            <marker date="1499297023292" expanded="false" signature="11007:11012" ph=" { " />
+            <marker date="1499297023292" expanded="false" signature="11039:11043" ph=" }" />
+            <marker date="1499297023292" expanded="false" signature="11090:11096" ph=" { " />
+            <marker date="1499297023292" expanded="false" signature="11145:11149" ph=" }" />
+            <marker date="1499297023292" expanded="true" signature="11190:11299" ph="{...}" />
+            <marker date="1499297023292" expanded="true" signature="11349:11614" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../untitled2/src/struct/Double.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="14" column="56" lean-forward="false" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
+          <folding>
+            <marker date="1499297776341" expanded="false" signature="437:448" ph=" { " />
+            <marker date="1499297776341" expanded="false" signature="477:483" ph=" }" />
+            <marker date="1499297776341" expanded="false" signature="528:1452" ph="{...}" />
+            <marker date="1499297776341" expanded="false" signature="1489:2943" ph="{...}" />
+            <marker date="1499297776341" expanded="false" signature="2979:2990" ph=" { " />
+            <marker date="1499297776341" expanded="false" signature="3041:3047" ph=" }" />
+            <marker date="1499297776341" expanded="false" signature="3089:3100" ph=" { " />
+            <marker date="1499297776341" expanded="false" signature="3156:3162" ph=" }" />
+            <marker date="1499297776341" expanded="false" signature="3196:3524" ph="{...}" />
+            <marker date="1499297776341" expanded="false" signature="3565:3576" ph=" { " />
+            <marker date="1499297776341" expanded="false" signature="3589:3595" ph=" }" />
+            <marker date="1499297776341" expanded="false" signature="3644:4770" ph="{...}" />
+            <marker date="1499297776341" expanded="false" signature="4815:5078" ph="{...}" />
+            <marker date="1499297776341" expanded="false" signature="5142:5849" ph="{...}" />
+            <marker date="1499297776341" expanded="false" signature="5995:6006" ph=" { " />
+            <marker date="1499297776341" expanded="false" signature="6049:6055" ph=" }" />
+            <marker date="1499297776341" expanded="false" signature="6096:6107" ph=" { " />
+            <marker date="1499297776341" expanded="false" signature="6133:6139" ph=" }" />
+            <marker date="1499297776341" expanded="false" signature="6180:6191" ph=" { " />
+            <marker date="1499297776341" expanded="false" signature="6217:6223" ph=" }" />
+            <marker date="1499297776341" expanded="false" signature="6251:6262" ph=" { " />
+            <marker date="1499297776341" expanded="false" signature="6275:6281" ph=" }" />
+            <marker date="1499297776341" expanded="false" signature="6326:6337" ph=" { " />
+            <marker date="1499297776341" expanded="false" signature="6356:6362" ph=" }" />
+            <marker date="1499297776341" expanded="false" signature="6400:7220" ph="{...}" />
+            <marker date="1499297776341" expanded="false" signature="7263:8176" ph="{...}" />
+            <marker date="1499297776341" expanded="false" signature="8217:9067" ph="{...}" />
+            <marker date="1499297776341" expanded="false" signature="9147:9414" ph="{...}" />
+            <marker date="1499297776341" expanded="false" signature="9671:9682" ph=" { " />
+            <marker date="1499297776341" expanded="false" signature="9742:9748" ph=" }" />
+            <marker date="1499297776341" expanded="false" signature="9796:9807" ph=" { " />
+            <marker date="1499297776341" expanded="false" signature="9845:9851" ph=" }" />
+            <marker date="1499297776341" expanded="false" signature="9885:10034" ph="{...}" />
+            <marker date="1499297776341" expanded="false" signature="10063:10434" ph="{...}" />
+            <marker date="1499297776341" expanded="false" signature="10467:10629" ph="{...}" />
+            <marker date="1499297776341" expanded="false" signature="10662:10673" ph=" { " />
+            <marker date="1499297776341" expanded="false" signature="10721:10727" ph=" }" />
+            <marker date="1499297776341" expanded="false" signature="10784:12617" ph="{...}" />
+            <marker date="1499297776341" expanded="false" signature="12662:12673" ph=" { " />
+            <marker date="1499297776341" expanded="false" signature="12687:12693" ph=" }" />
+            <marker date="1499297776341" expanded="false" signature="12739:12750" ph=" { " />
+            <marker date="1499297776341" expanded="false" signature="12800:12806" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../untitled2/src/test/core/EngineTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../untitled2/src/evaluator/POWER.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="69" column="41" lean-forward="false" selection-start-line="69" selection-start-column="41" selection-end-line="69" selection-end-column="41" />
+          <folding>
+            <marker date="1499297819813" expanded="true" signature="300:307" ph="/**...*/" />
+            <marker date="1499297819813" expanded="false" signature="3625:4059" ph="{...}" />
           </folding>
         </state>
       </provider>
