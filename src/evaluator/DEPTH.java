@@ -7,7 +7,7 @@ import core.CALC;
 import evaluator.extend.FunctionEvaluator;
 import exception.WrongParametersException;
 import struct.Function;
-import struct.Integer;
+import struct.MathInteger;
 import struct.MathObject;
 import struct.Symbol;
 
@@ -23,13 +23,13 @@ public class DEPTH implements FunctionEvaluator {
     public MathObject evaluate(Function input) {
         if (input.size() == 1) {
             MathObject obj = input.get(0);
-            return findDepth(obj, new Integer(1));
+            return findDepth(obj, new MathInteger(1));
         } else {
             throw new WrongParametersException("DEPTH -> wrong number of parameters");
         }
     }
 
-    public Integer findDepth(MathObject obj, Integer currDepth) {
+    public MathInteger findDepth(MathObject obj, MathInteger currDepth) {
         if (obj instanceof Function) {
             obj = CALC.EVALUATE(obj);
         }
@@ -38,16 +38,16 @@ public class DEPTH implements FunctionEvaluator {
         } else if (obj instanceof Function) {
             Function objFunc = ((Function) obj);
             ArrayList<MathObject> allParts = objFunc.getAll();
-            Integer testDepth;
+            MathInteger testDepth;
             int maxDepth = 0;
             for (MathObject temp : allParts) {
                 DEPTH depthFinder = new DEPTH();
-                testDepth = (Integer) CALC.EVALUATE(depthFinder.findDepth(temp, currDepth));
+                testDepth = (MathInteger) CALC.EVALUATE(depthFinder.findDepth(temp, currDepth));
                 if (testDepth.intValue() > maxDepth) {
                     maxDepth = testDepth.intValue();
                 }
             }
-            return (Integer) CALC.EVALUATE(CALC.ADD.createFunction(currDepth, new Integer(maxDepth)));
+            return (MathInteger) CALC.EVALUATE(CALC.ADD.createFunction(currDepth, new MathInteger(maxDepth)));
         }
         return currDepth;
     }

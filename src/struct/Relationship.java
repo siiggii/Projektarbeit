@@ -15,14 +15,14 @@ public class Relationship implements MathObject {
 
     public Relationship(Symbol symbol){
         functionHeader = symbol;
-        if(functionHeader.equals(CALC.SOLUTIONSET)){
+        if(functionHeader.equals(CALC.SET)){
             int a = 0;
             a++;
         }
     }
     public Relationship(Symbol symbol, MathObject left, MathObject right){
         functionHeader = symbol;
-        if(functionHeader.equals(CALC.SOLUTIONSET)){
+        if(functionHeader.equals(CALC.SET)){
             int a = 0;
             a++;
         }
@@ -40,10 +40,10 @@ public class Relationship implements MathObject {
 
     @Override
     public MathObject evaluate() throws Exception {
-        if(parameters.get(1).getHeader().equals(CALC.SOLUTIONSET)){
-            Relationship rel1 = new Relationship(CALC.EQUAL,parameters.get(0),((Set)parameters.get(1)).get(0));
-            Relationship rel2 = new Relationship(CALC.EQUAL,parameters.get(0),((Set)parameters.get(1)).get(1));
-            return new Set(CALC.SOLUTIONSET,rel1,rel2);
+        if(parameters.get(1).getHeader().equals(CALC.SET)){
+            Relationship rel1 = new Relationship(CALC.EQUAL,parameters.get(0),((MathSet)parameters.get(1)).get(0));
+            Relationship rel2 = new Relationship(CALC.EQUAL,parameters.get(0),((MathSet)parameters.get(1)).get(1));
+            return new MathSet(CALC.SET,rel1,rel2);
         }
         return functionHeader.evaluateRelationship(this);
 

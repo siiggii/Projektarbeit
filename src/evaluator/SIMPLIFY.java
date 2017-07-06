@@ -4,7 +4,7 @@ import core.CALC;
 import evaluator.extend.FunctionEvaluator;
 import exception.WrongParametersException;
 import struct.Function;
-import struct.Integer;
+import struct.MathInteger;
 import struct.MathObject;
 import struct.Symbol;
 
@@ -113,7 +113,7 @@ public class SIMPLIFY implements FunctionEvaluator {
         ArrayList<MathObject> allParts = giveList(test.getHeader(), test);
         int totalDepth = 0;
         for (MathObject piece : allParts) {
-            totalDepth += ((Integer) CALC.EVALUATE(CALC.DEPTH.createFunction(piece))).intValue();
+            totalDepth += ((MathInteger) CALC.EVALUATE(CALC.DEPTH.createFunction(piece))).intValue();
         }
         return totalDepth;
     }

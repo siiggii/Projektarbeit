@@ -63,8 +63,8 @@ public class Symbol implements MathObject, Serializable {
 		return new Relationship(this);
 	}
 
-	public Set createSet(MathObject fun1In,MathObject fun2In){
-		return new Set(this,fun1In,fun2In);
+	public MathSet createSet(MathObject fun1In, MathObject fun2In){
+		return new MathSet(this,fun1In,fun2In);
 	}
 	
 	private ArrayList<Symbol> variables = new ArrayList<Symbol>();

@@ -2,8 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e00fe82-353c-4989-befa-f28e8c6701ff" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../untitled2/src/gui/ComboBoxDemo2.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../untitled2/src/gui/Console.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../untitled2/src/gui/test.form" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../untitled2/src/gui/test.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../untitled2/src/struct/Double.java" afterPath="$PROJECT_DIR$/../untitled2/src/struct/MathDouble.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../untitled2/src/struct/Integer.java" afterPath="$PROJECT_DIR$/../untitled2/src/struct/MathInteger.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../untitled2/src/struct/Set.java" afterPath="$PROJECT_DIR$/../untitled2/src/struct/MathSet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/.idea/sonarIssues.xml" afterPath="$PROJECT_DIR$/../untitled2/.idea/sonarIssues.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/.idea/uiDesigner.xml" afterPath="$PROJECT_DIR$/../untitled2/.idea/uiDesigner.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../untitled2/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/core/CALC.java" afterPath="$PROJECT_DIR$/../untitled2/src/core/CALC.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/core/Engine.java" afterPath="$PROJECT_DIR$/../untitled2/src/core/Engine.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/core/Parser.java" afterPath="$PROJECT_DIR$/../untitled2/src/core/Parser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/evaluator/ADD.java" afterPath="$PROJECT_DIR$/../untitled2/src/evaluator/ADD.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/evaluator/DEPTH.java" afterPath="$PROJECT_DIR$/../untitled2/src/evaluator/DEPTH.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/evaluator/EXPAND.java" afterPath="$PROJECT_DIR$/../untitled2/src/evaluator/EXPAND.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/evaluator/LN.java" afterPath="$PROJECT_DIR$/../untitled2/src/evaluator/LN.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/evaluator/MULTIPLY.java" afterPath="$PROJECT_DIR$/../untitled2/src/evaluator/MULTIPLY.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/evaluator/PLUSMINUS.java" afterPath="$PROJECT_DIR$/../untitled2/src/evaluator/PLUSMINUS.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/evaluator/POWER.java" afterPath="$PROJECT_DIR$/../untitled2/src/evaluator/POWER.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/evaluator/SIMPLIFY.java" afterPath="$PROJECT_DIR$/../untitled2/src/evaluator/SIMPLIFY.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/evaluator/SOLVEFORVARIABEL.java" afterPath="$PROJECT_DIR$/../untitled2/src/evaluator/SOLVEFORVARIABEL.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/evaluator/extend/NParamFunctionEvaluator.java" afterPath="$PROJECT_DIR$/../untitled2/src/evaluator/extend/NParamFunctionEvaluator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/evaluator/extend/OneParamFunctionEvaluator.java" afterPath="$PROJECT_DIR$/../untitled2/src/evaluator/extend/OneParamFunctionEvaluator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/evaluator/extend/TwoParamFunctionEvaluator.java" afterPath="$PROJECT_DIR$/../untitled2/src/evaluator/extend/TwoParamFunctionEvaluator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/junit-4.12.jar/LICENSE-junit.txt" afterPath="$PROJECT_DIR$/../untitled2/src/junit-4.12.jar/LICENSE-junit.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/struct/Fraction.java" afterPath="$PROJECT_DIR$/../untitled2/src/struct/Fraction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/struct/Function.java" afterPath="$PROJECT_DIR$/../untitled2/src/struct/Function.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/struct/Relationship.java" afterPath="$PROJECT_DIR$/../untitled2/src/struct/Relationship.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/struct/Symbol.java" afterPath="$PROJECT_DIR$/../untitled2/src/struct/Symbol.java" />
     </list>
     <ignored path="$PROJECT_DIR$/../untitled2/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,77 +55,136 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Double.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../untitled2/src/struct/Double.java">
+      <file leaf-file-name="Engine.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../untitled2/src/core/Engine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="14" column="56" lean-forward="false" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
-              <folding>
-                <marker date="1499297776341" expanded="false" signature="437:448" ph=" { " />
-                <marker date="1499297776341" expanded="false" signature="477:483" ph=" }" />
-                <marker date="1499297776341" expanded="false" signature="528:1452" ph="{...}" />
-                <marker date="1499297776341" expanded="false" signature="1489:2943" ph="{...}" />
-                <marker date="1499297776341" expanded="false" signature="2979:2990" ph=" { " />
-                <marker date="1499297776341" expanded="false" signature="3041:3047" ph=" }" />
-                <marker date="1499297776341" expanded="false" signature="3089:3100" ph=" { " />
-                <marker date="1499297776341" expanded="false" signature="3156:3162" ph=" }" />
-                <marker date="1499297776341" expanded="false" signature="3196:3524" ph="{...}" />
-                <marker date="1499297776341" expanded="false" signature="3565:3576" ph=" { " />
-                <marker date="1499297776341" expanded="false" signature="3589:3595" ph=" }" />
-                <marker date="1499297776341" expanded="false" signature="3644:4770" ph="{...}" />
-                <marker date="1499297776341" expanded="false" signature="4815:5078" ph="{...}" />
-                <marker date="1499297776341" expanded="false" signature="5142:5849" ph="{...}" />
-                <marker date="1499297776341" expanded="false" signature="5995:6006" ph=" { " />
-                <marker date="1499297776341" expanded="false" signature="6049:6055" ph=" }" />
-                <marker date="1499297776341" expanded="false" signature="6096:6107" ph=" { " />
-                <marker date="1499297776341" expanded="false" signature="6133:6139" ph=" }" />
-                <marker date="1499297776341" expanded="false" signature="6180:6191" ph=" { " />
-                <marker date="1499297776341" expanded="false" signature="6217:6223" ph=" }" />
-                <marker date="1499297776341" expanded="false" signature="6251:6262" ph=" { " />
-                <marker date="1499297776341" expanded="false" signature="6275:6281" ph=" }" />
-                <marker date="1499297776341" expanded="false" signature="6326:6337" ph=" { " />
-                <marker date="1499297776341" expanded="false" signature="6356:6362" ph=" }" />
-                <marker date="1499297776341" expanded="false" signature="6400:7220" ph="{...}" />
-                <marker date="1499297776341" expanded="false" signature="7263:8176" ph="{...}" />
-                <marker date="1499297776341" expanded="false" signature="8217:9067" ph="{...}" />
-                <marker date="1499297776341" expanded="false" signature="9147:9414" ph="{...}" />
-                <marker date="1499297776341" expanded="false" signature="9671:9682" ph=" { " />
-                <marker date="1499297776341" expanded="false" signature="9742:9748" ph=" }" />
-                <marker date="1499297776341" expanded="false" signature="9796:9807" ph=" { " />
-                <marker date="1499297776341" expanded="false" signature="9845:9851" ph=" }" />
-                <marker date="1499297776341" expanded="false" signature="9885:10034" ph="{...}" />
-                <marker date="1499297776341" expanded="false" signature="10063:10434" ph="{...}" />
-                <marker date="1499297776341" expanded="false" signature="10467:10629" ph="{...}" />
-                <marker date="1499297776341" expanded="false" signature="10662:10673" ph=" { " />
-                <marker date="1499297776341" expanded="false" signature="10721:10727" ph=" }" />
-                <marker date="1499297776341" expanded="false" signature="10784:12617" ph="{...}" />
-                <marker date="1499297776341" expanded="false" signature="12662:12673" ph=" { " />
-                <marker date="1499297776341" expanded="false" signature="12687:12693" ph=" }" />
-                <marker date="1499297776341" expanded="false" signature="12739:12750" ph=" { " />
-                <marker date="1499297776341" expanded="false" signature="12800:12806" ph=" }" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EngineTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../untitled2/src/test/core/EngineTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <state relative-caret-position="316">
+              <caret line="72" column="17" lean-forward="true" selection-start-line="72" selection-start-column="17" selection-end-line="72" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="POWER.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="test.form" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../untitled2/src/gui/test.form">
+          <provider selected="true" editor-type-id="ui-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../untitled2/src/gui/test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="87" column="0" lean-forward="true" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
+              <folding>
+                <element signature="e#875#876#0" expanded="true" />
+                <element signature="e#913#914#0" expanded="true" />
+                <element signature="e#1059#1187#0" expanded="true" />
+                <element signature="e#1186#1187#0" expanded="true" />
+                <element signature="e#1349#1350#0" expanded="true" />
+                <element signature="e#1391#1392#0" expanded="true" />
+                <element signature="method#$$$setupUI$$$#0;class#test#0" expanded="true" />
+                <element signature="e#9174#9175#0" expanded="true" />
+                <element signature="e#9208#9209#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MathSet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../untitled2/src/struct/MathSet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="329">
+              <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+              <folding>
+                <element signature="e#337#349#0" expanded="true" />
+                <element signature="method#MathSet#1;class#MathSet#0" expanded="false" />
+                <element signature="method#add#0;class#MathSet#0" expanded="false" />
+                <element signature="method#addAll#0;class#MathSet#0" expanded="false" />
+                <element signature="method#toString#0;class#MathSet#0" expanded="false" />
+                <element signature="method#isSameSolution#0;class#MathSet#0" expanded="false" />
+                <element signature="method#cloneSolutionset#0;class#MathSet#0" expanded="false" />
+                <element signature="method#cloneMathObject#0;class#MathSet#0" expanded="false" />
+                <element signature="method#containsSet#0;class#MathSet#0" expanded="false" />
+                <element signature="method#containsSet#1;class#MathSet#0" expanded="false" />
+                <element signature="method#equals#0;class#MathSet#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CALC.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../untitled2/src/core/CALC.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="527">
+              <caret line="225" column="0" lean-forward="false" selection-start-line="225" selection-start-column="0" selection-end-line="225" selection-end-column="0" />
+              <folding>
+                <element signature="method#hasDefinedVariable#0;class#CALC#0" expanded="false" />
+                <element signature="method#getDefinedVariable#0;class#CALC#0" expanded="false" />
+                <element signature="method#getDefinedVariableKey#0;class#CALC#0" expanded="false" />
+                <element signature="method#setDefinedVariable#0;class#CALC#0" expanded="false" />
+                <element signature="method#isUpperCase#0;class#CALC#0" expanded="false" />
+                <marker date="1499300382059" expanded="true" signature="9951:9986" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Function.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../untitled2/src/struct/Function.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="313" column="0" lean-forward="false" selection-start-line="313" selection-start-column="0" selection-end-line="313" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SOLVEFORVARIABEL.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../untitled2/src/evaluator/SOLVEFORVARIABEL.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="631">
+              <caret line="254" column="0" lean-forward="false" selection-start-line="254" selection-start-column="0" selection-end-line="254" selection-end-column="0" />
+              <folding>
+                <element signature="class#Addends#0;class#SOLVEFORVARIABEL#0" expanded="false" />
+                <element signature="method#defineSum#0;class#Addends#0;class#SOLVEFORVARIABEL#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="POWER.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../untitled2/src/evaluator/POWER.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="69" column="41" lean-forward="false" selection-start-line="69" selection-start-column="41" selection-end-line="69" selection-end-column="41" />
+            <state relative-caret-position="595">
+              <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
               <folding>
-                <marker date="1499297819813" expanded="true" signature="300:307" ph="/**...*/" />
-                <marker date="1499297819813" expanded="false" signature="3625:4059" ph="{...}" />
+                <marker date="1499367604892" expanded="true" signature="308:315" ph="/**...*/" />
+                <marker date="1499367604892" expanded="false" signature="3707:4141" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TwoParamFunctionEvaluator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../untitled2/src/evaluator/extend/TwoParamFunctionEvaluator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Symbol.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../untitled2/src/struct/Symbol.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="193" column="0" lean-forward="false" selection-start-line="193" selection-start-column="0" selection-end-line="193" selection-end-column="0" />
+              <folding>
+                <element signature="e#2693#2694#0" expanded="true" />
+                <element signature="e#2737#2738#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -137,14 +224,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../untitled2/src/exception/SyntaxException.java" />
-        <option value="$PROJECT_DIR$/../untitled2/src/evaluator/DEPTH.java" />
-        <option value="$PROJECT_DIR$/../untitled2/src/evaluator/FACTOR.java" />
-        <option value="$PROJECT_DIR$/../untitled2/src/core/EngineTest.groovy" />
-        <option value="$PROJECT_DIR$/../untitled2/src/core/EngineTest.java" />
-        <option value="$PROJECT_DIR$/../untitled2/src/struct/Object.java" />
-        <option value="$PROJECT_DIR$/../untitled2/src/core/testKlasse.java" />
-        <option value="$PROJECT_DIR$/../untitled2/src/struct/PLUSMINUS.java" />
         <option value="$PROJECT_DIR$/../untitled2/src/struct/Sub.java" />
         <option value="$PROJECT_DIR$/../untitled2/src/evaluator/extend/ConstantEvaluator.java" />
         <option value="$PROJECT_DIR$/../untitled2/src/evaluator/MULTIPLY.java" />
@@ -163,7 +242,6 @@
         <option value="$PROJECT_DIR$/../untitled2/src/exception/UnsupportedException.java" />
         <option value="$PROJECT_DIR$/../untitled2/src/exception/WrongParametersException.java" />
         <option value="$PROJECT_DIR$/../untitled2/src/evaluator/SIMPLIFY.java" />
-        <option value="$PROJECT_DIR$/../untitled2/src/gui/Console.java" />
         <option value="$PROJECT_DIR$/../untitled2/src/core/Copy.java" />
         <option value="$PROJECT_DIR$/../untitled2/src/core/Parser.java" />
         <option value="$PROJECT_DIR$/../untitled2/src/struct/Solutionset.java" />
@@ -177,9 +255,7 @@
         <option value="$PROJECT_DIR$/../untitled2/src/struct/Symbol.java" />
         <option value="$PROJECT_DIR$/../untitled2/src/struct/Relationship.java" />
         <option value="$PROJECT_DIR$/../untitled2/src/struct/Function.java" />
-        <option value="$PROJECT_DIR$/../untitled2/src/core/Engine.java" />
         <option value="$PROJECT_DIR$/../untitled2/src/evaluator/FirstGradEquation.java" />
-        <option value="$PROJECT_DIR$/../untitled2/src/core/CALC.java" />
         <option value="$PROJECT_DIR$/../untitled2/src/evaluator/Substitution.java" />
         <option value="$PROJECT_DIR$/../untitled2/src/evaluator/extend/Addends.java" />
         <option value="$PROJECT_DIR$/../untitled2/src/evaluator/SecondGradeEquation.java" />
@@ -187,6 +263,17 @@
         <option value="$PROJECT_DIR$/../untitled2/src/evaluator/SOLVEFORVARIABEL.java" />
         <option value="$PROJECT_DIR$/../untitled2/src/evaluator/PLUSMINUS.java" />
         <option value="$PROJECT_DIR$/../untitled2/src/struct/Double.java" />
+        <option value="$PROJECT_DIR$/../untitled2/src/core/CALC.java" />
+        <option value="$PROJECT_DIR$/../untitled2/src/gui/Console.java" />
+        <option value="$PROJECT_DIR$/../untitled2/src/gui/ComboBoxDemo2.java" />
+        <option value="$PROJECT_DIR$/../untitled2/out/production/untitled2/gui/ComboBoxDemo2.class" />
+        <option value="$PROJECT_DIR$/../untitled2/src/gui/ComboBoxTest2.form" />
+        <option value="$PROJECT_DIR$/../untitled2/src/gui/ComboBoxTest2.java" />
+        <option value="$PROJECT_DIR$/../untitled2/src/gui/ScrollPanelField.form" />
+        <option value="$PROJECT_DIR$/../untitled2/src/gui/textField.java" />
+        <option value="$PROJECT_DIR$/../untitled2/src/gui/test.form" />
+        <option value="$PROJECT_DIR$/../untitled2/src/core/Engine.java" />
+        <option value="$PROJECT_DIR$/../untitled2/src/gui/test.java" />
         <option value="$PROJECT_DIR$/../untitled2/src/evaluator/POWER.java" />
       </list>
     </option>
@@ -213,8 +300,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -296,7 +383,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="exception" />
+              <option name="myItemId" value="gui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gui" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -315,28 +424,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="evaluator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="untitled2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="untitled2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="evaluator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="extend" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -369,22 +456,15 @@
     <property name="create.test.in.the.same.root" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/junit-4.10.jar!/" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="project.propGUI" />
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
+    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="279" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
       <recent name="core" />
       <recent name="Test" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\untitled2\src" />
-      <recent name="C:\untitled2\src\graphing" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-      <recent name="groovy.util.GroovyTestCase" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\untitled2" />
@@ -392,6 +472,15 @@
       <recent name="C:\untitled2\src\main\gui" />
       <recent name="C:\untitled2\src\main\exception" />
       <recent name="C:\untitled2\src\main\evaluator\extend" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+      <recent name="groovy.util.GroovyTestCase" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\untitled2\src\gui" />
+      <recent name="C:\untitled2\src" />
+      <recent name="C:\untitled2\src\graphing" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -406,8 +495,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.EngineTest">
-    <configuration default="false" name="EngineTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.test">
+    <configuration default="false" name="EngineTest.testplusminus" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="core.*" />
@@ -419,7 +508,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="core" />
       <option name="MAIN_CLASS_NAME" value="core.EngineTest" />
-      <option name="METHOD_NAME" value="test2" />
+      <option name="METHOD_NAME" value="testplusminus" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
@@ -433,108 +522,84 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="EngineTest.wurzelTest5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="Console" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="core.*" />
+          <option name="PATTERN" value="gui.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <module name="untitled2" />
+      <option name="MAIN_CLASS_NAME" value="gui.Console" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="core" />
-      <option name="MAIN_CLASS_NAME" value="core.EngineTest" />
-      <option name="METHOD_NAME" value="wurzelTest5" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
+      <module name="untitled2" />
       <envs />
-      <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="EngineTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="ComboBoxDemo2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="core.*" />
+          <option name="PATTERN" value="gui.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <module name="untitled2" />
+      <option name="MAIN_CLASS_NAME" value="gui.ComboBoxDemo2" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="core" />
-      <option name="MAIN_CLASS_NAME" value="core.EngineTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
+      <module name="untitled2" />
       <envs />
-      <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="EngineTest.test10" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="ComboBoxTest2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="core.*" />
+          <option name="PATTERN" value="gui.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <module name="untitled2" />
+      <option name="MAIN_CLASS_NAME" value="gui.ComboBoxTest2" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="core" />
-      <option name="MAIN_CLASS_NAME" value="core.EngineTest" />
-      <option name="METHOD_NAME" value="test10" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
+      <module name="untitled2" />
       <envs />
-      <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="EngineTest.test11" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="core.*" />
+          <option name="PATTERN" value="gui.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <module name="untitled2" />
+      <option name="MAIN_CLASS_NAME" value="gui.test" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="core" />
-      <option name="MAIN_CLASS_NAME" value="core.EngineTest" />
-      <option name="METHOD_NAME" value="test11" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
+      <module name="untitled2" />
       <envs />
-      <patterns />
       <method />
     </configuration>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
@@ -719,19 +784,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.EngineTest.test2" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.EngineTest.wurzelTest5" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.EngineTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.EngineTest.test10" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.EngineTest.test11" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.EngineTest.testplusminus" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Console" />
+      <item index="2" class="java.lang.String" itemvalue="Application.ComboBoxDemo2" />
+      <item index="3" class="java.lang.String" itemvalue="Application.ComboBoxTest2" />
+      <item index="4" class="java.lang.String" itemvalue="Application.test" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.EngineTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.EngineTest.test11" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.EngineTest.test10" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.EngineTest.wurzelTest5" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.EngineTest.test2" />
+        <item index="0" class="java.lang.String" itemvalue="Application.test" />
+        <item index="1" class="java.lang.String" itemvalue="Application.ComboBoxDemo2" />
+        <item index="2" class="java.lang.String" itemvalue="Application.ComboBoxTest2" />
+        <item index="3" class="java.lang.String" itemvalue="Application.Console" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.EngineTest.testplusminus" />
       </list>
     </recent_temporary>
   </component>
@@ -809,7 +874,14 @@
       <option name="project" value="LOCAL" />
       <updated>1499293428914</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="evaluated = true">
+      <created>1499297865151</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1499297865151</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -819,11 +891,8 @@
     <history-entry file="EngineTest - 2017.07.06 at 01h 37m 11s.xml">
       <configuration name="EngineTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EngineTest_test11 - 2017.07.06 at 01h 04m 10s.xml">
-      <configuration name="EngineTest.test11" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="EngineTest_test11 - 2017.07.06 at 01h 10m 56s.xml">
-      <configuration name="EngineTest.test11" configurationId="JUnit" />
+    <history-entry file="EngineTest - 2017.07.06 at 02h 19m 58s.xml">
+      <configuration name="EngineTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="EngineTest_test11 - 2017.07.06 at 01h 12m 00s.xml">
       <configuration name="EngineTest.test11" configurationId="JUnit" />
@@ -843,6 +912,9 @@
     <history-entry file="EngineTest_test11 - 2017.07.06 at 01h 20m 16s.xml">
       <configuration name="EngineTest.test11" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="EngineTest_testplusminus - 2017.07.06 at 02h 48m 51s.xml">
+      <configuration name="EngineTest.testplusminus" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
@@ -860,17 +932,17 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36307693" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3624318" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3271795" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3265306" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32735777" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25019485" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289166" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16414945" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16693164" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="SonarLint" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -957,7 +1029,8 @@
     <MESSAGE value="finished?" />
     <MESSAGE value="merging master" />
     <MESSAGE value="new classes for first and second grade equations and substitution" />
-    <option name="LAST_COMMIT_MESSAGE" value="new classes for first and second grade equations and substitution" />
+    <MESSAGE value="evaluated = true" />
+    <option name="LAST_COMMIT_MESSAGE" value="evaluated = true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -982,36 +1055,24 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/../untitled2/src/core/Engine.java</url>
-          <line>57</line>
+          <line>106</line>
           <properties />
           <option name="timeStamp" value="342" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/../untitled2/src/core/Engine.java</url>
-          <line>48</line>
+          <line>84</line>
           <properties />
-          <option name="timeStamp" value="437" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../untitled2/src/evaluator/PLUSMINUS.java</url>
-          <line>16</line>
-          <properties />
-          <option name="timeStamp" value="449" />
+          <option name="timeStamp" value="467" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/../untitled2/src/evaluator/SOLVEFORVARIABEL.java</url>
-          <line>261</line>
+          <line>254</line>
           <properties />
-          <option name="timeStamp" value="450" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../untitled2/src/evaluator/SOLVEFORVARIABEL.java</url>
-          <line>266</line>
-          <properties />
-          <option name="timeStamp" value="451" />
+          <option name="timeStamp" value="470" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="452" />
+      <option name="time" value="477" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
@@ -1024,80 +1085,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/runners/ParentRunner.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="174" column="0" lean-forward="false" selection-start-line="174" selection-start-column="0" selection-end-line="174" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../untitled2/src/struct/Sub.java" />
-    <entry file="file://$PROJECT_DIR$/../untitled2/src/core/testKlasse.java" />
-    <entry file="file://$PROJECT_DIR$/../untitled2/src/evaluator/FACTOR.java" />
-    <entry file="file://$PROJECT_DIR$/../untitled2/src/evaluator/FACTORIAL.java" />
-    <entry file="file://$PROJECT_DIR$/../untitled2/src/exception/DimensionException.java" />
-    <entry file="file://$PROJECT_DIR$/../untitled2/src/exception/SyntaxException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../untitled2/src/exception/WrongParametersException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="23" lean-forward="false" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../untitled2/src/evaluator/SIMPLIFY.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="61" column="14" lean-forward="false" selection-start-line="61" selection-start-column="14" selection-end-line="61" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../untitled2/src/gui/Console.java" />
-    <entry file="file://$PROJECT_DIR$/../untitled2/untitled2.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="9" lean-forward="true" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../untitled2/src/evaluator/DEPTH.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="17" column="2" lean-forward="false" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../untitled2/src/evaluator/MULTIPLY.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1173">
-          <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../untitled2/src/exception/ArithmeticException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="54" lean-forward="false" selection-start-line="3" selection-start-column="54" selection-end-line="3" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../untitled2/src/exception/IndeterminateException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -1118,6 +1105,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="901">
           <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1136,29 +1124,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="20" column="59" lean-forward="true" selection-start-line="20" selection-start-column="59" selection-end-line="20" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../untitled2/src/struct/Integer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-788">
-          <caret line="96" column="6" lean-forward="false" selection-start-line="96" selection-start-column="6" selection-end-line="96" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../untitled2/src/core/Parser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../untitled2/src/evaluator/extend/NParamFunctionEvaluator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1174,13 +1139,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="14" column="50" lean-forward="false" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../untitled2/src/evaluator/extend/FunctionEvaluator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="6" column="32" lean-forward="false" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1188,6 +1147,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1195,13 +1155,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../untitled2/src/evaluator/extend/OneParamFunctionEvaluator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="19" column="59" lean-forward="false" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="59" />
         </state>
       </provider>
     </entry>
@@ -1232,6 +1185,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1246,191 +1200,310 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../untitled2/src/evaluator/FirstGradEquation.java" />
-    <entry file="file://$PROJECT_DIR$/../untitled2/src/evaluator/extend/ConstantEvaluator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../untitled2/src/evaluator/extend/Addends.java" />
     <entry file="file://$PROJECT_DIR$/../untitled2/src/evaluator/Substitution.java" />
     <entry file="file://$PROJECT_DIR$/../untitled2/src/evaluator/SecondGradeEquation.java" />
-    <entry file="file://$PROJECT_DIR$/../untitled2/src/core/CALC.java">
+    <entry file="file://$PROJECT_DIR$/../untitled2/src/struct/MathDouble.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="211" column="0" lean-forward="false" selection-start-line="211" selection-start-column="0" selection-end-line="211" selection-end-column="0" />
-          <folding>
-            <marker date="1499297023241" expanded="true" signature="4842:4899" ph="/**...*/" />
-            <marker date="1499297023241" expanded="true" signature="5175:5292" ph="/**...*/" />
-            <marker date="1499297023241" expanded="false" signature="5364:5384" ph="&lt;~&gt;" />
-            <marker date="1499297023241" expanded="false" signature="5456:5878" ph="{...}" />
-            <marker date="1499297023241" expanded="false" signature="5948:6388" ph="{...}" />
-            <marker date="1499297023241" expanded="false" signature="6459:6896" ph="{...}" />
-            <marker date="1499297023241" expanded="false" signature="6975:7230" ph="{...}" />
-            <marker date="1499297023241" expanded="false" signature="7295:7518" ph="{...}" />
-            <marker date="1499297023241" expanded="true" signature="7528:7585" ph="/**...*/" />
-            <marker date="1499297023241" expanded="true" signature="7646:8971" ph="{...}" />
-            <marker date="1499297023241" expanded="true" signature="8405:8550" ph="//..." />
-            <marker date="1499297023241" expanded="true" signature="8981:9008" ph="/**...*/" />
-            <marker date="1499297023241" expanded="true" signature="9866:9901" ph="{...}" />
-            <marker date="1499297023241" expanded="false" signature="9959:9974" ph=" { " />
-            <marker date="1499297023241" expanded="false" signature="10015:10025" ph=" }" />
-            <marker date="1499297023241" expanded="false" signature="10078:10093" ph=" { " />
-            <marker date="1499297023241" expanded="false" signature="10132:10142" ph=" }" />
-          </folding>
+        <state relative-caret-position="136">
+          <caret line="14" column="56" lean-forward="false" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../untitled2/src/core/Copy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="68" lean-forward="false" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../untitled2/src/struct/Function.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="980">
-          <caret line="181" column="0" lean-forward="false" selection-start-line="181" selection-start-column="0" selection-end-line="181" selection-end-column="0" />
+        <state relative-caret-position="68">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="32" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../untitled2/src/struct/Set.java">
+    <entry file="file://$PROJECT_DIR$/../untitled2/src/core/Parser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="63" column="22" lean-forward="false" selection-start-line="63" selection-start-column="12" selection-end-line="63" selection-end-column="22" />
-          <folding>
-            <element signature="method#toString#0;class#Set#0" expanded="false" />
-            <element signature="method#cloneSolutionset#0;class#Set#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="1022">
+          <caret line="473" column="26" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="480" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../untitled2/src/evaluator/extend/TwoParamFunctionEvaluator.java">
+    <entry file="file://$PROJECT_DIR$/../untitled2/src/evaluator/extend/NParamFunctionEvaluator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        <state relative-caret-position="663">
+          <caret line="43" column="42" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../untitled2/src/struct/Symbol.java">
+    <entry file="file://$PROJECT_DIR$/../untitled2/src/evaluator/extend/FunctionEvaluator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1261">
-          <caret line="211" column="0" lean-forward="false" selection-start-line="211" selection-start-column="0" selection-end-line="211" selection-end-column="0" />
+        <state relative-caret-position="85">
+          <caret line="6" column="32" lean-forward="false" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../untitled2/src/evaluator/extend/ConstantEvaluator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../untitled2/src/struct/MathInteger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1003">
+          <caret line="96" column="6" lean-forward="false" selection-start-line="96" selection-start-column="6" selection-end-line="96" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../untitled2/src/evaluator/extend/OneParamFunctionEvaluator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../untitled2/src/evaluator/PLUSMINUS.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <marker date="1499297776340" expanded="true" signature="621:628" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../untitled2/src/core/Engine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="972">
-          <caret line="92" column="34" lean-forward="false" selection-start-line="92" selection-start-column="34" selection-end-line="92" selection-end-column="34" />
+        <state relative-caret-position="204">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../untitled2/src/evaluator/SOLVEFORVARIABEL.java">
+    <entry file="file://$PROJECT_DIR$/../untitled2/src/gui/ComboBoxTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1692">
-          <caret line="243" column="0" lean-forward="false" selection-start-line="243" selection-start-column="0" selection-end-line="243" selection-end-column="0" />
+        <state relative-caret-position="85">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../untitled2/src/gui/ComboBoxTest.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../untitled2/out/production/untitled2/gui/Console.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1499297023292" expanded="false" signature="8800:11617" ph="{...}" />
-            <marker date="1499297023292" expanded="false" signature="8898:8903" ph=" { " />
-            <marker date="1499297023292" expanded="false" signature="8914:8918" ph=" }" />
-            <marker date="1499297023292" expanded="true" signature="8957:9185" ph="{...}" />
-            <marker date="1499297023292" expanded="true" signature="9247:9340" ph="{...}" />
-            <marker date="1499297023292" expanded="false" signature="9374:9379" ph=" { " />
-            <marker date="1499297023292" expanded="false" signature="9394:9398" ph=" }" />
-            <marker date="1499297023292" expanded="false" signature="9425:10967" ph="{...}" />
-            <marker date="1499297023292" expanded="false" signature="11007:11012" ph=" { " />
-            <marker date="1499297023292" expanded="false" signature="11039:11043" ph=" }" />
-            <marker date="1499297023292" expanded="false" signature="11090:11096" ph=" { " />
-            <marker date="1499297023292" expanded="false" signature="11145:11149" ph=" }" />
-            <marker date="1499297023292" expanded="true" signature="11190:11299" ph="{...}" />
-            <marker date="1499297023292" expanded="true" signature="11349:11614" ph="{...}" />
+            <element signature="e#0#5485#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../untitled2/src/struct/Double.java">
+    <entry file="file://$PROJECT_DIR$/../untitled2/out/production/untitled2/gui/ComboBoxTest.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="14" column="56" lean-forward="false" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1499297776341" expanded="false" signature="437:448" ph=" { " />
-            <marker date="1499297776341" expanded="false" signature="477:483" ph=" }" />
-            <marker date="1499297776341" expanded="false" signature="528:1452" ph="{...}" />
-            <marker date="1499297776341" expanded="false" signature="1489:2943" ph="{...}" />
-            <marker date="1499297776341" expanded="false" signature="2979:2990" ph=" { " />
-            <marker date="1499297776341" expanded="false" signature="3041:3047" ph=" }" />
-            <marker date="1499297776341" expanded="false" signature="3089:3100" ph=" { " />
-            <marker date="1499297776341" expanded="false" signature="3156:3162" ph=" }" />
-            <marker date="1499297776341" expanded="false" signature="3196:3524" ph="{...}" />
-            <marker date="1499297776341" expanded="false" signature="3565:3576" ph=" { " />
-            <marker date="1499297776341" expanded="false" signature="3589:3595" ph=" }" />
-            <marker date="1499297776341" expanded="false" signature="3644:4770" ph="{...}" />
-            <marker date="1499297776341" expanded="false" signature="4815:5078" ph="{...}" />
-            <marker date="1499297776341" expanded="false" signature="5142:5849" ph="{...}" />
-            <marker date="1499297776341" expanded="false" signature="5995:6006" ph=" { " />
-            <marker date="1499297776341" expanded="false" signature="6049:6055" ph=" }" />
-            <marker date="1499297776341" expanded="false" signature="6096:6107" ph=" { " />
-            <marker date="1499297776341" expanded="false" signature="6133:6139" ph=" }" />
-            <marker date="1499297776341" expanded="false" signature="6180:6191" ph=" { " />
-            <marker date="1499297776341" expanded="false" signature="6217:6223" ph=" }" />
-            <marker date="1499297776341" expanded="false" signature="6251:6262" ph=" { " />
-            <marker date="1499297776341" expanded="false" signature="6275:6281" ph=" }" />
-            <marker date="1499297776341" expanded="false" signature="6326:6337" ph=" { " />
-            <marker date="1499297776341" expanded="false" signature="6356:6362" ph=" }" />
-            <marker date="1499297776341" expanded="false" signature="6400:7220" ph="{...}" />
-            <marker date="1499297776341" expanded="false" signature="7263:8176" ph="{...}" />
-            <marker date="1499297776341" expanded="false" signature="8217:9067" ph="{...}" />
-            <marker date="1499297776341" expanded="false" signature="9147:9414" ph="{...}" />
-            <marker date="1499297776341" expanded="false" signature="9671:9682" ph=" { " />
-            <marker date="1499297776341" expanded="false" signature="9742:9748" ph=" }" />
-            <marker date="1499297776341" expanded="false" signature="9796:9807" ph=" { " />
-            <marker date="1499297776341" expanded="false" signature="9845:9851" ph=" }" />
-            <marker date="1499297776341" expanded="false" signature="9885:10034" ph="{...}" />
-            <marker date="1499297776341" expanded="false" signature="10063:10434" ph="{...}" />
-            <marker date="1499297776341" expanded="false" signature="10467:10629" ph="{...}" />
-            <marker date="1499297776341" expanded="false" signature="10662:10673" ph=" { " />
-            <marker date="1499297776341" expanded="false" signature="10721:10727" ph=" }" />
-            <marker date="1499297776341" expanded="false" signature="10784:12617" ph="{...}" />
-            <marker date="1499297776341" expanded="false" signature="12662:12673" ph=" { " />
-            <marker date="1499297776341" expanded="false" signature="12687:12693" ph=" }" />
-            <marker date="1499297776341" expanded="false" signature="12739:12750" ph=" { " />
-            <marker date="1499297776341" expanded="false" signature="12800:12806" ph=" }" />
+            <element signature="e#0#214#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../untitled2/out/production/untitled2/gui/ComboBoxDemo2.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="98" column="5" lean-forward="false" selection-start-line="98" selection-start-column="5" selection-end-line="98" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#3683#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../untitled2/out/production/untitled2/gui/ComboBoxTest2.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="31" lean-forward="false" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#1562#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../untitled2/src/test/core/EngineTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state relative-caret-position="799">
+          <caret line="87" column="28" lean-forward="false" selection-start-line="87" selection-start-column="28" selection-end-line="87" selection-end-column="28" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../untitled2/src/gui/ComboBoxTest2.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../untitled2/src/gui/ComboBoxTest2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="85" column="0" lean-forward="false" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../untitled2/src/gui/ScrollPanelField.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../untitled2/src/gui/ScrollPanelField.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../untitled2/src/gui/textField.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="41" lean-forward="false" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../untitled2/src/gui/ComboBoxDemo2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="48" column="8" lean-forward="false" selection-start-line="48" selection-start-column="8" selection-end-line="58" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#reformat#0;class#ComboBoxDemo2#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../untitled2/src/gui/Console.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="803">
+          <caret line="87" column="15" lean-forward="false" selection-start-line="87" selection-start-column="8" selection-end-line="87" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="class#consoleOutputStream#0;class#Console#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../untitled2/src/core/Engine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="72" column="17" lean-forward="true" selection-start-line="72" selection-start-column="17" selection-end-line="72" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../untitled2/src/gui/test.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../untitled2/src/gui/test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="87" column="0" lean-forward="true" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
+          <folding>
+            <element signature="e#875#876#0" expanded="true" />
+            <element signature="e#913#914#0" expanded="true" />
+            <element signature="e#1059#1187#0" expanded="true" />
+            <element signature="e#1186#1187#0" expanded="true" />
+            <element signature="e#1349#1350#0" expanded="true" />
+            <element signature="e#1391#1392#0" expanded="true" />
+            <element signature="method#$$$setupUI$$$#0;class#test#0" expanded="true" />
+            <element signature="e#9174#9175#0" expanded="true" />
+            <element signature="e#9208#9209#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../untitled2/src/struct/MathSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+          <folding>
+            <element signature="e#337#349#0" expanded="true" />
+            <element signature="method#MathSet#1;class#MathSet#0" expanded="false" />
+            <element signature="method#add#0;class#MathSet#0" expanded="false" />
+            <element signature="method#addAll#0;class#MathSet#0" expanded="false" />
+            <element signature="method#toString#0;class#MathSet#0" expanded="false" />
+            <element signature="method#isSameSolution#0;class#MathSet#0" expanded="false" />
+            <element signature="method#cloneSolutionset#0;class#MathSet#0" expanded="false" />
+            <element signature="method#cloneMathObject#0;class#MathSet#0" expanded="false" />
+            <element signature="method#containsSet#0;class#MathSet#0" expanded="false" />
+            <element signature="method#containsSet#1;class#MathSet#0" expanded="false" />
+            <element signature="method#equals#0;class#MathSet#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../untitled2/src/evaluator/SOLVEFORVARIABEL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="631">
+          <caret line="254" column="0" lean-forward="false" selection-start-line="254" selection-start-column="0" selection-end-line="254" selection-end-column="0" />
+          <folding>
+            <element signature="class#Addends#0;class#SOLVEFORVARIABEL#0" expanded="false" />
+            <element signature="method#defineSum#0;class#Addends#0;class#SOLVEFORVARIABEL#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../untitled2/src/evaluator/POWER.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="69" column="41" lean-forward="false" selection-start-line="69" selection-start-column="41" selection-end-line="69" selection-end-column="41" />
+        <state relative-caret-position="595">
+          <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
           <folding>
-            <marker date="1499297819813" expanded="true" signature="300:307" ph="/**...*/" />
-            <marker date="1499297819813" expanded="false" signature="3625:4059" ph="{...}" />
+            <marker date="1499367604892" expanded="true" signature="308:315" ph="/**...*/" />
+            <marker date="1499367604892" expanded="false" signature="3707:4141" ph="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../untitled2/src/evaluator/extend/TwoParamFunctionEvaluator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../untitled2/src/struct/Symbol.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="193" column="0" lean-forward="false" selection-start-line="193" selection-start-column="0" selection-end-line="193" selection-end-column="0" />
+          <folding>
+            <element signature="e#2693#2694#0" expanded="true" />
+            <element signature="e#2737#2738#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../untitled2/src/core/CALC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="225" column="0" lean-forward="false" selection-start-line="225" selection-start-column="0" selection-end-line="225" selection-end-column="0" />
+          <folding>
+            <element signature="method#hasDefinedVariable#0;class#CALC#0" expanded="false" />
+            <element signature="method#getDefinedVariable#0;class#CALC#0" expanded="false" />
+            <element signature="method#getDefinedVariableKey#0;class#CALC#0" expanded="false" />
+            <element signature="method#setDefinedVariable#0;class#CALC#0" expanded="false" />
+            <element signature="method#isUpperCase#0;class#CALC#0" expanded="false" />
+            <marker date="1499300382059" expanded="true" signature="9951:9986" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../untitled2/src/struct/Function.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="313" column="0" lean-forward="false" selection-start-line="313" selection-start-column="0" selection-end-line="313" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

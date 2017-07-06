@@ -1,10 +1,7 @@
 package evaluator.extend;
 
-import core.CALC;
-import core.Copy;
 import struct.Function;
 import struct.MathObject;
-import struct.Set;
 import struct.Symbol;
 
 import java.io.Serializable;

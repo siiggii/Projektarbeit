@@ -4,8 +4,8 @@ import core.CALC;
 import evaluator.extend.FunctionEvaluator;
 import exception.WrongParametersException;
 import struct.*;
-import struct.Double;
-import struct.Integer;
+import struct.MathDouble;
+import struct.MathInteger;
 import struct.MathObject;
 
 import java.util.ArrayList;
@@ -49,20 +49,20 @@ public class EXPAND implements FunctionEvaluator {
             Function function = (Function) obj;
             MathObject firstObj = CALC.EVALUATE(function.get(0));
             MathObject secondObjTemp = CALC.EVALUATE(function.get(1));
-            Integer secondObj = null;
+            MathInteger secondObj = null;
             if (secondObjTemp.isNumber()) {
-                if (secondObjTemp instanceof Integer) {
-                    secondObj = (Integer) secondObjTemp;
+                if (secondObjTemp instanceof MathInteger) {
+                    secondObj = (MathInteger) secondObjTemp;
                 } else {
-                    Double temp = (Double) secondObjTemp;
+                    MathDouble temp = (MathDouble) secondObjTemp;
                     if (temp.isInteger()) {
                         //CalcDouble
-                        secondObj = new Integer(((Double) secondObjTemp).bigDecimalValue().toBigInteger());
+                        secondObj = new MathInteger(((MathDouble) secondObjTemp).bigDecimalValue().toBigInteger());
                     }
                 }
                 //System.out.println("This is a function in the power branch: " + function);
                 if (secondObj != null && firstObj instanceof Function) {//f(x)^k
-                    int pow = ((Integer) secondObj).intValue();
+                    int pow = ((MathInteger) secondObj).intValue();
                     boolean isPowNegative = pow < 0;
                     //System.out.println("WE ARE IN THE f(x)^k branch");
                     if (isPowNegative) {

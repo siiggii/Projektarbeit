@@ -13,29 +13,29 @@ import java.math.BigInteger;
  *  
  *
  */
-public class Integer implements MathObject, Serializable {
+public class MathInteger implements MathObject, Serializable {
 	private BigInteger value;
 	
-	public Integer(int in) {
+	public MathInteger(int in) {
 		value = BigInteger.valueOf(in);
 	}
 	
 	/**
 	 * Constructor
 	 */
-	public Integer(String intString, int radix) {
+	public MathInteger(String intString, int radix) {
 		value = new BigInteger(intString, radix);
 	}
 	
-	public Integer(String intString) {
+	public MathInteger(String intString) {
 		value = new BigInteger(intString, 10);
 	}
 	
-	public Integer(byte[] byteArrayIn) {
+	public MathInteger(byte[] byteArrayIn) {
 		value = new BigInteger(byteArrayIn);
 	}
 	
-	public Integer(BigInteger bigIntegerIn) {
+	public MathInteger(BigInteger bigIntegerIn) {
 		value = bigIntegerIn;
 	}
 
@@ -66,45 +66,45 @@ public class Integer implements MathObject, Serializable {
 		return (value.mod(CALC.TWO.bigIntegerValue()).equals(CALC.ZERO.bigIntegerValue()));
 	}
 	
-	public Integer negate() {
-		return new Integer(value.negate());
+	public MathInteger negate() {
+		return new MathInteger(value.negate());
 	}
 	
-	public Integer add(Integer input) {
-		return new Integer(value.add(input.bigIntegerValue()));
+	public MathInteger add(MathInteger input) {
+		return new MathInteger(value.add(input.bigIntegerValue()));
 	}
 	
-	public Integer multiply(Integer input) {
-		return new Integer(value.multiply(input.bigIntegerValue()));
+	public MathInteger multiply(MathInteger input) {
+		return new MathInteger(value.multiply(input.bigIntegerValue()));
 	}
 	
-	public Integer divide(Integer input) {
-		return new Integer(value.divide(input.bigIntegerValue()));
-	}
-	
-	/**
-	 *
-	 */
-	public Integer power(int n) {
-		return new Integer(value.pow(n));
-	}
-	
-	public Integer mod(Integer input) {
-		return new Integer(value.mod(input.bigIntegerValue()));
+	public MathInteger divide(MathInteger input) {
+		return new MathInteger(value.divide(input.bigIntegerValue()));
 	}
 	
 	/**
 	 *
 	 */
-	public Integer root(int n) {
+	public MathInteger power(int n) {
+		return new MathInteger(value.pow(n));
+	}
+	
+	public MathInteger mod(MathInteger input) {
+		return new MathInteger(value.mod(input.bigIntegerValue()));
+	}
+	
+	/**
+	 *
+	 */
+	public MathInteger root(int n) {
 		if (isNegative() && ((n % 2) == 0)) throw new ArithmeticException("Even root of a negative number.");
 		
 		int temp = n - 1;
-		Integer Temp = new Integer(temp);
-		Integer N = new Integer(n);
+		MathInteger Temp = new MathInteger(temp);
+		MathInteger N = new MathInteger(n);
 		
-		Integer A = this;
-		Integer B = this.add(Temp).divide(N);
+		MathInteger A = this;
+		MathInteger B = this.add(Temp).divide(N);
 		
 		while (B.compareTo(A) < 0) {
 			A = B;
@@ -115,12 +115,12 @@ public class Integer implements MathObject, Serializable {
 	}
 	
 	public boolean equals(java.lang.Object obj) {
-		if (obj instanceof Integer) {
-			return value.equals(((Integer)obj).bigIntegerValue());
+		if (obj instanceof MathInteger) {
+			return value.equals(((MathInteger)obj).bigIntegerValue());
 		}
-		else if (obj instanceof Double) {
-			if (value == null || !((Double)obj).isInteger()) return false;
-			else return value.intValue() == (int)((Double)obj).doubleValue();
+		else if (obj instanceof MathDouble) {
+			if (value == null || !((MathDouble)obj).isInteger()) return false;
+			else return value.intValue() == (int)((MathDouble)obj).doubleValue();
 		}
 		else return false;
 	}
@@ -148,14 +148,14 @@ public class Integer implements MathObject, Serializable {
 	@Override
 	public int compareTo(MathObject obj) {
 		if (obj.isNumber()) {
-			if (obj instanceof Integer) {
-				return value.compareTo(((Integer)obj).bigIntegerValue());
+			if (obj instanceof MathInteger) {
+				return value.compareTo(((MathInteger)obj).bigIntegerValue());
 			}
-			else if (obj instanceof Double) {
-				if ((double)value.intValue() < ((Double)obj).doubleValue()) {
+			else if (obj instanceof MathDouble) {
+				if ((double)value.intValue() < ((MathDouble)obj).doubleValue()) {
 					return -1;
 				}
-				else if ((double)value.intValue() > ((Double)obj).doubleValue()) {
+				else if ((double)value.intValue() > ((MathDouble)obj).doubleValue()) {
 					return 1;
 				}
 				else return 0;
@@ -189,7 +189,7 @@ public class Integer implements MathObject, Serializable {
 
 	@Override
 	public MathObject cloneMathObject() {
-		Integer clone = new Integer(value);
+		MathInteger clone = new MathInteger(value);
 
 		return clone;
 	}

@@ -2,8 +2,8 @@ package evaluator.extend;
 
 import core.CALC;
 import struct.*;
-import struct.Double;
-import struct.Integer;
+import struct.MathDouble;
+import struct.MathInteger;
 import struct.MathObject;
 
 import java.io.Serializable;
@@ -30,32 +30,32 @@ public abstract class TwoParamFunctionEvaluator implements FunctionEvaluator, Se
 		
 		if (returnVal != null) return returnVal;
 		
-		else if (parameter1 instanceof Integer) {
-			if (parameter2 instanceof Integer) {
-				return evaluateInteger((Integer)parameter1, (Integer)parameter2);
+		else if (parameter1 instanceof MathInteger) {
+			if (parameter2 instanceof MathInteger) {
+				return evaluateInteger((MathInteger)parameter1, (MathInteger)parameter2);
 			}
 			if (parameter2 instanceof Fraction) {
-				return evaluateFraction(new Fraction((Integer)parameter1, CALC.ONE), (Fraction)parameter2);
+				return evaluateFraction(new Fraction((MathInteger)parameter1, CALC.ONE), (Fraction)parameter2);
 			}
-			if (parameter2 instanceof Double) {
-				return evaluateDouble(new Double((Integer)parameter1), (Double)parameter2);
+			if (parameter2 instanceof MathDouble) {
+				return evaluateDouble(new MathDouble((MathInteger)parameter1), (MathDouble)parameter2);
 			}
 
 		}
 		else if (parameter1 instanceof Fraction) {
-			if (parameter2 instanceof Integer) {
-				return evaluateFraction((Fraction)parameter1, new Fraction((Integer)parameter2, CALC.ONE));
+			if (parameter2 instanceof MathInteger) {
+				return evaluateFraction((Fraction)parameter1, new Fraction((MathInteger)parameter2, CALC.ONE));
 			}
 			if (parameter2 instanceof Fraction) {
-				return evaluateFraction(new Fraction((Integer)parameter1, CALC.ONE), (Fraction)parameter2);
+				return evaluateFraction(new Fraction((MathInteger)parameter1, CALC.ONE), (Fraction)parameter2);
 			}
 		}
-		else if (parameter1 instanceof Double) {
-			if (parameter2 instanceof Double) {
-				return evaluateDouble((Double)parameter1, (Double)parameter2);
+		else if (parameter1 instanceof MathDouble) {
+			if (parameter2 instanceof MathDouble) {
+				return evaluateDouble((MathDouble)parameter1, (MathDouble)parameter2);
 			}
-			if (parameter2 instanceof Integer) {
-				return evaluateDouble((Double)parameter1, new Double((Integer)parameter2));
+			if (parameter2 instanceof MathInteger) {
+				return evaluateDouble((MathDouble)parameter1, new MathDouble((MathInteger)parameter2));
 			}
 
 		}
@@ -63,8 +63,8 @@ public abstract class TwoParamFunctionEvaluator implements FunctionEvaluator, Se
 			if (parameter2 instanceof Function) {
 				return evaluateFunction((Function)parameter1, (Function)parameter2);
 			}
-			if (parameter2 instanceof Integer) {
-				return evaluateFunctionAndInteger((Function)parameter1, (Integer)parameter2);
+			if (parameter2 instanceof MathInteger) {
+				return evaluateFunctionAndInteger((Function)parameter1, (MathInteger)parameter2);
 			}
 
 		}
@@ -81,12 +81,12 @@ public abstract class TwoParamFunctionEvaluator implements FunctionEvaluator, Se
 	}
 	
 	protected abstract MathObject evaluateObject(MathObject input1, MathObject input2);
-	protected abstract MathObject evaluateInteger(Integer input1, Integer input2);
-	protected abstract MathObject evaluateDouble(Double input1, Double input2);
+	protected abstract MathObject evaluateInteger(MathInteger input1, MathInteger input2);
+	protected abstract MathObject evaluateDouble(MathDouble input1, MathDouble input2);
 	protected abstract MathObject evaluateFraction(Fraction input1, Fraction input2);
 	protected abstract MathObject evaluateSymbol(Symbol input1, Symbol input2);
 	protected abstract MathObject evaluateFunction(Function input1, Function input2);
-	protected abstract MathObject evaluateFunctionAndInteger(Function input1, Integer input2);
+	protected abstract MathObject evaluateFunctionAndInteger(Function input1, MathInteger input2);
 	//will maybe make these abstract later. Right now we need a default implementation.
 
 

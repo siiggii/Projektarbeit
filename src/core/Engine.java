@@ -2,7 +2,7 @@ package core;
 
 import exception.SyntaxException;
 import struct.MathObject;
-import struct.Set;
+import struct.MathSet;
 
 import java.util.logging.Logger;
 
@@ -21,7 +21,19 @@ public final class Engine {
         parser = new Parser();
     }
 
+    public String execute(String input){
+        MathObject parsed = null;
+        try {
+            parsed = parser.parse(input);
+        } catch (SyntaxException e) {
+            e.printStackTrace();
+        }
 
+        CALC.toggleOperatorNotation();
+        MathObject mathMathObject = CALC.EVALUATE(parsed);
+        CALC.toggleOperatorNotation();
+        return mathMathObject.toString();
+    }
 
 
 
@@ -45,11 +57,48 @@ public final class Engine {
         MathObject input1 = executeIn(exercise);
 
         MathObject input2 = executeIn(userInput);
+        if(input1 instanceof MathSet && input2 instanceof MathSet){
+            if(((MathSet)input1).isSameSolution(input2)){
+                return true;
+            }
+            else{
+                return false;
+            }
 
-        if(((Set)input1).isSameSolution(input2)){
-            return true;
         }
-        return false;
+        else{
+            if(input1.equals(input2)){
+                return true;
+            }
+            else{
+                return false;
+            }
+        }
+
+    }
+    public static boolean compareSolutions2(String exercise, String userInput){
+        boolean trueFalse = false;
+        Engine engine = new Engine();
+        MathObject input1 = engine.executeIn(exercise);
+        Engine engine1 = new Engine();
+        MathObject input2 = engine1.executeIn(userInput);
+        if(input1 instanceof MathSet && input2 instanceof MathSet){
+            if(((MathSet)input1).isSameSolution(input2)){
+                return true;
+            }
+            else{
+                return false;
+            }
+
+        }
+        else{
+            if(input1.equals(input2)){
+                return true;
+            }
+            else{
+                return false;
+            }
+        }
     }
 
     public String solution(String exercise){

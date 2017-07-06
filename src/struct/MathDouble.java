@@ -12,18 +12,18 @@ import java.math.RoundingMode;
  * @see BigDecimal
  *
  */
-public class Double implements MathObject, Serializable{
+public class MathDouble implements MathObject, Serializable{
 
     private BigDecimal value;
     private boolean isPositiveInfinity = false;
     private boolean isNegativeInfinity = false;
     private boolean isNaN = false;
 
-    public Double() {
+    public MathDouble() {
         value = new BigDecimal(0.0d);
     }
 
-    public Double(BigDecimal bigDecimalIn) {
+    public MathDouble(BigDecimal bigDecimalIn) {
         //value = bigDecimalIn;
         if (CALC.fix_rounding_errors) {
             BigDecimal temp = bigDecimalIn;
@@ -43,7 +43,7 @@ public class Double implements MathObject, Serializable{
         }
     }
 
-    public Double(double doubleIn) {
+    public MathDouble(double doubleIn) {
         if (!java.lang.Double.isNaN(doubleIn) && !java.lang.Double.isInfinite(doubleIn)) {
             if (CALC.fix_rounding_errors) {
                 BigDecimal temp = new BigDecimal(doubleIn, CALC.mathcontext);
@@ -75,12 +75,12 @@ public class Double implements MathObject, Serializable{
         }
     }
 
-    public Double(String stringIn) {
+    public MathDouble(String stringIn) {
         value = new BigDecimal(stringIn, CALC.mathcontext);
     }
 
-    public Double(Integer calcIntegerIn) {
-        value = new BigDecimal(calcIntegerIn.bigIntegerValue());
+    public MathDouble(MathInteger calcMathIntegerIn) {
+        value = new BigDecimal(calcMathIntegerIn.bigIntegerValue());
     }
 
     public double doubleValue() {
@@ -140,22 +140,22 @@ public class Double implements MathObject, Serializable{
 
     @Override
     public boolean equals(java.lang.Object obj) {
-        if (obj instanceof Double) {
+        if (obj instanceof MathDouble) {
             if (isPositiveInfinity) {
-                return ((Double) obj).isPositiveInfinity();
+                return ((MathDouble) obj).isPositiveInfinity();
             }
             if (isNegativeInfinity) {
-                return ((Double) obj).isNegativeInfinity();
+                return ((MathDouble) obj).isNegativeInfinity();
             }
             if (isNaN) {
-                return ((Double) obj).isNaN();
+                return ((MathDouble) obj).isNaN();
             }
-            return value.doubleValue() == (((Double) obj).doubleValue());
-        } else if (obj instanceof Integer) {
+            return value.doubleValue() == (((MathDouble) obj).doubleValue());
+        } else if (obj instanceof MathInteger) {
             if (value == null) {
                 return false;
             } else {
-                return value.doubleValue() == (double) ((Integer) obj).intValue();
+                return value.doubleValue() == (double) ((MathInteger) obj).intValue();
             }
         } else {
             return false;
@@ -189,67 +189,67 @@ public class Double implements MathObject, Serializable{
         return CALC.DOUBLE;
     }
 
-    public Double add(Double input) {
+    public MathDouble add(MathDouble input) {
         if (isNaN || input.isNaN()) {
-            return new Double(java.lang.Double.NaN);
+            return new MathDouble(java.lang.Double.NaN);
         } else if (isPositiveInfinity) {
-            return input.isNegativeInfinity() ? new Double(0.0D) : new Double(java.lang.Double.POSITIVE_INFINITY);
+            return input.isNegativeInfinity() ? new MathDouble(0.0D) : new MathDouble(java.lang.Double.POSITIVE_INFINITY);
         } else if (isNegativeInfinity) {
-            return input.isPositiveInfinity() ? new Double(0.0D) : new Double(java.lang.Double.NEGATIVE_INFINITY);
+            return input.isPositiveInfinity() ? new MathDouble(0.0D) : new MathDouble(java.lang.Double.NEGATIVE_INFINITY);
         } else if (input.isPositiveInfinity()) {
-            return isNegativeInfinity() ? new Double(0.0D) : new Double(java.lang.Double.POSITIVE_INFINITY);
+            return isNegativeInfinity() ? new MathDouble(0.0D) : new MathDouble(java.lang.Double.POSITIVE_INFINITY);
         } else if (input.isNegativeInfinity()) {
-            return isPositiveInfinity() ? new Double(0.0D) : new Double(java.lang.Double.NEGATIVE_INFINITY);
+            return isPositiveInfinity() ? new MathDouble(0.0D) : new MathDouble(java.lang.Double.NEGATIVE_INFINITY);
         } else {
-            return new Double(value.add(input.bigDecimalValue()));
+            return new MathDouble(value.add(input.bigDecimalValue()));
         }
     }
 
-    public Double multiply(Double input) {
+    public MathDouble multiply(MathDouble input) {
         if (isNaN || input.isNaN()) {
-            return new Double(java.lang.Double.NaN);
+            return new MathDouble(java.lang.Double.NaN);
         } else if (isPositiveInfinity) {
-            return input.isNegative() ? new Double(java.lang.Double.NEGATIVE_INFINITY) : new Double(java.lang.Double.POSITIVE_INFINITY);
+            return input.isNegative() ? new MathDouble(java.lang.Double.NEGATIVE_INFINITY) : new MathDouble(java.lang.Double.POSITIVE_INFINITY);
         } else if (isNegativeInfinity) {
-            return input.isNegative() ? new Double(java.lang.Double.POSITIVE_INFINITY) : new Double(java.lang.Double.NEGATIVE_INFINITY);
+            return input.isNegative() ? new MathDouble(java.lang.Double.POSITIVE_INFINITY) : new MathDouble(java.lang.Double.NEGATIVE_INFINITY);
         } else if (input.isPositiveInfinity()) {
-            return isNegative() ? new Double(java.lang.Double.NEGATIVE_INFINITY) : new Double(java.lang.Double.POSITIVE_INFINITY);
+            return isNegative() ? new MathDouble(java.lang.Double.NEGATIVE_INFINITY) : new MathDouble(java.lang.Double.POSITIVE_INFINITY);
         } else if (input.isNegativeInfinity()) {
-            return isNegative() ? new Double(java.lang.Double.POSITIVE_INFINITY) : new Double(java.lang.Double.NEGATIVE_INFINITY);
+            return isNegative() ? new MathDouble(java.lang.Double.POSITIVE_INFINITY) : new MathDouble(java.lang.Double.NEGATIVE_INFINITY);
         } else {
-            return new Double(value.multiply(input.bigDecimalValue()));
+            return new MathDouble(value.multiply(input.bigDecimalValue()));
         }
     }
 
-    public Double divide(Double input) {
+    public MathDouble divide(MathDouble input) {
         if (isNaN || input.isNaN()) {
-            return new Double(java.lang.Double.NaN);
+            return new MathDouble(java.lang.Double.NaN);
         } else if (isPositiveInfinity) {
             if (input.isPositiveInfinity()) {
-                return new Double(1.0D);
+                return new MathDouble(1.0D);
             } else if (input.isNegativeInfinity()) {
-                return new Double(-1.0D);
+                return new MathDouble(-1.0D);
             } else {
-                return new Double(java.lang.Double.POSITIVE_INFINITY);
+                return new MathDouble(java.lang.Double.POSITIVE_INFINITY);
             }
         } else if (isNegativeInfinity) {
             if (input.isPositiveInfinity()) {
-                return new Double(-1.0D);
+                return new MathDouble(-1.0D);
             } else if (input.isNegativeInfinity()) {
-                return new Double(1.0D);
+                return new MathDouble(1.0D);
             } else {
-                return new Double(java.lang.Double.NEGATIVE_INFINITY);
+                return new MathDouble(java.lang.Double.NEGATIVE_INFINITY);
             }
         }
-        return new Double(value.divide(input.bigDecimalValue(), CALC.mathcontext));
+        return new MathDouble(value.divide(input.bigDecimalValue(), CALC.mathcontext));
     }
 
     //I DONT LIKE THIS... USING DOUBLES
-    public Double power(Double input) {
+    public MathDouble power(MathDouble input) {
         if (isNaN || input.isNaN()) {
-            return new Double(java.lang.Double.NaN);
+            return new MathDouble(java.lang.Double.NaN);
         } else {
-            return new Double(Math.pow(doubleValue(), input.doubleValue()));
+            return new MathDouble(Math.pow(doubleValue(), input.doubleValue()));
         }
         //value.pow(input.doubleValue(), core.CALC.mathcontext);
     }
@@ -262,11 +262,11 @@ public class Double implements MathObject, Serializable{
      }
 
      }*/
-    public Double mod(Double input) {
-        return new Double(value.remainder(input.bigDecimalValue()));
+    public MathDouble mod(MathDouble input) {
+        return new MathDouble(value.remainder(input.bigDecimalValue()));
     }
 
-    public boolean isDivisibleBy(Double input) {
+    public boolean isDivisibleBy(MathDouble input) {
         return mod(input).equals(CALC.D_ZERO);
     }
 
@@ -278,15 +278,15 @@ public class Double implements MathObject, Serializable{
         }
     }
 
-    public Double negate() {
+    public MathDouble negate() {
         if (isPositiveInfinity) {
-            return new Double(java.lang.Double.NEGATIVE_INFINITY);
+            return new MathDouble(java.lang.Double.NEGATIVE_INFINITY);
         } else if (isNegativeInfinity) {
-            return new Double(java.lang.Double.POSITIVE_INFINITY);
+            return new MathDouble(java.lang.Double.POSITIVE_INFINITY);
         } else if (isNaN) {
-            return new Double(java.lang.Double.NaN);
+            return new MathDouble(java.lang.Double.NaN);
         } else {
-            return new Double(value.negate());
+            return new MathDouble(value.negate());
         }
     }
 
@@ -308,39 +308,39 @@ public class Double implements MathObject, Serializable{
         }
 
         if (obj.isNumber()) {
-            if (obj instanceof Integer) {
+            if (obj instanceof MathInteger) {
                 if (isPositiveInfinity) {
                     return 1;
                 } else if (isNegativeInfinity) {
                     return -1;
-                } else if (value.doubleValue() < (double) ((Integer) obj).intValue()) {
+                } else if (value.doubleValue() < (double) ((MathInteger) obj).intValue()) {
                     return -1;
-                } else if (value.doubleValue() > (double) ((Integer) obj).intValue()) {
+                } else if (value.doubleValue() > (double) ((MathInteger) obj).intValue()) {
                     return 1;
                 } else {
                     return 0;
                 }
-            } else if (obj instanceof Double) {
+            } else if (obj instanceof MathDouble) {
                 if (isPositiveInfinity) {
-                    if (((Double) obj).isPositiveInfinity()) {
+                    if (((MathDouble) obj).isPositiveInfinity()) {
                         return 0;
-                    } else if (((Double) obj).isNegativeInfinity()) {
+                    } else if (((MathDouble) obj).isNegativeInfinity()) {
                         return 1;
                     } else {
                         return 1;
                     }
                 } else if (isNegativeInfinity) {
-                    if (((Double) obj).isPositiveInfinity()) {
+                    if (((MathDouble) obj).isPositiveInfinity()) {
                         return -1;
-                    } else if (((Double) obj).isNegativeInfinity()) {
+                    } else if (((MathDouble) obj).isNegativeInfinity()) {
                         return 0;
                     } else {
                         return -1;
                     }
-                } else if (isNaN || ((Double) obj).isNaN()) {
+                } else if (isNaN || ((MathDouble) obj).isNaN()) {
                     return 0;
                 } else {
-                    return value.compareTo(((Double) obj).bigDecimalValue());
+                    return value.compareTo(((MathDouble) obj).bigDecimalValue());
                 }
             } else {
                 throw new UnsupportedException(obj.toString());
@@ -368,7 +368,7 @@ public class Double implements MathObject, Serializable{
 
     @Override
     public MathObject cloneMathObject() {
-        Double clone = new Double(value);
+        MathDouble clone = new MathDouble(value);
 
         return clone;
     }

@@ -39,7 +39,7 @@ public class Fraction implements MathObject, Serializable {
 		denominator = deno;		
 	}
 	
-	public Fraction(Integer a, Integer b) {
+	public Fraction(MathInteger a, MathInteger b) {
 		this(a.bigIntegerValue(), b.bigIntegerValue());
 	}
 	
@@ -58,7 +58,7 @@ public class Fraction implements MathObject, Serializable {
 		return new Fraction(nume.divide(commonfactor), deno.divide(commonfactor));
 	}
 	
-	public MathObject multiply(Integer input) {
+	public MathObject multiply(MathInteger input) {
 		BigInteger nume = numerator.multiply(input.bigIntegerValue());
 		BigInteger commonfactor = nume.gcd(denominator);
 
@@ -115,7 +115,7 @@ public class Fraction implements MathObject, Serializable {
 	
 	@Override
 	public MathObject evaluate() throws Exception {
-		return new Double((new BigDecimal(numerator)).divide(new BigDecimal(denominator), CALC.mathcontext));
+		return new MathDouble((new BigDecimal(numerator)).divide(new BigDecimal(denominator), CALC.mathcontext));
 	}
 
 	public String toString() {

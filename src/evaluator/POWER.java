@@ -6,8 +6,8 @@ import evaluator.extend.OperatorEvaluator;
 import exception.ArithmeticException;
 import exception.IndeterminateException;
 import struct.*;
-import struct.Double;
-import struct.Integer;
+import struct.MathDouble;
+import struct.MathInteger;
 import struct.MathObject;
 
 /**
@@ -15,7 +15,7 @@ import struct.MathObject;
  */
 public class POWER extends TwoParamFunctionEvaluator implements OperatorEvaluator {
 
-	boolean evaluated = false;
+	//static boolean evaluated = false;
 	
 	@Override
 	protected MathObject evaluateObject(MathObject input1, MathObject input2) {
@@ -26,9 +26,9 @@ public class POWER extends TwoParamFunctionEvaluator implements OperatorEvaluato
 			if (input2.equals(CALC.ZERO)) {
 				throw new IndeterminateException("0^0");
 			}
-			if (input2 instanceof Integer &&
-				((Integer)input2).isNegative()) {
-				return new Double(java.lang.Double.POSITIVE_INFINITY);
+			if (input2 instanceof MathInteger &&
+				((MathInteger)input2).isNegative()) {
+				return new MathDouble(java.lang.Double.POSITIVE_INFINITY);
 			}
 			return CALC.ZERO;
 		}
@@ -45,7 +45,7 @@ public class POWER extends TwoParamFunctionEvaluator implements OperatorEvaluato
 			Function function1 = (Function)input1;
 			
 			if (function1.size() == 2 && function1.get(1).isNumber()) {
-				if(((Double) input2).doubleValue() < 1&&((Double) input2).doubleValue() > -1 ){
+				if(((MathDouble) input2).doubleValue() < 1&&((MathDouble) input2).doubleValue() > -1 ){
 					return CALC.PLUSMINUS.createFunction(CALC.POWER.createFunction(function1.get(0), CALC.MULTIPLY.createFunction(function1.get(1), input2)));
 				}
 				return CALC.POWER.createFunction(function1.get(0), CALC.MULTIPLY.createFunction(function1.get(1), input2));
@@ -63,13 +63,13 @@ public class POWER extends TwoParamFunctionEvaluator implements OperatorEvaluato
 			}
 		}
 		//debug
-		if(input2 instanceof  Double){
-			if(((Double)input2).doubleValue() < 1&&((Double)input2).doubleValue() > -1){
-				if(!(input1 instanceof Double)) {
-					if (!evaluated) {
-						evaluated = true;
-						return new Set(CALC.SOLUTIONSET, CALC.POWER.createFunction(input1, input2), CALC.POWER.createFunction(CALC.MULTIPLY.createFunction(CALC.D_NEG_ONE, input1), input2));
-					}
+		if(input2 instanceof MathDouble){
+			if(((MathDouble)input2).doubleValue() < 1&&((MathDouble)input2).doubleValue() > -1){
+				if(!(input1 instanceof MathDouble)) {
+					//if (!evaluated) {
+					//	evaluated = true;
+						return new MathSet(CALC.SET, CALC.POWER.createFunction(input1, input2), CALC.POWER.createFunction(CALC.MULTIPLY.createFunction(CALC.D_NEG_ONE, input1), input2));
+					//}
 					//return  new Function(CALC.PLUSMINUS,CALC.POWER.createFunction(input1,input2));
 				}
 			}
@@ -78,7 +78,7 @@ public class POWER extends TwoParamFunctionEvaluator implements OperatorEvaluato
 	}
 
 	@Override
-	protected MathObject evaluateDouble(Double input1, Double input2) {
+	protected MathObject evaluateDouble(MathDouble input1, MathDouble input2) {
 		if(input2.doubleValue() < 1){
 			if(input1.doubleValue() < 0){
 				return new Function(CALC.POWER,input1,input2);
@@ -100,9 +100,9 @@ public class POWER extends TwoParamFunctionEvaluator implements OperatorEvaluato
 		}
 		if (input1.getDenominator().equals(CALC.ONE) && input2.getNumerator().equals(CALC.ONE)) {
 			boolean negative = false;
-			Integer nume1 = new Integer(input1.getNumerator());
-			Integer denom2 = new Integer(input2.getDenominator());
-			Integer result;
+			MathInteger nume1 = new MathInteger(input1.getNumerator());
+			MathInteger denom2 = new MathInteger(input2.getDenominator());
+			MathInteger result;
 			
 			if (denom2.isNegative()) return null;
 			
@@ -149,12 +149,12 @@ public class POWER extends TwoParamFunctionEvaluator implements OperatorEvaluato
 	}
 
 	@Override
-	protected MathObject evaluateFunctionAndInteger(Function input1, Integer input2) {
+	protected MathObject evaluateFunctionAndInteger(Function input1, MathInteger input2) {
 		return CALC.POWER.createFunction(input1, input2);
 	}
 
 	@Override
-	protected MathObject evaluateInteger(Integer input1, Integer input2) {
+	protected MathObject evaluateInteger(MathInteger input1, MathInteger input2) {
 		if (input1.equals(CALC.ZERO)) return null;
 		if (input2.isNegative()) {
 			return new Fraction(CALC.ONE, input1.power(input2.negate().intValue()));

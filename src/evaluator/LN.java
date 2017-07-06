@@ -6,8 +6,8 @@ package evaluator;
 import core.CALC;
 import evaluator.extend.OneParamFunctionEvaluator;
 import struct.*;
-import struct.Double;
-import struct.Integer;
+import struct.MathDouble;
+import struct.MathInteger;
 import struct.MathObject;
 
 /**
@@ -19,9 +19,9 @@ public class LN extends OneParamFunctionEvaluator {
 	
 	@Override
 	protected MathObject evaluateObject(MathObject input) {
-		Double E = null;
+		MathDouble E = null;
 		try {
-			E = (Double) CALC.E.evaluate();
+			E = (MathDouble) CALC.E.evaluate();
 		}
 		catch (Exception e) {
 			e.printStackTrace();
@@ -39,8 +39,8 @@ public class LN extends OneParamFunctionEvaluator {
 	}
 	
 	@Override
-	protected MathObject evaluateDouble(Double input) {
-		return new Double(Math.log(input.doubleValue()));
+	protected MathObject evaluateDouble(MathDouble input) {
+		return new MathDouble(Math.log(input.doubleValue()));
 	}
 
 	@Override
@@ -56,8 +56,8 @@ public class LN extends OneParamFunctionEvaluator {
 	}
 
 	@Override
-	protected MathObject evaluateInteger(Integer input) {
-		return new Double(Math.log(input.bigIntegerValue().intValue()));
+	protected MathObject evaluateInteger(MathInteger input) {
+		return new MathDouble(Math.log(input.bigIntegerValue().intValue()));
 	}
 
 	

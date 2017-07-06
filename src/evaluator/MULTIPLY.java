@@ -4,8 +4,8 @@ import core.CALC;
 import evaluator.extend.NParamFunctionEvaluator;
 import evaluator.extend.OperatorEvaluator;
 import struct.*;
-import struct.Double;
-import struct.Integer;
+import struct.MathDouble;
+import struct.MathInteger;
 import struct.MathObject;
 
 /**
@@ -72,12 +72,12 @@ public class MULTIPLY extends NParamFunctionEvaluator implements OperatorEvaluat
     }
 
     @Override
-    protected MathObject evaluateInteger(Integer input1, Integer input2) {
+    protected MathObject evaluateInteger(MathInteger input1, MathInteger input2) {
         return input1.multiply(input2);
     }
 
     @Override
-    protected MathObject evaluateDouble(Double input1, Double input2) {
+    protected MathObject evaluateDouble(MathDouble input1, MathDouble input2) {
         return input1.multiply(input2);
     }
 
@@ -92,7 +92,7 @@ public class MULTIPLY extends NParamFunctionEvaluator implements OperatorEvaluat
     }
 
     @Override
-    protected MathObject evaluateFunctionAndInteger(Function input1, Integer input2) {
+    protected MathObject evaluateFunctionAndInteger(Function input1, MathInteger input2) {
         return null;
     }
 

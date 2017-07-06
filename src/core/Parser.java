@@ -3,8 +3,8 @@ package core;
 import exception.SyntaxException;
 import exception.UnsupportedException;
 import struct.*;
-import struct.Double;
-import struct.Integer;
+import struct.MathDouble;
+import struct.MathInteger;
 import struct.MathObject;
 
 /**
@@ -233,8 +233,8 @@ public final class Parser {
 		MathObject returnVal = parseDivision();
 		
 		if (isNegative) { //handle negated case
-			if (returnVal instanceof Integer) {
-				returnVal = ((Integer)returnVal).multiply(CALC.NEG_ONE);
+			if (returnVal instanceof MathInteger) {
+				returnVal = ((MathInteger)returnVal).multiply(CALC.NEG_ONE);
 			}
 			else if (returnVal instanceof Fraction) {
 				returnVal = ((Fraction)returnVal).multiply(CALC.NEG_ONE);
@@ -271,11 +271,11 @@ public final class Parser {
 		denominator = parsePower();
 		
 		if (token != CALC_DIVIDE) {
-			if (numerator instanceof Integer && denominator instanceof Integer) {
+			if (numerator instanceof MathInteger && denominator instanceof MathInteger) {
 				if (denominator == CALC.ZERO) {
 					throw new SyntaxException("Division by zero.");
 				}
-				return new Fraction((Integer)numerator, (Integer)denominator);
+				return new Fraction((MathInteger)numerator, (MathInteger)denominator);
 			}
 			else {
 				Function reciprocal = CALC.POWER.createFunction(denominator, CALC.NEG_ONE);
@@ -456,10 +456,10 @@ public final class Parser {
 		}*/
 	
 		if (IsFloating) {
-			return new Double(numberString.toString());
+			return new MathDouble(numberString.toString());
 		}
 		else {
-			return new Integer(numberString.toString());
+			return new MathInteger(numberString.toString());
 		}
 	}
 

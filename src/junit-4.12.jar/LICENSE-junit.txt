@@ -57,7 +57,7 @@ other combinations which include the Contribution. No hardware per se is
 licensed hereunder. 
 
       c) Recipient understands that although each Contributor grants the
-licenses to its Contributions set forth herein, no assurances are provided by
+licenses to its Contributions mathSet forth herein, no assurances are provided by
 any Contributor that the Program does not infringe the patent or other
 intellectual property rights of any other entity. Each Contributor disclaims
 any liability to Recipient for claims brought by any other entity based on
@@ -70,7 +70,7 @@ acquire that license before distributing the Program.
 
       d) Each Contributor represents that to its knowledge it has sufficient
 copyright rights in its Contribution, if any, to grant the copyright license
-set forth in this Agreement. 
+mathSet forth in this Agreement.
 
 3. REQUIREMENTS
 

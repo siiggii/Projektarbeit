@@ -4,7 +4,7 @@ import core.CALC;
 import evaluator.extend.FunctionEvaluator;
 import struct.Function;
 import struct.MathObject;
-import struct.Set;
+import struct.MathSet;
 
 /**
  * Evaluator that handles plusminus of expressions
@@ -18,9 +18,9 @@ public class PLUSMINUS implements FunctionEvaluator {
             return input.get(0);
         }
 
-        Set returnSet = CALC.SOLUTIONSET.createSet(input.get(0),CALC.MULTIPLY.createFunction(CALC.D_NEG_ONE,input.get(0)));
+        MathSet returnMathSet = CALC.SET.createSet(input.get(0),CALC.MULTIPLY.createFunction(CALC.D_NEG_ONE,input.get(0)));
 
 
-        return returnSet;
+        return returnMathSet;
     }
 }

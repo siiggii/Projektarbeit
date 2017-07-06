@@ -1,8 +1,8 @@
 package evaluator.extend;
 
 import struct.*;
-import struct.Double;
-import struct.Integer;
+import struct.MathDouble;
+import struct.MathInteger;
 import struct.MathObject;
 
 import java.io.Serializable;
@@ -20,8 +20,8 @@ public abstract class OneParamFunctionEvaluator implements FunctionEvaluator, Se
 			MathObject returnVal = evaluateObject(parameter);
 			if (returnVal != null) return returnVal;
 			
-			else if (parameter instanceof Integer) return evaluateInteger((Integer)parameter);
-			else if (parameter instanceof Double) return evaluateDouble((Double)parameter);
+			else if (parameter instanceof MathInteger) return evaluateInteger((MathInteger)parameter);
+			else if (parameter instanceof MathDouble) return evaluateDouble((MathDouble)parameter);
 			else if (parameter instanceof Fraction) return evaluateFraction((Fraction)parameter);
 			else if (parameter instanceof Symbol) return evaluateSymbol((Symbol)parameter);
 			else if (parameter instanceof Function) return evaluateFunction((Function)parameter);
@@ -32,8 +32,8 @@ public abstract class OneParamFunctionEvaluator implements FunctionEvaluator, Se
 	}
 	
 	protected abstract MathObject evaluateObject(MathObject input);
-	protected abstract MathObject evaluateInteger(Integer input);
-	protected abstract MathObject evaluateDouble(Double input);
+	protected abstract MathObject evaluateInteger(MathInteger input);
+	protected abstract MathObject evaluateDouble(MathDouble input);
 	protected abstract MathObject evaluateFraction(Fraction input);
 	protected abstract MathObject evaluateSymbol(Symbol input);
 	protected abstract MathObject evaluateFunction(Function input);

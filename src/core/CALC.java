@@ -2,10 +2,9 @@ package core;
 
 import evaluator.*;
     import evaluator.extend.ConstantEvaluator;
-    import evaluator.extend.FunctionEvaluator;
-    import struct.*;
-import struct.Double;
-import struct.Integer;
+import struct.*;
+import struct.MathDouble;
+import struct.MathInteger;
 import struct.MathObject;
 
 import java.math.MathContext;
@@ -76,30 +75,30 @@ import java.math.MathContext;
          * Useful numerical constants
          */
         private static final byte[] IntegerZero = {0};
-        public static final Integer ZERO = new Integer(IntegerZero);
-        public static final Double D_ZERO = new Double(ZERO);
+        public static final MathInteger ZERO = new MathInteger(IntegerZero);
+        public static final MathDouble D_ZERO = new MathDouble(ZERO);
         private static final byte[] IntegerOne = {1};
-        public static final Integer ONE = new Integer(IntegerOne);
-        public static final Double D_ONE = new Double(ONE);
+        public static final MathInteger ONE = new MathInteger(IntegerOne);
+        public static final MathDouble D_ONE = new MathDouble(ONE);
         private static final byte[] IntegerNegOne = {-1};
-        public static final Integer NEG_ONE = new Integer(IntegerNegOne);
-        public static final Double D_NEG_ONE = new Double(NEG_ONE);
+        public static final MathInteger NEG_ONE = new MathInteger(IntegerNegOne);
+        public static final MathDouble D_NEG_ONE = new MathDouble(NEG_ONE);
         private static final byte[] IntegerTwo = {2};
-        public static final Integer TWO = new Integer(IntegerTwo);
+        public static final MathInteger TWO = new MathInteger(IntegerTwo);
         private static final byte[] IntegerNegTwo = {-2};
-        public static final Integer NEG_TWO = new Integer(IntegerNegTwo);
-        public static final Double D_TWO = new Double(TWO);
+        public static final MathInteger NEG_TWO = new MathInteger(IntegerNegTwo);
+        public static final MathDouble D_TWO = new MathDouble(TWO);
         private static final byte[] IntegerFour = {4};
-        public static final Integer FOUR = new Integer(IntegerFour);
-        public static final Double D_FOUR = new Double(FOUR);
+        public static final MathInteger FOUR = new MathInteger(IntegerFour);
+        public static final MathDouble D_FOUR = new MathDouble(FOUR);
         public static final Fraction HALF = new Fraction(ONE, TWO);
         public static final Fraction NEG_HALF = new Fraction(NEG_ONE, TWO);
-        public static final Double D_NEG_QUARTER = new Double("-0.25");
-        public static final Double D_QUARTER = new Double("0.25");
-        public static final Double D_HALF = new Double("0.5");
-        public static final Double D_THREE_HALF = new Double("1.5");
-        public static final Double INFINITY = new Double(java.lang.Double.POSITIVE_INFINITY);
-        public static final Double NEG_INFINITY = new Double(java.lang.Double.NEGATIVE_INFINITY);
+        public static final MathDouble D_NEG_QUARTER = new MathDouble("-0.25");
+        public static final MathDouble D_QUARTER = new MathDouble("0.25");
+        public static final MathDouble D_HALF = new MathDouble("0.5");
+        public static final MathDouble D_THREE_HALF = new MathDouble("1.5");
+        public static final MathDouble INFINITY = new MathDouble(java.lang.Double.POSITIVE_INFINITY);
+        public static final MathDouble NEG_INFINITY = new MathDouble(java.lang.Double.NEGATIVE_INFINITY);
         /**
          * Header definitions for certain structs
          */
@@ -108,14 +107,14 @@ import java.math.MathContext;
         public static final Symbol FRACTION = new Symbol("Fraction");
         public static final Symbol SYMBOL = new Symbol("Symbol");
         public static final Symbol ERROR = new Symbol("Error");
-        public static final Symbol SOLUTIONSET = new Symbol("SOLUTIONSET");
+        public static final Symbol SET = new Symbol("SET");
         /**
          * Symbols for built-in constants
          */
         public static final Symbol PI = new Symbol("PI",
-                new ConstantEvaluator(new Double(Math.PI)), Symbol.CONSTANT);
+                new ConstantEvaluator(new MathDouble(Math.PI)), Symbol.CONSTANT);
         public static final Symbol E = new Symbol("E",
-                new ConstantEvaluator(new Double(Math.E)), Symbol.CONSTANT);
+                new ConstantEvaluator(new MathDouble(Math.E)), Symbol.CONSTANT);
         /**
          * HashMap that stores user defined local variables using the header symbol
          * as key

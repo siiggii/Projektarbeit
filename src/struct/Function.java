@@ -300,20 +300,20 @@ public class Function implements MathObject, Iterable<MathObject>, Serializable 
 	
 	@Override
 	public MathObject evaluate() throws Exception {
-		if(Set.containsSet(this)){
+		if(MathSet.containsSet(this)){
 			Function fun1 = (Function) this.cloneMathObject();
 			Function fun2 = (Function) this.cloneMathObject();
 
 			for(int i = 0;i<fun1.size();i++){
-				if(fun1.get(i).getHeader().equals(CALC.SOLUTIONSET)){
-					fun1.set(i,((Set)fun1.get(i)).get(0));
-					fun2.set(i,((Set)fun2.get(i)).get(1));
+				if(fun1.get(i).getHeader().equals(CALC.SET)){
+					fun1.set(i,((MathSet)fun1.get(i)).get(0));
+					fun2.set(i,((MathSet)fun2.get(i)).get(1));
 					break;
 				}
 			}
-			Set set = new Set(CALC.SOLUTIONSET, CALC.EVALUATE(fun1),CALC.EVALUATE(fun2));
+			MathSet mathSet = new MathSet(CALC.SET, CALC.EVALUATE(fun1),CALC.EVALUATE(fun2));
 
-			return set;
+			return mathSet;
 		}
 		return functionHeader.evaluateFunction(this);
 	}	

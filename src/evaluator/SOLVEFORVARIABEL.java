@@ -4,8 +4,8 @@ import core.CALC;
 import evaluator.extend.*;
 import exception.WrongParametersException;
 import struct.*;
-import struct.Double;
-import struct.Integer;
+import struct.MathDouble;
+import struct.MathInteger;
 import struct.MathObject;
 
 import java.util.ArrayList;
@@ -26,7 +26,7 @@ public SOLVEFORVARIABEL() {}
 
 
 	List<Addends> addendsList;
-	//Set set = new Set(CALC.SOLUTIONSET);
+	//Set set = new Set(CALC.SET);
     String variableToSolveFor = "x";
 
 
@@ -36,8 +36,8 @@ public SOLVEFORVARIABEL() {}
 
 		//todo x=0
 
-			if(input.get(0).getHeader().equals(CALC.SOLUTIONSET)){
-				return new Set(CALC.SOLUTIONSET,CALC.EVALUATE(CALC.SOLVEFORVARIABEL.createFunction(((Set)input.get(0)).get(0))),CALC.EVALUATE(CALC.SOLVEFORVARIABEL.createFunction(((Set)input.get(0)).get(1))));
+			if(input.get(0).getHeader().equals(CALC.SET)){
+				return new MathSet(CALC.SET,CALC.EVALUATE(CALC.SOLVEFORVARIABEL.createFunction(((MathSet)input.get(0)).get(0))),CALC.EVALUATE(CALC.SOLVEFORVARIABEL.createFunction(((MathSet)input.get(0)).get(1))));
 			}
             //bring everything to right side
             Relationship equation = (Relationship)input.get(0);
@@ -130,11 +130,11 @@ public SOLVEFORVARIABEL() {}
 
 
 	//todo use DEFINE class
-	private Set substitution(){
+	private MathSet substitution(){
 
-		Set setSubstitution = new Set(CALC.SOLUTIONSET);
+		MathSet mathSetSubstitution = new MathSet(CALC.SET);
 		int substitutionFactor = addendsList.get(1).getPotenzDesSummanden();
-		Function function1 = new Function(CALC.POWER,new Symbol("x"),new Integer(substitutionFactor));
+		Function function1 = new Function(CALC.POWER,new Symbol("x"),new MathInteger(substitutionFactor));
 		Relationship result1 = new Relationship(CALC.EQUAL,new Symbol("y"), function1);
 
 		Function function2 = new Function(CALC.ADD);
@@ -149,28 +149,28 @@ public SOLVEFORVARIABEL() {}
 			function3.add(addens.summand);
 		}
 		variableToSolveFor = "y";
-		setSubstitution = quadraticEquation();
+		mathSetSubstitution = quadraticEquation();
 
-  		int size = setSubstitution.getParameters().size();
+  		int size = mathSetSubstitution.getParameters().size();
 
 		for (int i = 0; i<size;i++) {
 
-			Function function5 = new Function(CALC.POWER,new Integer(substitutionFactor),CALC.D_NEG_ONE);
-			Function function4 = new Function(CALC.POWER,((Relationship)setSubstitution.getParameters().get(i)).get(1),function5);
+			Function function5 = new Function(CALC.POWER,new MathInteger(substitutionFactor),CALC.D_NEG_ONE);
+			Function function4 = new Function(CALC.POWER,((Relationship) mathSetSubstitution.getParameters().get(i)).get(1),function5);
 			Relationship result3 = new Relationship(CALC.EQUAL,new Symbol("x"), function4);
 			Function function = new Function(CALC.SOLVEFORVARIABEL,result3);
 			MathObject m = CALC.EVALUATE(function);
-			setSubstitution.addAll(((Set)m).getParameters());
+			mathSetSubstitution.addAll(((MathSet)m).getParameters());
 			int a = 0;
 			a++;
 
 		}
-		setSubstitution.add(result1);
-		return setSubstitution;
+		mathSetSubstitution.add(result1);
+		return mathSetSubstitution;
 	}
 
-	private Set simpleEquation(){
-		Set simpleEq = new Set(CALC.SOLUTIONSET);
+	private MathSet simpleEquation(){
+		MathSet simpleEq = new MathSet(CALC.SET);
 		MathObject leftSide = addendsList.get(0).getSummand();
 		MathObject rightSide = new Function(CALC.ADD, new Function(CALC.MULTIPLY,CALC.D_NEG_ONE,addendsList.get(1).getSummand()));
 
@@ -207,9 +207,9 @@ public SOLVEFORVARIABEL() {}
 
 				Relationship relationship = new Relationship(CALC.EQUAL, leftSide, mathObject);
 				MathObject mathObject1 = CALC.EVALUATE(relationship);
-				Set set1 = new Set(CALC.SOLUTIONSET,mathObject1);
-				MathObject mathObject2 = CALC.EVALUATE(set1);
-				simpleEq = (Set) mathObject2;
+				MathSet mathSet1 = new MathSet(CALC.SET,mathObject1);
+				MathObject mathObject2 = CALC.EVALUATE(mathSet1);
+				simpleEq = (MathSet) mathObject2;
 
 
 				break;
@@ -219,24 +219,24 @@ public SOLVEFORVARIABEL() {}
 		//addendsList.get(0)
 	}
 
-	private Set quadraticEquation(){
-		Set quadraticEq = new Set(CALC.SOLUTIONSET);
+	private MathSet quadraticEquation(){
+		MathSet quadraticEq = new MathSet(CALC.SET);
 		//2*a
-		Function m1 = new Function(CALC.MULTIPLY,new Integer(2), addendsList.get(0).getAbc());
+		Function m1 = new Function(CALC.MULTIPLY,new MathInteger(2), addendsList.get(0).getAbc());
 		//(2*a)^-1
 		Function m7 = new Function(CALC.POWER,m1,CALC.D_NEG_ONE);
 		//b^2
-		Function m2 = new Function(CALC.POWER, addendsList.get(1).getAbc(),new Integer(2));
+		Function m2 = new Function(CALC.POWER, addendsList.get(1).getAbc(),new MathInteger(2));
 		//-1*4*a*c
 		Function m3 = new Function(CALC.MULTIPLY);
 		m3.add(CALC.D_NEG_ONE);
-		m3.add(new Integer(4));
+		m3.add(new MathInteger(4));
 		m3.add(addendsList.get(0).getAbc());
 		m3.add(addendsList.get(2).getAbc());
 		//b^2-1*4*a*c
 		Function m4 = new Function(CALC.ADD,m2,m3);
 		//(b^2-1*4*a*c)^0.5
-		Function m5 = new Function(CALC.POWER,m4,new Double(0.5));
+		Function m5 = new Function(CALC.POWER,m4,new MathDouble(0.5));
 		//-1*b
 		Function m6 = new Function(CALC.MULTIPLY, CALC.D_NEG_ONE, addendsList.get(1).getAbc());
 
@@ -253,7 +253,7 @@ public SOLVEFORVARIABEL() {}
 		Relationship result1 = new Relationship(CALC.EQUAL,new Symbol(variableToSolveFor), m12);
 		Function function = new Function(CALC.SOLVEFORVARIABEL, result1);
 		CALC.EVALUATE(function);
-		quadraticEq.addAll(((Set)   (MathObject)function.get(0)).getParameters());
+		quadraticEq.addAll(((MathSet)   (MathObject)function.get(0)).getParameters());
 		return quadraticEq;
 	}
 
@@ -331,8 +331,8 @@ public SOLVEFORVARIABEL() {}
 							else if(calcMulitply.get(i).getHeader().equals(CALC.POWER)){
 								Function powerFunction = (Function)calcMulitply.get(i);
 								//to do: nur Zahlen implementiert
-								Integer integer1 = (Integer)powerFunction.get(1);
-								potenzDesSummanden=integer1.intValue();
+								MathInteger mathInteger1 = (MathInteger)powerFunction.get(1);
+								potenzDesSummanden= mathInteger1.intValue();
 							}
 						}
 						else{
@@ -350,14 +350,14 @@ public SOLVEFORVARIABEL() {}
 				else if(summand.getHeader().equals(CALC.POWER)){
 					Function powerFunction = (Function)summand;
 					//to do: nur Zahlen implementiert
-					Integer integer1 = (Integer)powerFunction.get(1);
-					potenzDesSummanden = integer1.intValue();
-					abc = new Integer(1);
+					MathInteger mathInteger1 = (MathInteger)powerFunction.get(1);
+					potenzDesSummanden = mathInteger1.intValue();
+					abc = new MathInteger(1);
 				}
 				// Summand = x
 				else if (summand instanceof Symbol){
 					potenzDesSummanden = 1;
-					abc = new Integer(1);
+					abc = new MathInteger(1);
 				}
 			}
 			else{
@@ -387,7 +387,7 @@ public SOLVEFORVARIABEL() {}
 		public void substitute(int substitutionFactor){
 			if(potenzDesSummanden != 0) {
 				potenzDesSummanden = potenzDesSummanden/substitutionFactor;
-				Function function = new Function(CALC.POWER, new Symbol("y"), new Integer(potenzDesSummanden));
+				Function function = new Function(CALC.POWER, new Symbol("y"), new MathInteger(potenzDesSummanden));
 				summand = new Function(CALC.MULTIPLY, abc, function);
 			}
 		}
