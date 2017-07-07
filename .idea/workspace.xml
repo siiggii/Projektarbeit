@@ -1,24 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1e00fe82-353c-4989-befa-f28e8c6701ff" name="Default" comment="create Exercise Tab">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../untitled2/src/gui/GUIConsole.form" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../untitled2/src/gui/GUIConsole.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../untitled2/src/gui/ComboBoxDemo2.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../untitled2/src/gui/Console.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../untitled2/src/gui/test.form" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../untitled2/src/gui/test.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/.idea/sonarIssues.xml" afterPath="$PROJECT_DIR$/../untitled2/.idea/sonarIssues.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/.idea/uiDesigner.xml" afterPath="$PROJECT_DIR$/../untitled2/.idea/uiDesigner.xml" />
+    <list default="true" id="1e00fe82-353c-4989-befa-f28e8c6701ff" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../untitled2/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/core/CALC.java" afterPath="$PROJECT_DIR$/../untitled2/src/core/CALC.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/core/Engine.java" afterPath="$PROJECT_DIR$/../untitled2/src/core/Engine.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/evaluator/PLUSMINUS.java" afterPath="$PROJECT_DIR$/../untitled2/src/evaluator/PLUSMINUS.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/evaluator/POWER.java" afterPath="$PROJECT_DIR$/../untitled2/src/evaluator/POWER.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/evaluator/SOLVEFORVARIABEL.java" afterPath="$PROJECT_DIR$/../untitled2/src/evaluator/SOLVEFORVARIABEL.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/junit-4.12.jar/LICENSE-junit.txt" afterPath="$PROJECT_DIR$/../untitled2/src/junit-4.12.jar/LICENSE-junit.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/struct/MathDouble.java" afterPath="$PROJECT_DIR$/../untitled2/src/struct/MathDouble.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../untitled2/src/test/core/EngineTest.java" afterPath="$PROJECT_DIR$/../untitled2/src/test/core/EngineTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/../untitled2/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -178,7 +162,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../untitled2" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/../untitled2" value="NewFunctionClasses" />
+        <entry key="$PROJECT_DIR$/../untitled2" value="37ac539c7fe69831a53c53160bd8685a7f92edcc" />
       </map>
     </option>
     <option name="RESET_MODE" value="HARD" />
@@ -878,7 +862,14 @@
       <option name="project" value="LOCAL" />
       <updated>1499391132507</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="create Exercise Tab try to push">
+      <created>1499394671170</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1499394671170</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -924,7 +915,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -945,7 +935,7 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24941543" sideWeight="0.49682036" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24941543" sideWeight="0.49682036" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32501948" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969603" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19872814" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1054,7 +1044,8 @@
     <MESSAGE value="evaluated = true" />
     <MESSAGE value="swing ui created" />
     <MESSAGE value="create Exercise Tab" />
-    <option name="LAST_COMMIT_MESSAGE" value="create Exercise Tab" />
+    <MESSAGE value="create Exercise Tab try to push" />
+    <option name="LAST_COMMIT_MESSAGE" value="create Exercise Tab try to push" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
