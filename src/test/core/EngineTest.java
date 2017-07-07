@@ -85,7 +85,7 @@ public class EngineTest {
     }
     @Test
     public void testplusminus() throws Exception {
-        boolean s = engine.compareSolutions("x=-(-4±((((-4)^2)-4*2*(-16))^(1/2)))/(2*2)","x=1");
+        boolean s = engine.compareSolutions("x=-(-4±((((-4)^2)-4*2*(-16))^(1/2)))/(2*2)","x=2");
         Assert.assertTrue(s );
     }
     @Test

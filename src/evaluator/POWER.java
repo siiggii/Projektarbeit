@@ -66,10 +66,13 @@ public class POWER extends TwoParamFunctionEvaluator implements OperatorEvaluato
 		if(input2 instanceof MathDouble){
 			if(((MathDouble)input2).doubleValue() < 1&&((MathDouble)input2).doubleValue() > -1){
 				if(!(input1 instanceof MathDouble)) {
-					//if (!evaluated) {
+					if (!CALC.ambiguityEvaluated) {
 					//	evaluated = true;
-						return new MathSet(CALC.SET, CALC.POWER.createFunction(input1, input2), CALC.POWER.createFunction(CALC.MULTIPLY.createFunction(CALC.D_NEG_ONE, input1), input2));
-					//}
+						return new Function(CALC.PLUSMINUS,CALC.POWER.createFunction(input1, input2));
+					}
+					else{
+						return null;
+					}
 					//return  new Function(CALC.PLUSMINUS,CALC.POWER.createFunction(input1,input2));
 				}
 			}

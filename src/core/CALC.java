@@ -29,6 +29,7 @@ import java.math.MathContext;
         public static int max_recursion_depth = 3;
         public static boolean full_integrate_mode = true;
         public static boolean fix_rounding_errors = true;
+        public static boolean ambiguityEvaluated = false;
 
         public static final Symbol EQUAL = new Symbol("EQUAL", new EQUAL());
 

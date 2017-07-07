@@ -142,7 +142,6 @@ public SOLVEFORVARIABEL() {}
 			function2.add(addens.summand);
 		}
 		Relationship result2 = new Relationship(CALC.EQUAL,function2, CALC.D_ZERO);
-		//solutionset.add(result2);
 		Function function3 = new Function(CALC.ADD);
 		for (Addends addens:addendsList) {
 			addens.substitute(substitutionFactor);
@@ -154,23 +153,25 @@ public SOLVEFORVARIABEL() {}
   		int size = mathSetSubstitution.getParameters().size();
 
 		for (int i = 0; i<size;i++) {
-
 			Function function5 = new Function(CALC.POWER,new MathInteger(substitutionFactor),CALC.D_NEG_ONE);
 			Function function4 = new Function(CALC.POWER,((Relationship) mathSetSubstitution.getParameters().get(i)).get(1),function5);
-			Relationship result3 = new Relationship(CALC.EQUAL,new Symbol("x"), function4);
-			Function function = new Function(CALC.SOLVEFORVARIABEL,result3);
-			MathObject m = CALC.EVALUATE(function);
-			mathSetSubstitution.addAll(((MathSet)m).getParameters());
-			int a = 0;
-			a++;
+			MathObject mhja = CALC.EVALUATE(function4);
+			Relationship result3 = new Relationship(CALC.EQUAL,new Symbol("x"), mhja);
+			CALC.ambiguityEvaluated = true;
+			MathObject mhja2 = CALC.EVALUATE(result3);
+			CALC.ambiguityEvaluated = false;
+			if(!(mhja2 instanceof MathSet)){
+				mhja2 = new MathSet(CALC.SET,mhja2);
+			}
 
+			mathSetSubstitution.addAll(((MathSet)mhja2).getParameters());
 		}
 		mathSetSubstitution.add(result1);
 		return mathSetSubstitution;
 	}
 
 	private MathSet simpleEquation(){
-		MathSet simpleEq = new MathSet(CALC.SET);
+
 		MathObject leftSide = addendsList.get(0).getSummand();
 		MathObject rightSide = new Function(CALC.ADD, new Function(CALC.MULTIPLY,CALC.D_NEG_ONE,addendsList.get(1).getSummand()));
 
@@ -203,19 +204,27 @@ public SOLVEFORVARIABEL() {}
 					rightSide = newRightSide;
 				}
 			} else {
-				MathObject mathObject = CALC.EVALUATE(rightSide);
+				//MathObject mathObject = CALC.EVALUATE(rightSide);
 
-				Relationship relationship = new Relationship(CALC.EQUAL, leftSide, mathObject);
+				Relationship relationship = new Relationship(CALC.EQUAL, leftSide, rightSide);
 				MathObject mathObject1 = CALC.EVALUATE(relationship);
-				MathSet mathSet1 = new MathSet(CALC.SET,mathObject1);
-				MathObject mathObject2 = CALC.EVALUATE(mathSet1);
-				simpleEq = (MathSet) mathObject2;
+				CALC.ambiguityEvaluated = true;
+				MathObject mathObject2 = CALC.EVALUATE(mathObject1);
+				CALC.ambiguityEvaluated = false;
+				if(mathObject2 instanceof MathSet){
+					return (MathSet)mathObject2;
+				}
+				else {
+					return new MathSet(CALC.SET,mathObject2);
+				}
+
+				//simpleEq = (MathSet) mathObject2;
 
 
-				break;
+				//break;
 			}
 		}
-		return simpleEq;
+		//return simpleEq;
 		//addendsList.get(0)
 	}
 
@@ -240,21 +249,34 @@ public SOLVEFORVARIABEL() {}
 		//-1*b
 		Function m6 = new Function(CALC.MULTIPLY, CALC.D_NEG_ONE, addendsList.get(1).getAbc());
 
-        MathObject m8 = CALC.EVALUATE(m6);
-        MathObject m9 = CALC.EVALUATE(m5);
-
-        Function m10 = new Function(CALC.ADD, m8,m9);
+        //MathObject m8 = CALC.EVALUATE(m6);
+        //MathObject m9 = CALC.EVALUATE(m5);
+		//CALC.ambiguityEvaluated = true;
+		//MathObject temp1 = CALC.EVALUATE(m9);
+		//CALC.ambiguityEvaluated = false;
+        Function m10 = new Function(CALC.ADD, m6,m5);
         //MathObject m11 = CALC.EVALUATE(m10);
         //MathObject m13 = CALC.EVALUATE(m7);
-        Function m12 = new Function(CALC.MULTIPLY,m10,CALC.EVALUATE(m7));
+        Function m12 = new Function(CALC.MULTIPLY,m10,m7);
 
 
 		//MathObject mathObject = CALC.EVALUATE(m12);
 		Relationship result1 = new Relationship(CALC.EQUAL,new Symbol(variableToSolveFor), m12);
-		Function function = new Function(CALC.SOLVEFORVARIABEL, result1);
-		CALC.EVALUATE(function);
-		quadraticEq.addAll(((MathSet)   (MathObject)function.get(0)).getParameters());
-		return quadraticEq;
+		MathObject mhhhhh = CALC.EVALUATE(result1);
+		CALC.ambiguityEvaluated = true;
+		MathObject temp1 = CALC.EVALUATE(mhhhhh);
+		CALC.ambiguityEvaluated = false;
+		if(temp1 instanceof MathSet) {
+			return (MathSet) temp1;
+		}
+		else {
+			return new MathSet(CALC.SET,temp1);
+		}
+
+		//Function function = new Function(CALC.SOLVEFORVARIABEL, result1);
+		//CALC.EVALUATE(function);
+		//quadraticEq.addAll(((MathSet)   (MathObject)function.get(0)).getParameters());
+		//return quadraticEq;
 	}
 
 

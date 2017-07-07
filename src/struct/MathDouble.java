@@ -150,6 +150,10 @@ public class MathDouble implements MathObject, Serializable{
             if (isNaN) {
                 return ((MathDouble) obj).isNaN();
             }
+            double tempDouble = value.doubleValue() - ((MathDouble) obj).doubleValue();
+            if(tempDouble > -0.001 && tempDouble < 0.001){
+                return true;
+            }
             return value.doubleValue() == (((MathDouble) obj).doubleValue());
         } else if (obj instanceof MathInteger) {
             if (value == null) {
